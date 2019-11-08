@@ -38,18 +38,18 @@ int main() {
 
     if ((numrand[0] == 1) && (numrand[1] == 2) && (numrand[2] == 3) && (numrand[3] == 4)){
         gns = apost * 5;
-        printf(" 4 %c%cACIERTOS!! Haz ganado %d",173,173,gns);
+        printf(" 4 %c%cACIERTOS!! Has ganado %d",173,173,gns);
     }
     if ((numrand[0] == 1) && (numrand[1] == 2) && (numrand[2] == 3) && (numrand[3] == 4)  && (numrand[4] == 5)){
         gns = apost * 10;
-        printf(" 5 %c%cACIERTOS!! Haz ganado %d",173,173,gns);
+        printf(" 5 %c%cACIERTOS!! Has ganado %d",173,173,gns);
     }
     if ((numrand[0] == 1) && (numrand[1] == 2) && (numrand[2] == 3) && (numrand[3] == 4)  && (numrand[4] == 5) && (numrand[6] == 6)){
         gns = apost * 15;
-        printf(" 6 %c%cACIERTOS!! Haz ganado %d",173,173,gns);
+        printf(" 6 %c%cACIERTOS!! Has ganado %d",173,173,gns);
     }
     if ((numrand[0] == 1) && (numrand[1] == 2) && (numrand[2] == 3) && (numrand[3] == 4)  && (numrand[4] == 5) && (numrand[5] == 6) && (numrand[6] == 7)) {
         gns = apost * 100;
-        printf(" 7 %c%cACIERTOS!! Haz ganado %d", 173, 173, gns);
+        printf(" 7 %c%cACIERTOS!! Has ganado %d", 173, 173, gns);
     }
 }
