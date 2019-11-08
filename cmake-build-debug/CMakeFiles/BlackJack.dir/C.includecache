@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Bryan/Documents/Universidad/SilverBlueDiamond/BlackJack/BlackJack.c
+time.h
+-
+stdlib.h
+-
+
+C:/Users/Bryan/Documents/Universidad/SilverBlueDiamond/BlackJack/BlackJack.h
+
+C:/Users/Bryan/Documents/Universidad/SilverBlueDiamond/BlackJack/main.c
+minunit.h
+C:/Users/Bryan/Documents/Universidad/SilverBlueDiamond/BlackJack/minunit.h
+BlackJack.h
+C:/Users/Bryan/Documents/Universidad/SilverBlueDiamond/BlackJack/BlackJack.h
+
+C:/Users/Bryan/Documents/Universidad/SilverBlueDiamond/BlackJack/minunit.h
+windows.h
+-
+unistd.h
+-
+time.h
+-
+sys/time.h
+-
+sys/resource.h
+-
+sys/times.h
+-
+string.h
+-
+mach/mach.h
+-
+mach/mach_time.h
+-
+stdio.h
+-
+math.h
+-
+
