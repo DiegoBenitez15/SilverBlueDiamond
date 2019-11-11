@@ -23,6 +23,7 @@ int main() {
         suma2 = sumando(c2,0,ccartas2,0);
         d = repartidor(c2,p,&cmazo,&ccartas2,suma2);
     }
+    r2 = comparar(c2,ccartas2);
 
     for(d =0;d< ccartas2;d++)
     {
@@ -45,7 +46,6 @@ int main() {
         }
         printf("\t\tSuma: %d",suma);
         printf("\nSeleccion: ");
-        fflush(stdin);
         scanf("%d",&op);
 
         switch(op)
@@ -53,12 +53,14 @@ int main() {
             case 1:
             {
                 ccartas = pedircartas(p,c,ccartas,&cmazo);
+                break;
             }
             case 2:
             {
                 d = 1;
                 r1 = comparar(cartas,suma);
                 y = resultados(r1,r2,suma,suma2);
+                break;
             }
             default:
             {
