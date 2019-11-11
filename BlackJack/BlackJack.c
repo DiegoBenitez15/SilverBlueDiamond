@@ -4,9 +4,8 @@
 
 #include "BlackJack.h"
 #include <stdlib.h>
-#include <string.h>
 
-int generar(int *p)
+void generar(int *p)
 {
     int j,c;
     c = 0;
@@ -18,36 +17,15 @@ int generar(int *p)
     }
 }
 
-int* barajar(int *baraja)
-{
-    int tamano = (int)strlen((char*)baraja);
-    int *temp = calloc(tamano + 1,sizeof(int));
-    int x;
-    int i = 0;
-
-    while(i < tamano)
-    {
-        x = rand() % 53;
-        if(baraja[x] != 0)
-        {
-            temp[i] = baraja[x];
-            baraja[x] = 0;
-            i++;
-        }
-    }
-    free(baraja);
-    return temp;
-}
-
 int pedircartas(int *mazo,int *cartas,int ccartas,int *cmazo)
 {
-    int i;
+    int i,x;
 
     for(i = 0;i < ccartas + 1;i++)
     {
-        if(cartas[i] <= 0 || cartas[i] > 52)
+        if(cartas[i] == 0)
         {
-            int x = rand() % *cmazo;
+            x = rand() % (*cmazo + 1);
             cartas[i] = mazo[x];
 
             *cmazo = elimazo(mazo,*cmazo,x);
@@ -114,7 +92,7 @@ int sumando(int *cards,int ii,int is,int suma)
     return -1;
 }
 
-int comparar(int *cards,int suma)
+int comparar(const int *cards,int suma)
 {
     if((cards[0]  % 13) + 1 == 13 && (cards[1]  % 13) + 1 == 1) // BlackJack
     {
@@ -128,6 +106,8 @@ int comparar(int *cards,int suma)
     {
         return 1;
     }
+
+    return -1;
 }
 
 int resultados(int r1,int r2,int suma,int suma2) //Compara ambos jugadores y determina quien gana
@@ -158,6 +138,8 @@ int resultados(int r1,int r2,int suma,int suma2) //Compara ambos jugadores y det
     {
         return 0;
     }
+
+    return -1;
 }
 
 int repartidor(int *cartas,int *mazo,int *cmazo,int *ccarta,int suma)
@@ -170,9 +152,9 @@ int repartidor(int *cartas,int *mazo,int *cmazo,int *ccarta,int suma)
     else if(suma > 11 && suma <= 16)
     {
         int op;
-        op = rand() % 1;
+        op = rand() % 3;
 
-        if(op == 0)
+        if(op == 0 || op ==2)
         {
             *ccarta = pedircartas(mazo,cartas,*ccarta,cmazo);
             return 0;
@@ -186,6 +168,8 @@ int repartidor(int *cartas,int *mazo,int *cmazo,int *ccarta,int suma)
     {
         return 1;
     }
+
+    return -1;
 }
 
 void ordenar(int *cartas,int ccartas)
