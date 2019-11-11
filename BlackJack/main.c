@@ -1,83 +1,83 @@
-//
-// Created by diego on 5/11/2019.
-//
-
-#include "minunit.h"
-
+#include <stdio.h>
 #include "BlackJack.h"
+#include <stdlib.h>
+#include <time.h>
 
-#define MINUNIT_EPSILON 1E-12
 
-MU_TEST(test_NombrePrueba) {
-    int *cartas;
-    int x = 2;
-    cartas = (int*) calloc(x,sizeof(int));
+int main() {
+    srand(time(NULL));
+    int mazo[52],cmazo,d,y; int *p; //Mazo de Cartas h
+    cmazo = 52; d = 0; p = mazo; y =0;
+    int cartas[10],ccartas,suma,r1;int *c; //Jugador #1
+    c = cartas; ccartas = 1; r1 = 0;
+    int cartas2[10],ccartas2,suma2,r2;int *c2;//La Casa
+    c2 = cartas2; ccartas2 = 1; suma2 = 0; r2 = 0;
 
-    printf("\nPrimer Intento\n");
+    generar(p);
+    ccartas = pedircartas(p,c,ccartas,&cmazo);
+    ccartas2 = pedircartas(p,c2,ccartas2,&cmazo);
 
-    cartas = generarcartas(cartas,x);
-
-    for(int i =0;i < x;i++)
+    while(d == 0)
     {
-        if(cartas[i] == 1)
-        {
-            printf("A ");
-        }
-        else if(cartas[i] == 11)
-        {
-            printf("J ");
-        }
-        else if(cartas[i] == 12)
-        {
-            printf("Q ");
-        }
-        else if(cartas[i] == 13)
-        {
-            printf("K ");
-        }
-        else
-        {
-            printf("%d ",cartas[i]);
-        }
+        ordenar(c2,ccartas2);
+        suma2 = sumando(c2,0,ccartas2,0);
+        d = repartidor(c2,p,&cmazo,&ccartas2,suma2);
     }
 
-    printf("\nSegundo Intento\n");
-
-    x = 3;
-    cartas = generarcartas(cartas,x);
-
-    for(int i =0;i < x;i++)
+    for(d =0;d< ccartas2;d++)
     {
-        if(cartas[i] == 1)
+        printf("%d ",(c2[d] % 13) + 1);
+    }
+    printf("SUMA: %d",suma2);
+
+    do
+    {
+        int op,i;
+        d = 0;
+        ordenar(cartas,ccartas);
+        suma = sumando(c,0,ccartas,0);
+
+        printf("\n|1|Pedir Carta |2|Quedarse\n");
+        for(i = 0;i < ccartas;i++)
         {
-            printf("A ");
+            printf("%d ",(c[i] % 13) + 1);
         }
-        else if(cartas[i] == 11)
+        printf("\t\tSuma: %d",suma);
+        printf("\nSeleccion: ");
+        fflush(stdin);
+        op = getchar();
+
+        if(op == 1)
         {
-            printf("J ");
+            ccartas = pedircartas(p,c,ccartas,&cmazo);
         }
-        else if(cartas[i] == 12)
+        else if(op == 2)
         {
-            printf("Q ");
+            d = 1;
+            r1 = comparar(cartas,suma);
+            y = resultados(r1,r2,suma,suma2);
         }
-        else if(cartas[i] == 13)
-        {
-            printf("K ");
-        }
-        else
-        {
-            printf("%d ",cartas[i]);
-        }
+
+    }while(d == 0);
+
+
+
+
+
+    if(y == 0)
+    {
+        printf("\nPERDISTE GAFO\n");
+    }
+    else if(y == 1)
+    {
+        printf("\nGANASTE GAFO\n");
+    }
+    if(y == 2)
+    {
+        printf("\nEMPATE GAFO\n");
     }
 
+    printf("\t\tR1: %d  R2: %d",r1,r2);
+
 }
 
-MU_TEST_SUITE(test_suite) {
-        MU_RUN_TEST(test_NombrePrueba);
-}
-
-int main(int argc, char *argv[]) {
-    MU_RUN_SUITE(test_suite);
-    MU_REPORT();
-    return 0;
-}
