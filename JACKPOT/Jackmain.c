@@ -8,7 +8,7 @@
 
 int cantidad_acertados(int res[], int n);
 
-int cantidad_acertados(int res[], int n){
+int  (int res[], int n){
     int c=0;
     for(int i=0; i < n; i++){
         if (res[i] == i+1){
