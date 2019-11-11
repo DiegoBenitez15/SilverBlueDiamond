@@ -3,7 +3,7 @@ project(Portafolio-2)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(BlackJack BlackJack/main.c BlackJack/BlackJack.c BlackJack/BlackJack.h)
+add_executable(BlackJack BlackJack/BlackJack.c BlackJack/main.c BlackJack/BlackJack.h)
 
 add_executable(Craps Craps/fcraps.c Craps/fcraps.h Craps/maincp.c)
 

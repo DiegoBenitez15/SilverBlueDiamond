@@ -56,22 +56,9 @@ include CMakeFiles/BlackJack.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/BlackJack.dir/flags.make
 
-CMakeFiles/BlackJack.dir/BlackJack/main.c.obj: CMakeFiles/BlackJack.dir/flags.make
-CMakeFiles/BlackJack.dir/BlackJack/main.c.obj: ../BlackJack/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\diego\Desktop\SilverBlueDiamond\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BlackJack.dir/BlackJack/main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BlackJack.dir\BlackJack\main.c.obj   -c C:\Users\diego\Desktop\SilverBlueDiamond\BlackJack\main.c
-
-CMakeFiles/BlackJack.dir/BlackJack/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BlackJack.dir/BlackJack/main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\diego\Desktop\SilverBlueDiamond\BlackJack\main.c > CMakeFiles\BlackJack.dir\BlackJack\main.c.i
-
-CMakeFiles/BlackJack.dir/BlackJack/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BlackJack.dir/BlackJack/main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\diego\Desktop\SilverBlueDiamond\BlackJack\main.c -o CMakeFiles\BlackJack.dir\BlackJack\main.c.s
-
 CMakeFiles/BlackJack.dir/BlackJack/BlackJack.c.obj: CMakeFiles/BlackJack.dir/flags.make
 CMakeFiles/BlackJack.dir/BlackJack/BlackJack.c.obj: ../BlackJack/BlackJack.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\diego\Desktop\SilverBlueDiamond\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BlackJack.dir/BlackJack/BlackJack.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\diego\Desktop\SilverBlueDiamond\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BlackJack.dir/BlackJack/BlackJack.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BlackJack.dir\BlackJack\BlackJack.c.obj   -c C:\Users\diego\Desktop\SilverBlueDiamond\BlackJack\BlackJack.c
 
 CMakeFiles/BlackJack.dir/BlackJack/BlackJack.c.i: cmake_force
@@ -82,16 +69,29 @@ CMakeFiles/BlackJack.dir/BlackJack/BlackJack.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BlackJack.dir/BlackJack/BlackJack.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\diego\Desktop\SilverBlueDiamond\BlackJack\BlackJack.c -o CMakeFiles\BlackJack.dir\BlackJack\BlackJack.c.s
 
+CMakeFiles/BlackJack.dir/BlackJack/main.c.obj: CMakeFiles/BlackJack.dir/flags.make
+CMakeFiles/BlackJack.dir/BlackJack/main.c.obj: ../BlackJack/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\diego\Desktop\SilverBlueDiamond\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BlackJack.dir/BlackJack/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BlackJack.dir\BlackJack\main.c.obj   -c C:\Users\diego\Desktop\SilverBlueDiamond\BlackJack\main.c
+
+CMakeFiles/BlackJack.dir/BlackJack/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BlackJack.dir/BlackJack/main.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\diego\Desktop\SilverBlueDiamond\BlackJack\main.c > CMakeFiles\BlackJack.dir\BlackJack\main.c.i
+
+CMakeFiles/BlackJack.dir/BlackJack/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BlackJack.dir/BlackJack/main.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\diego\Desktop\SilverBlueDiamond\BlackJack\main.c -o CMakeFiles\BlackJack.dir\BlackJack\main.c.s
+
 # Object files for target BlackJack
 BlackJack_OBJECTS = \
-"CMakeFiles/BlackJack.dir/BlackJack/main.c.obj" \
-"CMakeFiles/BlackJack.dir/BlackJack/BlackJack.c.obj"
+"CMakeFiles/BlackJack.dir/BlackJack/BlackJack.c.obj" \
+"CMakeFiles/BlackJack.dir/BlackJack/main.c.obj"
 
 # External object files for target BlackJack
 BlackJack_EXTERNAL_OBJECTS =
 
-BlackJack.exe: CMakeFiles/BlackJack.dir/BlackJack/main.c.obj
 BlackJack.exe: CMakeFiles/BlackJack.dir/BlackJack/BlackJack.c.obj
+BlackJack.exe: CMakeFiles/BlackJack.dir/BlackJack/main.c.obj
 BlackJack.exe: CMakeFiles/BlackJack.dir/build.make
 BlackJack.exe: CMakeFiles/BlackJack.dir/linklibs.rsp
 BlackJack.exe: CMakeFiles/BlackJack.dir/objects1.rsp

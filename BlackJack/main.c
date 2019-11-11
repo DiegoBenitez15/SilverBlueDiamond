@@ -32,7 +32,8 @@ int main() {
 
     do
     {
-        int op,i;
+        int i,op;
+        op = 0;
         d = 0;
         ordenar(cartas,ccartas);
         suma = sumando(c,0,ccartas,0);
@@ -45,24 +46,27 @@ int main() {
         printf("\t\tSuma: %d",suma);
         printf("\nSeleccion: ");
         fflush(stdin);
-        op = getchar();
+        scanf("%d",&op);
 
-        if(op == 1)
+        switch(op)
         {
-            ccartas = pedircartas(p,c,ccartas,&cmazo);
-        }
-        else if(op == 2)
-        {
-            d = 1;
-            r1 = comparar(cartas,suma);
-            y = resultados(r1,r2,suma,suma2);
+            case 1:
+            {
+                ccartas = pedircartas(p,c,ccartas,&cmazo);
+            }
+            case 2:
+            {
+                d = 1;
+                r1 = comparar(cartas,suma);
+                y = resultados(r1,r2,suma,suma2);
+            }
+            default:
+            {
+                printf("\nIngrese una de las dos opciones correctamente\n");
+            }
         }
 
     }while(d == 0);
-
-
-
-
 
     if(y == 0)
     {
@@ -78,6 +82,5 @@ int main() {
     }
 
     printf("\t\tR1: %d  R2: %d",r1,r2);
-
 }
 

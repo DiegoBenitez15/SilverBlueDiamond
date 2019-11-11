@@ -22,16 +22,16 @@ int* barajar(int *baraja)
 {
     int tamano = (int)strlen((char*)baraja);
     int *temp = calloc(tamano + 1,sizeof(int));
-    int r;
+    int x;
     int i = 0;
 
     while(i < tamano)
     {
-        r = rand() % 53;
-        if(baraja[r] != 0)
+        x = rand() % 53;
+        if(baraja[x] != 0)
         {
-            temp[i] = baraja[r];
-            baraja[r] = 0;
+            temp[i] = baraja[x];
+            baraja[x] = 0;
             i++;
         }
     }
@@ -61,7 +61,7 @@ int elimazo(int* mazo,int cmazo,int pos)
 {
     int aux;
 
-    while(pos < cmazo)
+    while(pos < cmazo) //Manda la carta del mazo a la parte final del arreglo y reduce cmazo(variable que controla la cantidad de cartas en el mazo)
     {
         aux = mazo[pos];
         mazo[pos] = mazo[pos+1];
