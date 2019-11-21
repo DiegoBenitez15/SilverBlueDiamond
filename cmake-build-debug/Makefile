@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond"
+CMAKE_SOURCE_DIR = C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug\CMakeFiles" "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug\CMakeFiles C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -173,6 +173,19 @@ MISSISSIPI-STUD: cmake_check_build_system
 MISSISSIPI-STUD/fast:
 	$(MAKE) -f CMakeFiles\MISSISSIPI-STUD.dir\build.make CMakeFiles/MISSISSIPI-STUD.dir/build
 .PHONY : MISSISSIPI-STUD/fast
+
+#=============================================================================
+# Target rules for targets named ruleta
+
+# Build rule for target.
+ruleta: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 ruleta
+.PHONY : ruleta
+
+# fast build rule for target.
+ruleta/fast:
+	$(MAKE) -f CMakeFiles\ruleta.dir\build.make CMakeFiles/ruleta.dir/build
+.PHONY : ruleta/fast
 
 BlackJack/BlackJack.obj: BlackJack/BlackJack.c.obj
 
@@ -417,6 +430,33 @@ RedDog/main.c.s:
 	$(MAKE) -f CMakeFiles\RedDog.dir\build.make CMakeFiles/RedDog.dir/RedDog/main.c.s
 .PHONY : RedDog/main.c.s
 
+ruleta/ruleta.obj: ruleta/ruleta.c.obj
+
+.PHONY : ruleta/ruleta.obj
+
+# target to build an object file
+ruleta/ruleta.c.obj:
+	$(MAKE) -f CMakeFiles\ruleta.dir\build.make CMakeFiles/ruleta.dir/ruleta/ruleta.c.obj
+.PHONY : ruleta/ruleta.c.obj
+
+ruleta/ruleta.i: ruleta/ruleta.c.i
+
+.PHONY : ruleta/ruleta.i
+
+# target to preprocess a source file
+ruleta/ruleta.c.i:
+	$(MAKE) -f CMakeFiles\ruleta.dir\build.make CMakeFiles/ruleta.dir/ruleta/ruleta.c.i
+.PHONY : ruleta/ruleta.c.i
+
+ruleta/ruleta.s: ruleta/ruleta.c.s
+
+.PHONY : ruleta/ruleta.s
+
+# target to generate assembly for a file
+ruleta/ruleta.c.s:
+	$(MAKE) -f CMakeFiles\ruleta.dir\build.make CMakeFiles/ruleta.dir/ruleta/ruleta.c.s
+.PHONY : ruleta/ruleta.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -429,6 +469,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... JACKPOT
 	@echo ... MISSISSIPI-STUD
+	@echo ... ruleta
 	@echo ... edit_cache
 	@echo ... BlackJack/BlackJack.obj
 	@echo ... BlackJack/BlackJack.i
@@ -457,6 +498,9 @@ help:
 	@echo ... RedDog/main.obj
 	@echo ... RedDog/main.i
 	@echo ... RedDog/main.s
+	@echo ... ruleta/ruleta.obj
+	@echo ... ruleta/ruleta.i
+	@echo ... ruleta/ruleta.s
 .PHONY : help
 
 
