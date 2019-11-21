@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond"
+CMAKE_SOURCE_DIR = C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Craps.dir/depend.make
@@ -58,29 +58,29 @@ include CMakeFiles/Craps.dir/flags.make
 
 CMakeFiles/Craps.dir/Craps/fcraps.c.obj: CMakeFiles/Craps.dir/flags.make
 CMakeFiles/Craps.dir/Craps/fcraps.c.obj: ../Craps/fcraps.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Craps.dir/Craps/fcraps.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Craps.dir\Craps\fcraps.c.obj   -c "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\Craps\fcraps.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Craps.dir/Craps/fcraps.c.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Craps.dir\Craps\fcraps.c.obj   -c C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\Craps\fcraps.c
 
 CMakeFiles/Craps.dir/Craps/fcraps.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Craps.dir/Craps/fcraps.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\Craps\fcraps.c" > CMakeFiles\Craps.dir\Craps\fcraps.c.i
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\Craps\fcraps.c > CMakeFiles\Craps.dir\Craps\fcraps.c.i
 
 CMakeFiles/Craps.dir/Craps/fcraps.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Craps.dir/Craps/fcraps.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\Craps\fcraps.c" -o CMakeFiles\Craps.dir\Craps\fcraps.c.s
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\Craps\fcraps.c -o CMakeFiles\Craps.dir\Craps\fcraps.c.s
 
 CMakeFiles/Craps.dir/Craps/maincp.c.obj: CMakeFiles/Craps.dir/flags.make
 CMakeFiles/Craps.dir/Craps/maincp.c.obj: ../Craps/maincp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Craps.dir/Craps/maincp.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Craps.dir\Craps\maincp.c.obj   -c "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\Craps\maincp.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Craps.dir/Craps/maincp.c.obj"
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Craps.dir\Craps\maincp.c.obj   -c C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\Craps\maincp.c
 
 CMakeFiles/Craps.dir/Craps/maincp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Craps.dir/Craps/maincp.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\Craps\maincp.c" > CMakeFiles\Craps.dir\Craps\maincp.c.i
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\Craps\maincp.c > CMakeFiles\Craps.dir\Craps\maincp.c.i
 
 CMakeFiles/Craps.dir/Craps/maincp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Craps.dir/Craps/maincp.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\Craps\maincp.c" -o CMakeFiles\Craps.dir\Craps\maincp.c.s
+	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\Craps\maincp.c -o CMakeFiles\Craps.dir\Craps\maincp.c.s
 
 # Object files for target Craps
 Craps_OBJECTS = \
@@ -96,7 +96,7 @@ Craps.exe: CMakeFiles/Craps.dir/build.make
 Craps.exe: CMakeFiles/Craps.dir/linklibs.rsp
 Craps.exe: CMakeFiles/Craps.dir/objects1.rsp
 Craps.exe: CMakeFiles/Craps.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Craps.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Craps.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Craps.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -109,6 +109,6 @@ CMakeFiles/Craps.dir/clean:
 .PHONY : CMakeFiles/Craps.dir/clean
 
 CMakeFiles/Craps.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond" "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond" "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug" "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug" "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug\CMakeFiles\Craps.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug\CMakeFiles\Craps.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Craps.dir/depend
 
