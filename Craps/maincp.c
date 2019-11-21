@@ -10,56 +10,53 @@
 int main() {
     srand(time(NULL));
     printf("Bienvenido a CRAPS!\n");
-    char respt;
-    int apst = 0, nd1 = 0, nd2 = 0, tapst = 0;
-    char mdj;
-    printf("Elija el modo de apuesta que desea utilizar: ");
-    printf("\n-Linea de pase [A]\n-Campo[C]\n-Gran Seis[S]\n-Gran Ocho[O]\n");
-    mdj = getchar();
-    printf("\n");
-    printf("Introduzca la cantidad que desea apostar:  ");
-    scanf("%d", &apst);
-    if (apst <= 0) {
-        printf("APUESTA ERRONEA");
-        exit(0);
-    }
-    nd1 = 1 + rand() % (6 - 1);
-    nd2 = 1 + rand() % (6 - 1);
+    char respt, mdj;
+    do {
+        int apst = 0, nd1 = 0, nd2 = 0, tapst = 0;
+        printf("Elija el modo de apuesta que desea utilizar: ");
+        printf("\n-Linea de pase [A]\n-Campo[C]\n-Gran Seis[S]\n-Gran Ocho[O]\n");
+        mdj = getchar();
+        printf("\n");
+        printf("Introduzca la cantidad que desea apostar:\t");
+        scanf("%d", &apst);
+        if (apst <= 0) {
+            printf("APUESTA ERRONEA");
+            exit(0);
+        }
+        nd1 = 1 + rand() % (6 - 1);
+        nd2 = 1 + rand() % (6 - 1);
 
-    switch (toupper(mdj))
-    {
-        case 'A':
-            {
+        switch (toupper(mdj)) {
+            case 'A': {
                 tapst = lna_pase(nd1, nd1, apst);
                 break;
             }
 
-        case mdj = 'C':
-            {
+            case 'C': {
                 tapst = campo(nd1, nd2, apst);
                 break;
             }
 
-        case mdj = 'S':
-            {
-                tapst = grnss(nd1,nd2,apst);
+            case 'S': {
+                tapst = grnss(nd1, nd2, apst);
                 break;
             }
 
-        case mdj = 'O':
-            {
-                tapst = grnoo(nd1,nd2,apst);
-                break:
+            case 'O': {
+                tapst = grnoo(nd1, nd2, apst);
+                break;
             }
-        default:
-        {
-            printf("OPCION INCORRECTA");
-        }
+            default: {
+                printf("OPCION INCORRECTA");
+            }
 
-    }
-    printf("\n");
-    printf("%cQuieres volver a jugar?\n",168);
-    fflush(stdin);
-    respt = getchar();
+        }
+        printf("\n");
+        printf("Desea Continuar en la mesa?  [S] [N]");
+        fflush(stdin);
+        respt = getchar();
+    } while ((respt != 'N') && (respt != 'n'));
+
+    printf("Gracias por Jugar!");
 }
 
