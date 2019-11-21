@@ -17,13 +17,13 @@ int main ()
     switch (c) {
         case 'A' :
             do {
-                printf ("1 - Apostar a los pares \t 2 - Apostar a los impares\n");
+                printf ("1 - Apostarle a los pares \t 2 - Apostarle a los impares\n");
                 scanf ("%d",&n);}while(n!=1 && n!=2);
             break;
 
         case 'B' :
             do {
-                printf ("Dime a los tres numeros que quieres apostar \n(Comprendidos entre 1 y 36):\n");
+                printf ("Di tres numeros que quieres apostar! \n(Comprendidos entre 1 y 36):\n");
                 for (i=0;i<3;i++)
                     scanf ("%d",&m[i]);
             }
@@ -31,7 +31,7 @@ int main ()
             break;
         case 'C' :
             do {
-                printf ("Dime el numero al que quieres apostar \n(Comprendido entre 1 y 36):\n");
+                printf ("Di el numero al que le apostaras \n(Comprendido entre 1 y 36):\n");
                 scanf ("%d",&n);
             }
             while(n<=0 || n>36); break;
@@ -51,23 +51,23 @@ int main ()
     switch ( c ) {
         case 'A' :
             if ((n==1 && premio%2 == 0) || (n==2 && premio%2 == 1))
-                printf ("Has ganado! \n");
-            else printf ("Lo siento! Otra vez sera \n");
+                printf ("Has ganado!\tGanaste: $0.00\n");
+            else printf ("Perdiste!\tPerdiste: $0.00\n");
             break;
         case 'B' :
             if ((n==1 && premio%3 == 1) || (n==2 && premio%3 == 2) || (n==3 && premio%2 == 0))
-                printf ("Has ganado! \n");
-            else printf ("Lo siento! Otra vez sera \n");
+                printf ("Has ganado!\tGanaste: $0.00 \n");
+            else printf ("Perdiste!\tPerdiste: $0.00\n");
             break;
         case 'C' :
             if ((m[0]==premio) || (m[1]==premio) || (m[2]==premio))
-                printf ("Has ganado! \n");
-            else printf ("Lo siento! Otra vez sera \n");
+                printf ("Has ganado!\tGanaste: $0.00\n");
+            else printf ("Perdiste\tPerdiste: $0.00\n");
             break;
         case 'D' :
             if (n==premio)
-                printf ("Has ganado! \n");
-            else printf ("Lo siento! Otra vez sera \n");
+                printf ("Has ganado!\tGanaste: $0.00 \n");
+            else printf ("Perdiste!\tPerdiste: $0.00\n");
             break;
     }
     system ("pause");
@@ -77,8 +77,8 @@ char presentacion()
 {
     char c;
     do {
-        printf ("Bienvenido a la version casera de la ruleta francesa.\n\n");
-        printf ("Que tipo de apuesta quieres realizar?\n (Para elegir escribe la mayuscula correspondiente: )\n\n");
+        printf ("\tRuleta!\n");
+        printf ("Que tipo de apuesta quieres realizar?\t(Para elegir escribe la mayuscula correspondiente: )\n\n");
         printf ("A - Pares o Impares \t B - Terna \t C - Pleno (un numero)\n");
         scanf ("%c",&c);
         system("cls"); } while (c!='A' && c!='B' && c!='C' && c!='D');
