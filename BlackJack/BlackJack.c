@@ -7,13 +7,11 @@
 
 void generar(int *p)
 {
-    int j,c;
-    c = 0;
+    int j;
 
     for(j = 0;j < 52;j++)
     {
-        p[c] = j;
-        c++;
+        p[j] = j+1;
     }
 }
 
@@ -25,7 +23,7 @@ int pedircartas(int *mazo,int *cartas,int ccartas,int *cmazo)
     {
         if(cartas[i] == 0)
         {
-            x = rand() % (*cmazo + 1);
+            x = rand() % (*cmazo);
             cartas[i] = mazo[x];
 
             *cmazo = elimazo(mazo,*cmazo,x);
@@ -39,7 +37,7 @@ int elimazo(int* mazo,int cmazo,int pos)
 {
     int aux;
 
-    while(pos < cmazo) //Manda la carta del mazo a la parte final del arreglo y reduce cmazo(variable que controla la cantidad de cartas en el mazo)
+    while(pos < (cmazo-1)) //Manda la carta del mazo a la parte final del arreglo y reduce cmazo(variable que controla la cantidad de cartas en el mazo)
     {
         aux = mazo[pos];
         mazo[pos] = mazo[pos+1];
@@ -48,7 +46,7 @@ int elimazo(int* mazo,int cmazo,int pos)
         pos++;
     }
 
-    return cmazo-1;
+    return (cmazo-1);
 }
 
 int sumando(int *cards,int ii,int is,int suma)
@@ -169,7 +167,7 @@ int repartidor(int *cartas,int *mazo,int *cmazo,int *ccarta,int suma)
         return 1;
     }
 
-    return -1;
+    return 1;
 }
 
 void ordenar(int *cartas,int ccartas)

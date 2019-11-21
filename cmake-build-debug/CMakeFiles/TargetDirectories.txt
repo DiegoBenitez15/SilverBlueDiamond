@@ -1,5 +1,7 @@
-C:/Users/diego/Desktop/SilverBlueDiamond/cmake-build-debug/CMakeFiles/BlackJack.dir
-C:/Users/diego/Desktop/SilverBlueDiamond/cmake-build-debug/CMakeFiles/Craps.dir
-C:/Users/diego/Desktop/SilverBlueDiamond/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/diego/Desktop/SilverBlueDiamond/cmake-build-debug/CMakeFiles/JACKPOT.dir
-C:/Users/diego/Desktop/SilverBlueDiamond/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/diego/Desktop/SilverBlueDiamond3/cmake-build-debug/CMakeFiles/BlackJack.dir
+C:/Users/diego/Desktop/SilverBlueDiamond3/cmake-build-debug/CMakeFiles/RedDog.dir
+C:/Users/diego/Desktop/SilverBlueDiamond3/cmake-build-debug/CMakeFiles/Craps.dir
+C:/Users/diego/Desktop/SilverBlueDiamond3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/diego/Desktop/SilverBlueDiamond3/cmake-build-debug/CMakeFiles/JACKPOT.dir
+C:/Users/diego/Desktop/SilverBlueDiamond3/cmake-build-debug/CMakeFiles/MISSISSIPI-STUD.dir
+C:/Users/diego/Desktop/SilverBlueDiamond3/cmake-build-debug/CMakeFiles/edit_cache.dir

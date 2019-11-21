@@ -5,96 +5,105 @@
 
 
 int main() {
+    int mazo[52],cmazo; //Variables del mazo
+    cmazo = 52;
+    int ccartas,*J1,sumaJ1,r1; //Variables del jugador
+    J1 = (int*) calloc(10, sizeof(int));ccartas = 1; sumaJ1 = 0;
+    int ccartas2,*J2,sumaJ2,r2; //Variables de la Casa
+    J2 = (int*) calloc(10, sizeof(int));ccartas2 = 1; sumaJ2 = 0;
+    int i,d,y,p1,p2; //Variables para el programa
+    p1 = 0;p2 = 0;
     srand(time(NULL));
-    int mazo[52],cmazo,d,y,m,i; int *p; //Mazo de Cartas h
-    cmazo = 52; d = 0; p = mazo; y =0; m =0;
-    int cartas[10] = {0,0,0,0,0,0,0,0,0,0};
-    int ccartas,suma,r1;int *c; //Jugador #1
-    c = cartas; ccartas = 1; r1 = 0; suma = 0;
-    int cartas2[10] = {0,0,0,0,0,0,0,0,0,0};
-    int ccartas2,suma2,r2;int *c2;//La Casa
-    c2 = cartas2; ccartas2 = 1; suma2 = 0; r2 = 0;
 
-    generar(p);
-    ccartas = pedircartas(p,c,ccartas,&cmazo);
-    ccartas2 = pedircartas(p,c2,ccartas2,&cmazo);
+    generar(mazo);
+    ccartas = pedircartas(mazo,J1,ccartas,&cmazo);
+    ordenar(J1,ccartas);
+    sumaJ1 =sumando(J1,0,ccartas,sumaJ1);
+    ccartas2 = pedircartas(mazo,J2,ccartas2,&cmazo);
+    ordenar(J2,ccartas2);
+    sumaJ2 = sumando(J2,0,ccartas2,sumaJ2);
 
-    for(i = 0;i < ccartas2;i++)
+    while(p1 == 0 || p2 == 0)
     {
-        printf("%d ",(c2[i] % 13) + 1);
+        if(p2 == 0)
+        {
+            ordenar(J2,ccartas2);
+            p2 = repartidor(J2,mazo,&cmazo,&ccartas2,sumaJ2);
+            sumaJ2 = sumando(J2,0,ccartas2,0);
+            printf("\nCARTAS:");
+            for(i =0;i<ccartas2;i++)
+            {
+                printf("%d ",((J2[i]  % 13) + 1));
+            }
+            printf("\t\tSuma: %d",sumaJ2);
+        }
+
+       if(p1 == 0)
+       {
+           char op;
+           printf("\n|1|Pedir Cartas    |2|Quedarse");
+           printf("\nCARTAS:");
+           for(i =0;i<ccartas;i++)
+           {
+               printf("%d ",((J1[i]  % 13) + 1));
+           }
+           printf("\t\tSuma: %d",sumaJ1);
+           printf("\nSeleccionar: ");
+           fflush(stdin);
+           scanf(" %c",&op);
+
+           switch(op)
+           {
+               case '1':
+               {
+                   ccartas = pedircartas(mazo,J1,ccartas,&cmazo);
+                   ordenar(J1,ccartas);
+                   sumaJ1 = sumando(J1,0,ccartas,sumaJ1);
+                   break;
+               }
+               case '2':
+               {
+                   sumando(J1,0,ccartas,0);
+                   p1 = 1;
+                   break;
+               }
+               default:
+               {
+                   printf("\nError opcion no valida");
+               }
+           }
+       }
     }
 
-    do
-    {
-        if(m == 0)
-        {
-            ordenar(c2,ccartas2);
-            suma2 = sumando(c2,0,ccartas2,0);
-            m = repartidor(c2,p,&cmazo,&ccartas2,suma2);
-        }
-
-        if(d == 0)
-        {
-            int op;
-            op = 0;
-            ordenar(cartas,ccartas);
-            suma = sumando(c,0,ccartas,0);
-
-            printf("\n|1|Pedir Carta |2|Quedarse\n");
-            for(i = 0;i < ccartas;i++)
-            {
-                printf("%d ",(c[i] % 13) + 1);
-            }
-            printf("\t\tSuma: %d",suma);
-            printf("\nSeleccion: ");
-            scanf(" %d",&op);
-
-            switch(op)
-            {
-                case 1:
-                {
-                    ccartas = pedircartas(p,c,ccartas,&cmazo);
-                    break;
-                }
-                case 2:
-                {
-                    d = 1;
-                    break;
-                }
-                default:
-                {
-                    printf("\nIngrese una de las dos opciones correctamente\n");
-                }
-            }
-        }
-
-        if(d == 1 && m == 1)
-        {
-            r1 = comparar(cartas,suma);
-            r2 = comparar(c2,ccartas2);
-            y = resultados(r1,r2,suma,suma2);
-        }
-
-    }while(d == 0 || m == 0);
-
+    r1 = comparar(J1,sumaJ1);
+    r2 = comparar(J2,sumaJ2);
+    y = resultados(r1,r2,sumaJ1,sumaJ2);
 
     if(y == 0)
     {
-        printf("\nPERDISTE GAFO\n");
+        printf("\n\n|LO LAMENTO HAS PERDIDO|");
     }
     else if(y == 1)
     {
-        printf("\nGANASTE GAFO\n");
+        printf("\n\n|FELICIDADEEEEES HAS GANADO|");
     }
-    if(y == 2)
+    else if(y == 2)
     {
-        printf("\nEMPATE GAFO\n");
+        printf("\n\n|EMPATE|");
     }
 
-    printf("\t\tR1: %d  R2: %d\n",r1,r2);
-
-    for(i = 0;i < ccartas2;i++)
+    printf("\nJugador:");
+    for(i =0;i<ccartas;i++)
     {
-        printf("%d ",(c2[i] % 13) + 1);
+        printf("%d ",((J1[i]  % 13) + 1));
     }
+    printf("\t\tSuma: %d",sumaJ1);
+
+    printf("\nCASINO:");
+    for(i =0;i<ccartas2;i++)
+    {
+        printf("%d ",((J2[i]  % 13) + 1));
+    }
+    printf("\t\tSuma2: %d",sumaJ2);
+
 }

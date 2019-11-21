@@ -54,6 +54,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/BlackJack.dir/DependInfo.cmake"
+  "CMakeFiles/RedDog.dir/DependInfo.cmake"
   "CMakeFiles/Craps.dir/DependInfo.cmake"
   "CMakeFiles/JACKPOT.dir/DependInfo.cmake"
+  "CMakeFiles/MISSISSIPI-STUD.dir/DependInfo.cmake"
   )

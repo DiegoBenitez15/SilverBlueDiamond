@@ -6,19 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/diego/Desktop/SilverBlueDiamond/BlackJack/BlackJack.c
-BlackJack.h
-C:/Users/diego/Desktop/SilverBlueDiamond/BlackJack/BlackJack.h
-stdlib.h
--
+C:/Users/diego/Desktop/SilverBlueDiamond3/BlackJack/BlackJack.h
 
-C:/Users/diego/Desktop/SilverBlueDiamond/BlackJack/BlackJack.h
-
-C:/Users/diego/Desktop/SilverBlueDiamond/BlackJack/main.c
+C:/Users/diego/Desktop/SilverBlueDiamond3/BlackJack/main.c
 stdio.h
 -
 BlackJack.h
-C:/Users/diego/Desktop/SilverBlueDiamond/BlackJack/BlackJack.h
+C:/Users/diego/Desktop/SilverBlueDiamond3/BlackJack/BlackJack.h
 stdlib.h
 -
 time.h

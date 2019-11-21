@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\diego\Desktop\SilverBlueDiamond
+CMAKE_SOURCE_DIR = C:\Users\diego\Desktop\SilverBlueDiamond3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\diego\Desktop\SilverBlueDiamond\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\diego\Desktop\SilverBlueDiamond3\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\diego\Desktop\SilverBlueDiamond\cmake-build-debug\CMakeFiles C:\Users\diego\Desktop\SilverBlueDiamond\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\diego\Desktop\SilverBlueDiamond3\cmake-build-debug\CMakeFiles C:\Users\diego\Desktop\SilverBlueDiamond3\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\diego\Desktop\SilverBlueDiamond\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\diego\Desktop\SilverBlueDiamond3\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,19 @@ BlackJack/fast:
 .PHONY : BlackJack/fast
 
 #=============================================================================
+# Target rules for targets named RedDog
+
+# Build rule for target.
+RedDog: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 RedDog
+.PHONY : RedDog
+
+# fast build rule for target.
+RedDog/fast:
+	$(MAKE) -f CMakeFiles\RedDog.dir\build.make CMakeFiles/RedDog.dir/build
+.PHONY : RedDog/fast
+
+#=============================================================================
 # Target rules for targets named Craps
 
 # Build rule for target.
@@ -147,6 +160,19 @@ JACKPOT: cmake_check_build_system
 JACKPOT/fast:
 	$(MAKE) -f CMakeFiles\JACKPOT.dir\build.make CMakeFiles/JACKPOT.dir/build
 .PHONY : JACKPOT/fast
+
+#=============================================================================
+# Target rules for targets named MISSISSIPI-STUD
+
+# Build rule for target.
+MISSISSIPI-STUD: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 MISSISSIPI-STUD
+.PHONY : MISSISSIPI-STUD
+
+# fast build rule for target.
+MISSISSIPI-STUD/fast:
+	$(MAKE) -f CMakeFiles\MISSISSIPI-STUD.dir\build.make CMakeFiles/MISSISSIPI-STUD.dir/build
+.PHONY : MISSISSIPI-STUD/fast
 
 BlackJack/BlackJack.obj: BlackJack/BlackJack.c.obj
 
@@ -283,6 +309,114 @@ JACKPOT/jackmain.c.s:
 	$(MAKE) -f CMakeFiles\JACKPOT.dir\build.make CMakeFiles/JACKPOT.dir/JACKPOT/jackmain.c.s
 .PHONY : JACKPOT/jackmain.c.s
 
+MISSISSIPI-STUD/MississipiStud.obj: MISSISSIPI-STUD/MississipiStud.c.obj
+
+.PHONY : MISSISSIPI-STUD/MississipiStud.obj
+
+# target to build an object file
+MISSISSIPI-STUD/MississipiStud.c.obj:
+	$(MAKE) -f CMakeFiles\MISSISSIPI-STUD.dir\build.make CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/MississipiStud.c.obj
+.PHONY : MISSISSIPI-STUD/MississipiStud.c.obj
+
+MISSISSIPI-STUD/MississipiStud.i: MISSISSIPI-STUD/MississipiStud.c.i
+
+.PHONY : MISSISSIPI-STUD/MississipiStud.i
+
+# target to preprocess a source file
+MISSISSIPI-STUD/MississipiStud.c.i:
+	$(MAKE) -f CMakeFiles\MISSISSIPI-STUD.dir\build.make CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/MississipiStud.c.i
+.PHONY : MISSISSIPI-STUD/MississipiStud.c.i
+
+MISSISSIPI-STUD/MississipiStud.s: MISSISSIPI-STUD/MississipiStud.c.s
+
+.PHONY : MISSISSIPI-STUD/MississipiStud.s
+
+# target to generate assembly for a file
+MISSISSIPI-STUD/MississipiStud.c.s:
+	$(MAKE) -f CMakeFiles\MISSISSIPI-STUD.dir\build.make CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/MississipiStud.c.s
+.PHONY : MISSISSIPI-STUD/MississipiStud.c.s
+
+MISSISSIPI-STUD/main.obj: MISSISSIPI-STUD/main.c.obj
+
+.PHONY : MISSISSIPI-STUD/main.obj
+
+# target to build an object file
+MISSISSIPI-STUD/main.c.obj:
+	$(MAKE) -f CMakeFiles\MISSISSIPI-STUD.dir\build.make CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/main.c.obj
+.PHONY : MISSISSIPI-STUD/main.c.obj
+
+MISSISSIPI-STUD/main.i: MISSISSIPI-STUD/main.c.i
+
+.PHONY : MISSISSIPI-STUD/main.i
+
+# target to preprocess a source file
+MISSISSIPI-STUD/main.c.i:
+	$(MAKE) -f CMakeFiles\MISSISSIPI-STUD.dir\build.make CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/main.c.i
+.PHONY : MISSISSIPI-STUD/main.c.i
+
+MISSISSIPI-STUD/main.s: MISSISSIPI-STUD/main.c.s
+
+.PHONY : MISSISSIPI-STUD/main.s
+
+# target to generate assembly for a file
+MISSISSIPI-STUD/main.c.s:
+	$(MAKE) -f CMakeFiles\MISSISSIPI-STUD.dir\build.make CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/main.c.s
+.PHONY : MISSISSIPI-STUD/main.c.s
+
+RedDog/REDDOG.obj: RedDog/REDDOG.c.obj
+
+.PHONY : RedDog/REDDOG.obj
+
+# target to build an object file
+RedDog/REDDOG.c.obj:
+	$(MAKE) -f CMakeFiles\RedDog.dir\build.make CMakeFiles/RedDog.dir/RedDog/REDDOG.c.obj
+.PHONY : RedDog/REDDOG.c.obj
+
+RedDog/REDDOG.i: RedDog/REDDOG.c.i
+
+.PHONY : RedDog/REDDOG.i
+
+# target to preprocess a source file
+RedDog/REDDOG.c.i:
+	$(MAKE) -f CMakeFiles\RedDog.dir\build.make CMakeFiles/RedDog.dir/RedDog/REDDOG.c.i
+.PHONY : RedDog/REDDOG.c.i
+
+RedDog/REDDOG.s: RedDog/REDDOG.c.s
+
+.PHONY : RedDog/REDDOG.s
+
+# target to generate assembly for a file
+RedDog/REDDOG.c.s:
+	$(MAKE) -f CMakeFiles\RedDog.dir\build.make CMakeFiles/RedDog.dir/RedDog/REDDOG.c.s
+.PHONY : RedDog/REDDOG.c.s
+
+RedDog/main.obj: RedDog/main.c.obj
+
+.PHONY : RedDog/main.obj
+
+# target to build an object file
+RedDog/main.c.obj:
+	$(MAKE) -f CMakeFiles\RedDog.dir\build.make CMakeFiles/RedDog.dir/RedDog/main.c.obj
+.PHONY : RedDog/main.c.obj
+
+RedDog/main.i: RedDog/main.c.i
+
+.PHONY : RedDog/main.i
+
+# target to preprocess a source file
+RedDog/main.c.i:
+	$(MAKE) -f CMakeFiles\RedDog.dir\build.make CMakeFiles/RedDog.dir/RedDog/main.c.i
+.PHONY : RedDog/main.c.i
+
+RedDog/main.s: RedDog/main.c.s
+
+.PHONY : RedDog/main.s
+
+# target to generate assembly for a file
+RedDog/main.c.s:
+	$(MAKE) -f CMakeFiles\RedDog.dir\build.make CMakeFiles/RedDog.dir/RedDog/main.c.s
+.PHONY : RedDog/main.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -290,9 +424,11 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... BlackJack
+	@echo ... RedDog
 	@echo ... Craps
 	@echo ... rebuild_cache
 	@echo ... JACKPOT
+	@echo ... MISSISSIPI-STUD
 	@echo ... edit_cache
 	@echo ... BlackJack/BlackJack.obj
 	@echo ... BlackJack/BlackJack.i
@@ -309,6 +445,18 @@ help:
 	@echo ... JACKPOT/jackmain.obj
 	@echo ... JACKPOT/jackmain.i
 	@echo ... JACKPOT/jackmain.s
+	@echo ... MISSISSIPI-STUD/MississipiStud.obj
+	@echo ... MISSISSIPI-STUD/MississipiStud.i
+	@echo ... MISSISSIPI-STUD/MississipiStud.s
+	@echo ... MISSISSIPI-STUD/main.obj
+	@echo ... MISSISSIPI-STUD/main.i
+	@echo ... MISSISSIPI-STUD/main.s
+	@echo ... RedDog/REDDOG.obj
+	@echo ... RedDog/REDDOG.i
+	@echo ... RedDog/REDDOG.s
+	@echo ... RedDog/main.obj
+	@echo ... RedDog/main.i
+	@echo ... RedDog/main.s
 .PHONY : help
 
 
