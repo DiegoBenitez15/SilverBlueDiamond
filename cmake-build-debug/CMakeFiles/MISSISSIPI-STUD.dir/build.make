@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg
+CMAKE_SOURCE_DIR = "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MISSISSIPI-STUD.dir/depend.make
@@ -58,29 +58,29 @@ include CMakeFiles/MISSISSIPI-STUD.dir/flags.make
 
 CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/main.c.obj: CMakeFiles/MISSISSIPI-STUD.dir/flags.make
 CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/main.c.obj: ../MISSISSIPI-STUD/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/main.c.obj"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\MISSISSIPI-STUD.dir\MISSISSIPI-STUD\main.c.obj   -c C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\MISSISSIPI-STUD\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/main.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\MISSISSIPI-STUD.dir\MISSISSIPI-STUD\main.c.obj   -c "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\MISSISSIPI-STUD\main.c"
 
 CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/main.c.i"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\MISSISSIPI-STUD\main.c > CMakeFiles\MISSISSIPI-STUD.dir\MISSISSIPI-STUD\main.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\MISSISSIPI-STUD\main.c" > CMakeFiles\MISSISSIPI-STUD.dir\MISSISSIPI-STUD\main.c.i
 
 CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/main.c.s"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\MISSISSIPI-STUD\main.c -o CMakeFiles\MISSISSIPI-STUD.dir\MISSISSIPI-STUD\main.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\MISSISSIPI-STUD\main.c" -o CMakeFiles\MISSISSIPI-STUD.dir\MISSISSIPI-STUD\main.c.s
 
 CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/MississipiStud.c.obj: CMakeFiles/MISSISSIPI-STUD.dir/flags.make
 CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/MississipiStud.c.obj: ../MISSISSIPI-STUD/MississipiStud.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/MississipiStud.c.obj"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\MISSISSIPI-STUD.dir\MISSISSIPI-STUD\MississipiStud.c.obj   -c C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\MISSISSIPI-STUD\MississipiStud.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/MississipiStud.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\MISSISSIPI-STUD.dir\MISSISSIPI-STUD\MississipiStud.c.obj   -c "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\MISSISSIPI-STUD\MississipiStud.c"
 
 CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/MississipiStud.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/MississipiStud.c.i"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\MISSISSIPI-STUD\MississipiStud.c > CMakeFiles\MISSISSIPI-STUD.dir\MISSISSIPI-STUD\MississipiStud.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\MISSISSIPI-STUD\MississipiStud.c" > CMakeFiles\MISSISSIPI-STUD.dir\MISSISSIPI-STUD\MississipiStud.c.i
 
 CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/MississipiStud.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/MississipiStud.c.s"
-	C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\MISSISSIPI-STUD\MississipiStud.c -o CMakeFiles\MISSISSIPI-STUD.dir\MISSISSIPI-STUD\MississipiStud.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\MISSISSIPI-STUD\MississipiStud.c" -o CMakeFiles\MISSISSIPI-STUD.dir\MISSISSIPI-STUD\MississipiStud.c.s
 
 # Object files for target MISSISSIPI-STUD
 MISSISSIPI__STUD_OBJECTS = \
@@ -96,7 +96,7 @@ MISSISSIPI-STUD.exe: CMakeFiles/MISSISSIPI-STUD.dir/build.make
 MISSISSIPI-STUD.exe: CMakeFiles/MISSISSIPI-STUD.dir/linklibs.rsp
 MISSISSIPI-STUD.exe: CMakeFiles/MISSISSIPI-STUD.dir/objects1.rsp
 MISSISSIPI-STUD.exe: CMakeFiles/MISSISSIPI-STUD.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable MISSISSIPI-STUD.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable MISSISSIPI-STUD.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MISSISSIPI-STUD.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -109,6 +109,6 @@ CMakeFiles/MISSISSIPI-STUD.dir/clean:
 .PHONY : CMakeFiles/MISSISSIPI-STUD.dir/clean
 
 CMakeFiles/MISSISSIPI-STUD.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug C:\Users\sebastian\CLionProjects\SilverBlueDiamondmmg\cmake-build-debug\CMakeFiles\MISSISSIPI-STUD.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond" "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond" "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug" "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug" "C:\Users\Bryan\Documents\Universidad\Fundamentos de Programacion\SilverBlueDiamond\cmake-build-debug\CMakeFiles\MISSISSIPI-STUD.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/MISSISSIPI-STUD.dir/depend
 

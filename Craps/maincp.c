@@ -9,41 +9,58 @@
 #include <ctype.h>
 int main() {
     srand(time(NULL));
-    printf("Bienvenido a CRAPS!\n");
+    printf("\t\t    Bienvenido a CRAPS!\n");
     char respt, mdj;
     do {
-        int apst = 0, nd1 = 0, nd2 = 0, tapst = 0;
-        printf("Elija el modo de apuesta que desea utilizar: ");
-        printf("\n-Linea de pase [A]\n-Campo[C]\n-Gran Seis[S]\n-Gran Ocho[O]\n");
-        mdj = getchar();
+        int apst = 0, nd1 = 0, nd2 = 0, gns = 0;
         printf("\n");
-        printf("Introduzca la cantidad que desea apostar:\t");
+        printf("\tIntroduzca la cantidad que desea apostar:\t");
         scanf("%d", &apst);
+        fflush(stdin);
+        system("CLS");
         if (apst <= 0) {
             printf("APUESTA ERRONEA");
             exit(0);
         }
+        printf("\tElija el modo de apuesta que desea utilizar: ");
+        printf("\n-Linea de pase [A]\n-Campo[C]\n-Gran Seis[S]\n-Gran Ocho[O]\n");
+        mdj = getc(stdin);
         nd1 = 1 + rand() % (6 - 1);
         nd2 = 1 + rand() % (6 - 1);
-
+        printf("\n\n");
+        dados(nd1);
+        dados(nd2);
+        printf("\n\n");
         switch (toupper(mdj)) {
             case 'A': {
-                tapst = lna_pase(nd1, nd1, apst);
+                gns = lna_pase(nd1, nd1, apst);
+                if (gns > 1){
+                    printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
+                }
                 break;
             }
 
             case 'C': {
-                tapst = campo(nd1, nd2, apst);
+                gns = campo(nd1, nd2, apst);
+                if (gns > 1){
+                    printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
+                }
                 break;
             }
 
             case 'S': {
-                tapst = grnss(nd1, nd2, apst);
+                gns = grnss(nd1, nd2, apst);
+                if (gns > 1){
+                    printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
+                }
                 break;
             }
 
             case 'O': {
-                tapst = grnoo(nd1, nd2, apst);
+                gns = grnoo(nd1, nd2, apst);
+                if (gns > 1){
+                    printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
+                }
                 break;
             }
             default: {
@@ -54,7 +71,7 @@ int main() {
         printf("\n");
         printf("Desea Continuar en la mesa?  [S] [N]");
         fflush(stdin);
-        respt = getchar();
+        respt = getc(stdin);
     } while ((respt != 'N') && (respt != 'n'));
 
     printf("Gracias por Jugar!");

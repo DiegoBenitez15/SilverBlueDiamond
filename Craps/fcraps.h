@@ -13,4 +13,6 @@ int grnss(int d1, int d2, int apst);
 
 int grnoo(int d1, int d2, int apst);
 
+void dados(int dado);
+
 #endif //PORTAFOLIO_2_FCRAPS_H
