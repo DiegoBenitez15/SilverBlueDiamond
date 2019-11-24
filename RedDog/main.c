@@ -26,11 +26,10 @@ int main()
     //scanf(" %d",&apuesta);
     apuesta = 20;
     rd = RedDog(cartas);
-    //system("cls");
 
     if(rd == 12)
     {
-//        system("cls");
+        system("cls");
         for(i=0;i<100;i++)
         {
             printf("-");
@@ -43,6 +42,7 @@ int main()
     }
     else if(rd == 13)
     {
+        system("cls");
         ccartas = carta(m,c,&ccmazo,ccartas);
         pantalla(cartas,0,ccartas,0,rd);
 
@@ -53,6 +53,7 @@ int main()
     }
     else
     {
+        system("cls");
         int op;
         pantalla(cartas,0,ccartas,0,rd);
         fflush(stdin);
@@ -109,8 +110,7 @@ int main()
         }
 
     }
-    system("cls");
-    printf("\n");
+
     imprimir(cartas,0,ccartas,0);
 
     printf("\n");
