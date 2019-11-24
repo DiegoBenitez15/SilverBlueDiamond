@@ -7,6 +7,7 @@
 #include <time.h>
 #include "fcraps.h"
 #include <ctype.h>
+
 int main() {
     srand(time(NULL));
     printf("\t\t    Bienvenido a CRAPS!\n");

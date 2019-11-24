@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/diego/Desktop/SilverBlueDiamond4/RedDog/REDDOG-ESTETICA.c" "C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/RedDog.dir/RedDog/REDDOG-ESTETICA.c.obj"
-  "C:/Users/diego/Desktop/SilverBlueDiamond4/RedDog/REDDOG.c" "C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/RedDog.dir/RedDog/REDDOG.c.obj"
-  "C:/Users/diego/Desktop/SilverBlueDiamond4/RedDog/main.c" "C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/RedDog.dir/RedDog/main.c.obj"
+  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/RedDog/REDDOG-ESTETICA.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/RedDog.dir/RedDog/REDDOG-ESTETICA.c.obj"
+  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/RedDog/REDDOG.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/RedDog.dir/RedDog/REDDOG.c.obj"
+  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/RedDog/main.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/RedDog.dir/RedDog/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
