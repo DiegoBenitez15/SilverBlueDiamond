@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/JACKPOT.dir/JACKPOT/jackmain.c.obj"
+  "JACKPOT.pdb"
   "JACKPOT.exe"
   "JACKPOT.exe.manifest"
-  "JACKPOT.pdb"
   "libJACKPOT.dll.a"
 )
 

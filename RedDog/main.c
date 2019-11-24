@@ -9,7 +9,7 @@
 
 int main()
 {
-    int mazo[52],*m,ccmazo,apuesta,rd;
+    int mazo[52],*m,ccmazo,apuesta,rd,i;
     m= mazo,ccmazo = 52;apuesta = 0;
     int cartas[3],*c,ccartas;
     c = cartas;ccartas = 0;
@@ -22,28 +22,29 @@ int main()
     }
     ordenar(c,ccartas);
 
-    printf("\nRealice su apuesta inicial: ");
-    scanf(" %d",&apuesta);
+    //printf("\nRealice su apuesta inicial: ");
+    //scanf(" %d",&apuesta);
+    apuesta = 20;
     rd = RedDog(cartas);
-    printf("CARTAS:");
-    for(int i=0;i<ccartas;i++)
-    {
-        printf("%d ",(cartas[i] % 13) + 1);
-    }
-    printf("\t\tPerro Rojo: %d",rd);
+    //system("cls");
 
     if(rd == 12)
     {
-        printf("\n|EMPATE|Juego Consecutivo");
+//        system("cls");
+        for(i=0;i<100;i++)
+        {
+            printf("-");
+        }
+        printf("\n\t\t\t|EMPATE|Juego Consecutivo\n");
+        for(i=0;i<100;i++)
+        {
+            printf("-");
+        }
     }
     else if(rd == 13)
     {
         ccartas = carta(m,c,&ccmazo,ccartas);
-        printf("\nCARTAS:");
-        for(int i=0;i<ccartas;i++)
-        {
-            printf("%d ",(cartas[i] % 13) + 1);
-        }
+        pantalla(cartas,0,ccartas,0,rd);
 
         if(c[2] == c[0])
         {
@@ -53,7 +54,7 @@ int main()
     else
     {
         int op;
-        printf("\n|1|Seguir\t\t|2|Quedarse");
+        pantalla(cartas,0,ccartas,0,rd);
         fflush(stdin);
         scanf(" %d",&op);
 
@@ -67,12 +68,30 @@ int main()
 
                 if(p == 0)
                 {
-                    printf("\nLA CASA HA GANADO");
+                    system("cls");
+                    for(i=0;i<100;i++)
+                    {
+                        printf("-");
+                    }
+                    printf("\n\t\t\t\t\tLA CASA HA GANADO\n");
+                    for(i=0;i<100;i++)
+                    {
+                        printf("-");
+                    }
                     apuesta = (apuesta*2) *(-1);
                 }
                 else if(p == 1)
                 {
-                    printf("\nTU HAS GANADO");
+                    system("cls");
+                    for(i=0;i<100;i++)
+                    {
+                        printf("-");
+                    }
+                    printf("\n\t\t\t\t\tTU HAS GANADO\n");
+                    for(i=0;i<100;i++)
+                    {
+                        printf("-");
+                    }
                     apuesta += (apuesta) * tasadeapuestas(rd);
                 }
 
@@ -92,10 +111,15 @@ int main()
     }
 
     printf("\n");
-    for(int i=0;i<ccartas;i++)
+    imprimir(cartas,0,ccartas,0);
+
+    printf("\n");
+
+    for(i=0;i<100;i++)
     {
-        printf("%d ",((cartas[i] % 13)+1));
+        printf("-");
     }
 
+    printf("\n");
     printf("\nDinero Obtenido: %d",apuesta);
 }

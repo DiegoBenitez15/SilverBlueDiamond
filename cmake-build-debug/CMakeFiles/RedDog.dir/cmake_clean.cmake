@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/RedDog.dir/RedDog/REDDOG.c.obj"
   "CMakeFiles/RedDog.dir/RedDog/main.c.obj"
+  "CMakeFiles/RedDog.dir/RedDog/REDDOG.c.obj"
+  "CMakeFiles/RedDog.dir/RedDog/REDDOG-ESTETICA.c.obj"
+  "RedDog.pdb"
   "RedDog.exe"
   "RedDog.exe.manifest"
-  "RedDog.pdb"
   "libRedDog.dll.a"
 )
 

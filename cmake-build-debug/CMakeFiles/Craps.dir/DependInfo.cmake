@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/Craps/fcraps.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/Craps.dir/Craps/fcraps.c.obj"
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/Craps/maincp.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/Craps.dir/Craps/maincp.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond4/Craps/fcraps.c" "C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/Craps.dir/Craps/fcraps.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond4/Craps/maincp.c" "C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/Craps.dir/Craps/maincp.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

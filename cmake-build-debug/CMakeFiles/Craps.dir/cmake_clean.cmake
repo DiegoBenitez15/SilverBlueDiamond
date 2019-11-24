@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Craps.dir/Craps/fcraps.c.obj"
   "CMakeFiles/Craps.dir/Craps/maincp.c.obj"
+  "Craps.pdb"
   "Craps.exe"
   "Craps.exe.manifest"
-  "Craps.pdb"
   "libCraps.dll.a"
 )
 

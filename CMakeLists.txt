@@ -11,6 +11,6 @@ add_executable(JACKPOT JACKPOT/jackmain)
 
 add_executable(MISSISSIPI-STUD MISSISSIPI-STUD/main.c MISSISSIPI-STUD/MississipiStud.c MISSISSIPI-STUD/MississipiStud.h)
 
-add_executable(RedDog RedDog/main.c RedDog/REDDOG.c RedDog/REDDOG.h)
+add_executable(RedDog RedDog/main.c RedDog/REDDOG.c RedDog/REDDOG.h RedDog/REDDOG-ESTETICA.c)
 
 add_executable(ruleta ruleta/ruleta.c)

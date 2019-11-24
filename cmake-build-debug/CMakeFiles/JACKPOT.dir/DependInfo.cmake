@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/JACKPOT/Jackmain.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/JACKPOT.dir/JACKPOT/jackmain.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond4/JACKPOT/Jackmain.c" "C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/JACKPOT.dir/JACKPOT/jackmain.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
