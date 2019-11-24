@@ -109,7 +109,7 @@ int main()
         }
 
     }
-
+    system("cls");
     printf("\n");
     imprimir(cartas,0,ccartas,0);
 
