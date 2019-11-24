@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/main.c.obj"
   "CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/MississipiStud.c.obj"
-  "MISSISSIPI-STUD.pdb"
+  "CMakeFiles/MISSISSIPI-STUD.dir/MISSISSIPI-STUD/main.c.obj"
   "MISSISSIPI-STUD.exe"
   "MISSISSIPI-STUD.exe.manifest"
+  "MISSISSIPI-STUD.pdb"
   "libMISSISSIPI-STUD.dll.a"
 )
 

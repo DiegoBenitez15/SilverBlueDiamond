@@ -1,8 +1,8 @@
-C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/BlackJack.dir
-C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/RedDog.dir
-C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/Craps.dir
-C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/JACKPOT.dir
-C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/MISSISSIPI-STUD.dir
-C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/ruleta.dir
-C:/Users/diego/Desktop/SilverBlueDiamond4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/BlackJack.dir
+C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/RedDog.dir
+C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/Craps.dir
+C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/JACKPOT.dir
+C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/MISSISSIPI-STUD.dir
+C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/ruleta.dir
+C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/edit_cache.dir
