@@ -109,6 +109,8 @@ void BlackJack()
         printf("%d ",((J2[i]  % 13) + 1));
     }
     printf("\t\tSuma2: %d",sumaJ2);
+
+    return;
 }
 
 

@@ -120,6 +120,8 @@ void REDDOG()
 
     printf("\n");
     printf("\nDinero Obtenido: %d",apuesta);
+
+    return;
 }
 
 void generarcarta(int *mazo)

@@ -79,6 +79,7 @@ void Ruleta()
         }
     }
     system ("pause");
+    return;
 }
 char presentacion()
 {
