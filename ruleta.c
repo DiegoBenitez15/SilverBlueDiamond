@@ -5,10 +5,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "Funciones.h"
 #define DIM 20
-char presentacion();
-void espera(int segundos);
-int main ()
+
+void Ruleta()
 {
     char c;
     int n=0,m[DIM],i,premio,k=4;

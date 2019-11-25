@@ -2,7 +2,7 @@
 // Created by diego on 24/11/2019.
 //
 
-#include "REDDOG.h"
+#include "Funciones.h"
 #include <stdio.h>
 #include <windows.h>
 
