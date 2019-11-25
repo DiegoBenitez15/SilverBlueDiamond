@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "jfuncc.h"
+#include "Funciones.h"
 #include <time.h>
 
 
@@ -12,7 +12,7 @@ void Jackpot()
 {
     srand (time(NULL));
     int  jckscrn[7];
-    int apost, gns, acrt;
+    int apost, acrt;
     printf("\t\tBienvenido a JackPot!\n \t     Por favor ingrese su apuesta: ");
     scanf("%d", &apost);
     printf("\n");
@@ -39,7 +39,7 @@ int cantidad_acertados(int res[]){
         return c;
 }
 
-int res_apost(int result, int apuesta){
+int res_apost(int result, int apost){
     int gns = 0;
 
     if (result == 4){

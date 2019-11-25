@@ -15,41 +15,65 @@ int main () {
             case 1:
 
                 do {
+                    fflush(stdin);
                     system("cls");
                     printf("Juegos!\nBlackJack[1]\nRed Hog[2]\nMissisipii[3]\nRuleta[4]\nRegresar al menu inicial[5]\n");
                     scanf("%d", &opcion2);
                     switch (opcion2) {
-                        case 1:
-                            printf("Juego de jackpot\n");
+                        case 1: {
+                            system("cls");
+                            printf("--------------------\n");
+                            printf("Juego de Blackjack\n");
+                            printf("--------------------\n");
+                            system("cls");
                                             BlackJack();
-                                            break;
-                        case 2:
+                                            break; }
+                        case 2:{
+                            system("cls");
+                            printf("--------------------\n");
                             printf("Juego de Red Hog\n");
+                            printf("--------------------\n");
                                             REDDOG();
-                                            break;
-                        case 3:
+                                            break; }
+                        case 3: {
+                            system("cls");
+                            printf("--------------------\n");
                             printf("Juego de Missisipi\n");
-
-                                            break;
-                        case 4:
+                            printf("--------------------\n");
+                                            break;}
+                        case 4:{
+                            system("cls");
+                            printf("--------------------\n");
                             printf("Juego de Ruleta\n");
+                            printf("--------------------\n");
                                             Ruleta();
-                                            break;
-                        case 5: break;
+                                            break; }
+                        default: {  printf("menu");
+                                    break;}
                     }
-                }while (opcion2 != 5 );
+                }while (opcion2 != 3);
 
                 break;
 
             case 2:
+                system("cls");
+                printf("--------------------\n");
                 printf("Puntuacion\n");
+                printf("--------------------\n");
                 break;
 
             case 3:
+                system("cls");
+                printf("--------------------\n");
                 printf("Creditos\n");
+                printf("--------------------\n");
                 break;
 
-            case 4:
+            default:
+                system("cls");
+                printf("--------------------\n");
+                printf("Ahora te puedes marchar\n");
+                printf("--------------------\n");
                 break;
 
         }

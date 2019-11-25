@@ -257,6 +257,33 @@ fcraps.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/fcraps.c.s
 .PHONY : fcraps.c.s
 
+jfuncc.obj: jfuncc.c.obj
+
+.PHONY : jfuncc.obj
+
+# target to build an object file
+jfuncc.c.obj:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/jfuncc.c.obj
+.PHONY : jfuncc.c.obj
+
+jfuncc.i: jfuncc.c.i
+
+.PHONY : jfuncc.i
+
+# target to preprocess a source file
+jfuncc.c.i:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/jfuncc.c.i
+.PHONY : jfuncc.c.i
+
+jfuncc.s: jfuncc.c.s
+
+.PHONY : jfuncc.s
+
+# target to generate assembly for a file
+jfuncc.c.s:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/jfuncc.c.s
+.PHONY : jfuncc.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -335,6 +362,9 @@ help:
 	@echo ... fcraps.obj
 	@echo ... fcraps.i
 	@echo ... fcraps.s
+	@echo ... jfuncc.obj
+	@echo ... jfuncc.i
+	@echo ... jfuncc.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
