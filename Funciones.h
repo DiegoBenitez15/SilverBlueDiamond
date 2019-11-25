@@ -42,7 +42,9 @@ void botones();
 
 
 //Jackpot
-
+void Jackpot();
+int cantidad_acertados(int res[]);
+int res_apost(int result, int apost);
 
 
 //MississipiStud

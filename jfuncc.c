@@ -8,26 +8,29 @@
 #include <time.h>
 
 
-void Jackpot()
-{
-    srand (time(NULL));
-    int  jckscrn[7];
-    int apost, acrt;
+void Jackpot(){
+    srand(time(NULL));
+    int jckscrn[7];
+    int apost, gns, acrt;
     printf("\t\tBienvenido a JackPot!\n \t     Por favor ingrese su apuesta: ");
     scanf("%d", &apost);
     printf("\n");
-    for (int i = 0; i < 7; i++){
+    for (int i = 0; i < 7; i++) {
         jckscrn[i] = 1 + rand() % (7 - 1);
     }
 
-    for (int x = 0; x < 7; x++){
+    for (int x = 0; x < 7; x++) {
         printf("%d\t", jckscrn[x]);
     }
 
     acrt = cantidad_acertados(jckscrn);
-    res_apost(acrt,apost);
-}
 
+    if(acrt >= 4 ){
+        gns = res_apost(acrt,apost);
+        printf(" %d %c%cACIERTOS!! Has ganado %d",acrt,173,173, gns);
+    }else printf("\n\tHas Perdido, Vuelve a intentarlo\n\t\tPerdiste -%d ",apost);
+
+}
 
 int cantidad_acertados(int res[]){
         int c=0;
@@ -40,23 +43,20 @@ int cantidad_acertados(int res[]){
 }
 
 int res_apost(int result, int apost){
-    int gns = 0;
-
     if (result == 4){
-        gns = apost * 5;
-        printf(" 4 %c%cACIERTOS!! Has ganado %d",173,173,gns);
+        return apost * 5;
     }
     if  (result == 5){
-        gns = apost * 10;
-        printf(" 5 %c%cACIERTOS!! Has ganado %d",173,173,gns);
+        return apost * 10;
     }
     if (result == 6){
-        gns = apost * 15;
-        printf(" 6 %c%cACIERTOS!! Has ganado %d",173,173,gns);
+        return apost * 15;
     }
-    if (result == 7) {
-        gns = apost * 100;
-        printf(" 7 %c%cACIERTOS!! Has ganado %d", 173, 173, gns);
+    if (result == 7){
+        return apost * 100;
+    }
+    if (result < 4){
+        return 0;
     }
 }
 
