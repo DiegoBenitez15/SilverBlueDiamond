@@ -15,7 +15,6 @@ int sumando(int *cards,int ii,int is,int suma);
 int resultados(int r1,int r2,int suma,int suma2);
 int comparar(const int *cards,int suma);
 int repartidor(int *cartas,int *mazo,int *cmazo,int *ccarta,int suma);
-void ordenar(int *cartas,int ccartas);
 
 //Craps
 
@@ -38,7 +37,7 @@ int tasadeapuestas(int rd);
 void ordenar(int *cartas,int ccartas);
 void impcarta(const int *cards,int x);
 void imprimir(int *cartas,int ii,int ccartas,int x);
-void pantalla(int *cartas,int ii,int ccartas,int x,int rd);
+void pantalla(int *cartas,int ccartas,int x,int rd);
 void botones();
 
 

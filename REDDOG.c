@@ -16,7 +16,7 @@ void REDDOG()
     srand(time(NULL));
 
     generarcarta(m);
-    for(int i=0;i<2;i++)
+    for(i=0;i<2;i++)
     {
         ccartas = carta(m,c,&ccmazo,ccartas);
     }
@@ -43,7 +43,7 @@ void REDDOG()
     else if(rd == 13)
     {
         ccartas = carta(m,c,&ccmazo,ccartas);
-        pantalla(cartas,0,ccartas,0,rd);
+        pantalla(cartas,ccartas,0,rd);
 
         if(c[2] == c[0])
         {
@@ -53,7 +53,7 @@ void REDDOG()
     else
     {
         int op;
-        pantalla(cartas,0,ccartas,0,rd);
+        pantalla(cartas,ccartas,0,rd);
         fflush(stdin);
         scanf(" %d",&op);
 

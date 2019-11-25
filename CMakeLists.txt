@@ -3,4 +3,4 @@ project(Portafolio-2)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Casino REDDOG.c REDDOG-ESTETICA.c MississipiStud.c fcraps.c BlackJack.c main.c Funciones.h Silver)
+add_executable(CASINO REDDOG.c REDDOG-ESTETICA.c MississipiStud.c fcraps.c BlackJack.c main.c Funciones.h ruleta.c)

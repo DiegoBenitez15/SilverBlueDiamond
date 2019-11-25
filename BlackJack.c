@@ -277,22 +277,5 @@ int repartidor(int *cartas,int *mazo,int *cmazo,int *ccarta,int suma)
     return 1;
 }
 
-void ordenar(int *cartas,int ccartas)
-{
-    int i, j, aux;
-
-    for (i = 0 ; i < ccartas - 1; i++)
-    {
-        for (j = 0 ; j < ccartas - i - 1; j++)
-        {
-            if (cartas[j] < cartas[j+1])
-            {
-                aux       = cartas[j];
-                cartas[j]   = cartas[j+1];
-                cartas[j+1] = aux;
-            }
-        }
-    }
-}
 
 

@@ -14,7 +14,7 @@ void Ruleta()
     int n=0,m[DIM],i,premio,k=4;
     srand(time(NULL));
     c=presentacion ();
-    switch (c) {
+    switch(c) {
         case 'A' :
             do {
                 printf ("1 - Apostarle a los pares \t 2 - Apostarle a los impares\n");
@@ -35,6 +35,10 @@ void Ruleta()
                 scanf ("%d",&n);
             }
             while(n<=0 || n>36); break;
+        default:
+        {
+            printf("ERROR");
+        }
     }
     system("cls");
     printf ("\nUna vez hecha la apuesta, toca ver que numero sale en la ruleta :\n\n");
@@ -47,7 +51,7 @@ void Ruleta()
     if (premio==0) {
         printf ("Gana la banca!");
         system ("pause");
-        return 0;}
+        }
     switch ( c ) {
         case 'A' :
             if ((n==1 && premio%2 == 0) || (n==2 && premio%2 == 1))
@@ -69,9 +73,12 @@ void Ruleta()
                 printf ("Has ganado!\tGanaste: $0.00 \n");
             else printf ("Perdiste!\tPerdiste: $0.00\n");
             break;
+        default:
+        {
+            printf("ERROR");
+        }
     }
     system ("pause");
-    return 0;
 }
 char presentacion()
 {

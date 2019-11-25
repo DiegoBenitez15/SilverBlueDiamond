@@ -17,7 +17,7 @@ void gotoxy(int x,int y)
     SetConsoleCursorPosition(hCon,dwPos);
 }
 
-void pantalla(int *cartas,int ii,int ccartas,int x,int rd)
+void pantalla(int *cartas,int ccartas,int x,int rd)
 {
     int i;
 
