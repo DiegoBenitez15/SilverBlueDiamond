@@ -5,6 +5,10 @@
 #ifndef PORTAFOLIO_2_FUNCIONES_H
 #define PORTAFOLIO_2_FUNCIONES_H
 
+//Auxiliar
+
+void gotoxy(int x,int y);
+
 //BlackJack
 
 void BlackJack();
@@ -15,6 +19,11 @@ int sumando(int *cards,int ii,int is,int suma);
 int resultados(int r1,int r2,int suma,int suma2);
 int comparar(const int *cards,int suma);
 int repartidor(int *cartas,int *mazo,int *cmazo,int *ccarta,int suma);
+void imprimirb(int *cartas,int ii,int ccartas,int x ,int y);
+void cartaposterior(const int *carta,int x,int y);
+void cartainicial(const int *cartas,int x,int y);
+void botones2(int x,int y);
+void pantallaB(int *cartas,int ccartas,int x,int suma);
 
 //Craps
 

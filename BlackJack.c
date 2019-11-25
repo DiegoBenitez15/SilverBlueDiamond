@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include <windows.h>
 
 void BlackJack()
 {
@@ -34,24 +35,13 @@ void BlackJack()
             ordenar(J2,ccartas2);
             p2 = repartidor(J2,mazo,&cmazo,&ccartas2,sumaJ2);
             sumaJ2 = sumando(J2,0,ccartas2,0);
-            printf("\nCARTAS:");
-            for(i =0;i<ccartas2;i++)
-            {
-                printf("%d ",((J2[i]  % 13) + 1));
-            }
-            printf("\t\tSuma: %d",sumaJ2);
         }
 
         if(p1 == 0)
         {
             char op;
-            printf("\n|1|Pedir Cartas    |2|Quedarse");
-            printf("\nCARTAS:");
-            for(i =0;i<ccartas;i++)
-            {
-                printf("%d ",((J1[i]  % 13) + 1));
-            }
-            printf("\t\tSuma: %d",sumaJ1);
+            system("cls");
+            pantallaB(J1,ccartas,0,sumaJ1);
             printf("\nSeleccionar: ");
             fflush(stdin);
             scanf(" %c",&op);
@@ -62,7 +52,7 @@ void BlackJack()
                 {
                     ccartas = pedircartas(mazo,J1,ccartas,&cmazo);
                     ordenar(J1,ccartas);
-                    sumaJ1 = sumando(J1,0,ccartas,sumaJ1);
+                    sumaJ1 = sumando(J1,0,ccartas,0);
                     break;
                 }
                 case '2':
@@ -279,5 +269,97 @@ int repartidor(int *cartas,int *mazo,int *cmazo,int *ccarta,int suma)
     return 1;
 }
 
+void cartainicial(const int *cartas,int x,int y)
+{
+    gotoxy(x,y);printf(" _______________________");
+    gotoxy(x,y+1);printf("|                     %d|",(*(cartas) % 13) + 1);
+    gotoxy(x,y+2);printf("|                       |");
+    gotoxy(x,y+3);printf("|                       |");
+    gotoxy(x,y+4);printf("|                       |");
+    gotoxy(x,y+5);printf("|                       |");
+    gotoxy(x,y+6);printf("|                       |");
+    gotoxy(x,y+7);printf("|                       |");
+    gotoxy(x,y+8);printf("|                       |");
+    gotoxy(x,y+9);printf("|                       |");
+    gotoxy(x,y+10);printf("|                       |");
+    gotoxy(x,y+11);printf("|                       |");
+    gotoxy(x,y+12);printf("|                       |");
+    gotoxy(x,y+13);printf("|                       |");
+    gotoxy(x,y+14);printf("|                       |");
+    gotoxy(x,y+15);printf("|%d______________________|",(*(cartas) % 13) + 1);
+}
+
+void cartaposterior(const int *carta,int x,int y)
+{
+    gotoxy(x,y);printf("_____");
+    gotoxy(x,y+1);printf("   %d|",(*(carta) % 13) + 1);
+    gotoxy(x,y+2);printf("     |");
+    gotoxy(x,y+3);printf("     |");
+    gotoxy(x,y+4);printf("     |");
+    gotoxy(x,y+5);printf("     |");
+    gotoxy(x,y+6);printf("     |");
+    gotoxy(x,y+7);printf("     |");
+    gotoxy(x,y+8);printf("     |");
+    gotoxy(x,y+9);printf("     |");
+    gotoxy(x,y+10);printf("     |");
+    gotoxy(x,y+11);printf("     |");
+    gotoxy(x,y+12);printf("     |");
+    gotoxy(x,y+13);printf("     |");
+    gotoxy(x,y+14);printf("     |");
+    gotoxy(x,y+15);printf("_____|");
+}
+
+void imprimirb(int *cartas,int ii,int ccartas,int x ,int y)
+{
+    if(ii == ccartas)
+    {
+        return;
+    }
+    else if(ii == 0)
+    {
+        cartainicial(cartas+ii,x,y);
+        imprimirb(cartas,ii+1,ccartas,x+25,y);
+    }
+    else if(ii > 0)
+    {
+        cartaposterior(cartas+ii,x,y);
+        imprimirb(cartas,ii+1,ccartas,x+7,y);
+    }
+
+}
 
 
+void pantallaB(int *cartas,int ccartas,int x,int suma) {
+    int i;
+
+    for (i = 0; i < 100; i++) {
+        printf("-");
+    }
+    printf("\n\t\t\t\t B L A  C K J A C K\t\t\t\tsuma: %d\n", suma);
+    for (i = 0; i < 100; i++) {
+        printf("-");
+    }
+    imprimirb(cartas, 0, ccartas, 17, 4);
+
+    gotoxy(x, 21);
+    for (i = 0; i < 100; i++) {
+        printf("-");
+    }
+
+    botones2(0,3);
+
+    printf("\n\n");
+    for (i = 0; i < 100; i++) {
+        printf("-");
+    }
+}
+
+void botones2(int x,int y)
+{
+    gotoxy(x+20,y+19);printf(" _______________________");
+    gotoxy(x+20,y+20);printf("| [1]P E D I R C A R T A|");
+    gotoxy(x+20,y+21);printf("|_______________________|");
+    gotoxy(x+60,y+19);printf(" _______________________");
+    gotoxy(x+60,y+20);printf("|  [2]R E T I R A R S E |");
+    gotoxy(x+60,y+21);printf("|_______________________|");
+}
