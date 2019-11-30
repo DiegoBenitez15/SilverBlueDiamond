@@ -5,6 +5,7 @@
 #ifndef PORTAFOLIO_2_FUNCIONES_H
 #define PORTAFOLIO_2_FUNCIONES_H
 
+void casinoshow();
 //Auxiliar
 
 void gotoxy(int x,int y);

@@ -4,82 +4,83 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "Funciones.h"
 int main () {
 
-    int opcion,opcion2, dinero = 0;
-    do {
-        printf("Casino!\nEliga una opcion:\nJugar[1]\nPuntuacion[2]\nCreditos[3]\nSalir[4]\n");
-        scanf("%d",&opcion);
-        switch (opcion) {
+    int opcion,opcion2;
+    char resp='s',resp2 ='s';
+    do
+    {
+        fflush (stdin);
+        casinoshow();
+        printf("\t\t\t\t\tJugar[1]\n\n\n\t\t\t\t\tPuntuacion[2]\n\n\n\t\t\t\t\tCreditos[3]\n\n\n\t\t\t\t\tSalir[4]\n");
+       scanf("%d",&opcion);
+        switch (opcion)
+        {
             case 1:
-
                 do {
-                    fflush(stdin);
                     system("cls");
-                    printf("Juegos!\nBlackJack[1]\nRed Hog[2]\nMissisipii[3]\nRuleta[4]\nRegresar al menu inicial[5]\n");
-                    scanf("%d", &opcion2);
-                    switch (opcion2) {
-                        case 1: {
+                    printf("Juegos!\nBlackJack[1]\nCraps[2]\nJackpot[3]\nRed Hog[4]\nRuleta[5]\n");
+                    scanf("%d",&opcion2);
+                    switch (opcion2){
+                        case 1:{
                             system("cls");
-                            printf("--------------------\n");
-                            printf("Juego de Blackjack\n");
-                            printf("--------------------\n");
+                            BlackJack();
+                            break;
+                        }
+                        case 2: {
                             system("cls");
-                                            BlackJack();
-                                            break; }
-                        case 2:{
+                            Craps();
+                            break;
+                        }
+                        case 3:{
                             system("cls");
-                            printf("--------------------\n");
-                            printf("Juego de Red Hog\n");
-                            printf("--------------------\n");
-                                            REDDOG();
-                                            break; }
-                        case 3: {
-                            system("cls");
-                            printf("--------------------\n");
-                            printf("Juego de Missisipi\n");
-                            printf("--------------------\n");
-                                            break;}
+                            Jackpot();
+                            break;
+                        }
                         case 4:{
                             system("cls");
-                            printf("--------------------\n");
-                            printf("Juego de Ruleta\n");
-                            printf("--------------------\n");
-                                            Ruleta();
-                                            break; }
-                        default: {  printf("menu");
-                                    break;}
+                            REDDOG();
+                            break;
+                        }
+                        case 5:{
+                            system("cls");
+                            Ruleta();
+                            break;
+                        }
+
+
                     }
-                }while (opcion2 != 3);
+                    fflush (stdin);
+                    printf("\n Deseas jugar otro juego? [s][n] \n");
+                    scanf("%c",&resp2);
 
+                }while (toupper(resp2)=='S');
                 break;
-
-            case 2:
+            case 2:{
                 system("cls");
                 printf("--------------------\n");
                 printf("Puntuacion\n");
                 printf("--------------------\n");
-                break;
-
-            case 3:
+                break; }
+            case 3:{
                 system("cls");
                 printf("--------------------\n");
                 printf("Creditos\n");
                 printf("--------------------\n");
-                break;
-
-            default:
-                system("cls");
-                printf("--------------------\n");
-                printf("Ahora te puedes marchar\n");
-                printf("--------------------\n");
-                break;
-
+                break;}
+            case 4:{
+                exit(0); }
+            default:{
+                printf("error"); }
         }
-    }while (opcion != 4 );
-
-    return 0;
-
-
+        fflush (stdin);
+        printf("\n\nDesea volver al menu principal?[s][n]\n");
+        scanf("%c",&resp);
+    }while (toupper(resp)=='S');
 }
+
+
+
+

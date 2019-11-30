@@ -33,13 +33,13 @@ void Jackpot(){
 }
 
 int cantidad_acertados(int res[]){
-        int c=0;
-        for(int i=0; i < 7; i++){
-            if (res[i] == i+1){
-                c++;
-            }
+    int c=0;
+    for(int i=0; i < 7; i++){
+        if (res[i] == i+1){
+            c++;
         }
-        return c;
+    }
+    return c;
 }
 
 int res_apost(int result, int apost){
