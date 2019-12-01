@@ -7,6 +7,7 @@
 
 void casinoshow();
 void puerta();
+void creditos();
 //Auxiliar
 
 void gotoxy(int x,int y);

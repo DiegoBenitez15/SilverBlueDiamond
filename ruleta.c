@@ -86,11 +86,11 @@ char presentacion()
 {
     char c;
     do {
-        printf("--------------------------------------------------------\n");
+        printf("----------------------------------------------------------------------------\n");
         printf ("\t\tR\tU\tL\tE\tT\tA\n");
-        printf("-------------------------------------------------------\n");
-        printf ("Que tipo de apuesta quieres realizar?\t(Para elegir escribe la mayuscula correspondiente: )\n\n");
-        printf ("A - Pares o Impares \t B - Terna \t C - Pleno (un numero)\n");
+        printf("----------------------------------------------------------------------------\n");
+        printf ("\t\t%cQu%c tipo de apuesta quieres realizar?\n\n",168,130);
+        printf ("Pares o Impares[A]\n\n\n\nTerna[B]\n\n\n\nPleno[C]\n");
         scanf ("%c",&c);
         system("cls"); } while (c!='A' && c!='B' && c!='C' && c!='D');
     return c;
@@ -111,11 +111,16 @@ void espera(int segundos)
 }
 
 void casinoshow(){
-    printf("-----------------------------------------------------------------------------------------\n");
+    for(int i=0; i< 85;i++){
+        printf("%c",177);
+    }
+    printf("\n\n");
     printf("\t\t\t%c%c%c%c%c %c%c%c%c%c %c%c%c%c%c%c %c%c%c %c%c%c %c%c %c%c%c%c%c%c\n",177,219,223,223,219,178,219,223,223,219,177,219,223,223,223,219,223,219,223,177,219,220,177,219,177,219,223,223,223,219);
     printf("\t\t\t%c%c    %c%c%c%c%c %c%c%c%c%c%c %c%c%c %c%c %c %c %c%c   %c\n",177,219,177,219,220,220,219,178,223,223,223,220,220,177,219,178,177,219,219,219,177,219,219);
-    printf("\t\t\t%c%c%c%c%c %c%c%c%c%c %c%c%c%c%c%c %c%c%c %c%c  %c%c %c%c%c%c%c%c\n",177,219,220,220,219,177,219,178,177,219,177,219,220,220,220,219,220,219,220,177,219,223,219,177,219,220,220,220,219);
-    printf("-----------------------------------------------------------------------------------------\n");
+    printf("\t\t\t%c%c%c%c%c %c%c%c%c%c %c%c%c%c%c%c %c%c%c %c%c  %c%c %c%c%c%c%c%c\n\n",177,219,220,220,219,177,219,178,177,219,177,219,220,220,220,219,220,219,220,177,219,223,219,177,219,220,220,220,219);
+    for(int i=0; i< 85;i++){
+        printf("%c",177);
+    }
 }
 
 void puerta(){
@@ -291,7 +296,7 @@ void puerta(){
 
 void creditos()
 {
-    system("cls");
+
 
     printf("\t\t\t                  %c%c%c%c               \n",220,219,219,220);
     printf("\t\t\t              .:||||||||:.            \n");

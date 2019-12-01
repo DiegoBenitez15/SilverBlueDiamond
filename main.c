@@ -24,7 +24,7 @@ int main () {
     {
         fflush (stdin);
         casinoshow();
-        printf("\t\t\t\t\tJugar[1]\n\n\n\t\t\t\t\tPuntuacion[2]\n\n\n\t\t\t\t\tCreditos[3]\n\n\n\t\t\t\t\tSalir[4]\n\n\n\t\t\t\tCopyright (c) 2019 SilverDiamondBlue\n");
+        printf("\n\n\t\t\t\t\tJugar[1]\n\n\n\t\t\t\t\tPuntuacion[2]\n\n\n\t\t\t\t\tCreditos[3]\n\n\n\t\t\t\t\tSalir[4]\n\n\n\t\t\t\tCopyright (c) 2019 SilverDiamondBlue\n");
        scanf("%d",&opcion);
         switch (opcion)
         {
@@ -104,6 +104,7 @@ int main () {
                 printf("--------------------\n");
                 printf("Creditos\n");
                 printf("--------------------\n");
+                creditos();
                 break;}
             case 4:{
                 exit(0); }
