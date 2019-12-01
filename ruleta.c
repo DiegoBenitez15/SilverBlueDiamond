@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <synchapi.h>
+#include <winbase.h>
 #include "Funciones.h"
 #define DIM 20
 

@@ -9,16 +9,15 @@
 #include <ctype.h>
 #include "Funciones.h"
 
-struct JUEGO{
-    char nombre[20];
-    int puntualidad;
-    int dinero;
-}jugador;
+
 
 int main () {
 
     int opcion,opcion2;
+    JUGADOR *jugadores,*jug;
     char resp='s',resp2 ='s',resp3='s';
+    jugadores = leer();
+    jug = jugador(jugadores);
 
     do
     {
@@ -107,6 +106,8 @@ int main () {
                 creditos();
                 break;}
             case 4:{
+
+                escribir(jug);
                 exit(0); }
             default:{
                 printf("error"); }

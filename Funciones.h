@@ -5,6 +5,19 @@
 #ifndef PORTAFOLIO_2_FUNCIONES_H
 #define PORTAFOLIO_2_FUNCIONES_H
 
+#include <stdio.h>
+typedef struct jugador
+{
+    char *nombre;
+    int dinero;
+    int puntuacion;
+    struct jugador *siguiente;
+}JUGADOR;
+//Jugador
+JUGADOR* leer();
+FILE* escribir(JUGADOR *p);
+JUGADOR* jugador(JUGADOR *jugadores);
+//Casino
 void casinoshow();
 void puerta();
 void creditos();
