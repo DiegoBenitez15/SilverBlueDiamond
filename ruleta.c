@@ -287,6 +287,25 @@ void puerta(){
     printf("\t\t%c  %c  %c   %c     %c    %c  %c  %c\n",186,178,178,186,186,178,178,186);
     printf("\t\t%c  %c  %c   %c     %c    %c  %c  %c\n",186,178,178,186,186,178,178,186);
     printf("\t\t%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n",200,205,205,205,205,205,205,205,205,205,202,205,205,205,205,205,202,205,205,205,205,205,205,205,205,205,205,188);
+}
 
+void creditos()
+{
+    system("cls");
 
+    printf("\t\t\t                  %c%c%c%c               \n",220,219,219,220);
+    printf("\t\t\t              .:||||||||:.            \n");
+    printf("\t\t\t            (   O      O   )          \n");
+    printf("\t\t\t ____@@@@_____________________@@@@___\n");
+    printf("\t\t\t|                                    |\n");
+    printf("\t\t\t|   Diego Ben%ctez    2018-1603       |\n",161);
+    printf("\t\t\t|                                    |\n");
+    printf("\t\t\t|                                    |\n");
+    printf("\t\t\t|   Sebasti%cn S%cnchez 2018-0032      |\n",160,160);
+    printf("\t\t\t|                                    |\n");
+    printf("\t\t\t|                                    |\n");
+    printf("\t\t\t|   Bryan Vargas Montero 2018-0585   |\n");
+    printf("\t\t\t|____________________________________|\n");
+
+    system("pause");
 }
