@@ -80,10 +80,10 @@ void impcarta(const int *cards,int x)
 
 void botones()
 {
-    gotoxy(20,19);printf(" _______________________");
-    gotoxy(20,20);printf("|   [1]  S E G U I R    |");
-    gotoxy(20,21);printf("|_______________________|");
-    gotoxy(60,19);printf(" _______________________");
-    gotoxy(60,20);printf("|  [2] Q U E D A R S E  |");
-    gotoxy(60,21);printf("|_______________________|");
+    gotoxy(20,19);printf(" ________________");
+    gotoxy(20,20);printf("|   [1] Seguir   |");
+    gotoxy(20,21);printf("|________________|");
+    gotoxy(60,19);printf(" _________________");
+    gotoxy(60,20);printf("|  [2] Quedarse   |");
+    gotoxy(60,21);printf("|_________________|");
 }

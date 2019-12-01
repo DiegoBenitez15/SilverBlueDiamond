@@ -75,30 +75,30 @@ void BlackJack()
 
     if(y == 0)
     {
-        printf("\n\n|LO LAMENTO HAS PERDIDO|");
+        printf("\n\n\t\t\t|H A S   P E R D I D O|");
     }
     else if(y == 1)
     {
-        printf("\n\n|FELICIDADEEEEES HAS GANADO|");
+        printf("\n\n\t\t\t|H A S  G A N A D O|");
     }
     else if(y == 2)
     {
-        printf("\n\n|EMPATE|");
+        printf("\n\n\t\t\t|E M P A T E|");
     }
 
-    printf("\nJugador:");
+    printf("\nJUGADOR:");
     for(i =0;i<ccartas;i++)
     {
-        printf("%d ",((J1[i]  % 13) + 1));
+        printf("[%d] ",((J1[i]  % 13) + 1));
     }
-    printf("\t\tSuma: %d",sumaJ1);
+    printf("\t\t\tSuma del jugador: %d",sumaJ1);
 
     printf("\nCASINO:");
     for(i =0;i<ccartas2;i++)
     {
-        printf("%d ",((J2[i]  % 13) + 1));
+        printf("[%d] ",((J2[i]  % 13) + 1));
     }
-    printf("\t\tSuma2: %d",sumaJ2);
+    printf("\t\t\tSuma del Casino: %d",sumaJ2);
 
     return;
 }
@@ -335,7 +335,7 @@ void pantallaB(int *cartas,int ccartas,int x,int suma) {
     for (i = 0; i < 100; i++) {
         printf("-");
     }
-    printf("\n\t\t\t\t B L A  C K J A C K\t\t\t\tsuma: %d\n", suma);
+    printf("\n\t\t\t\t B L A C K  J A C K\t\t\t\tSUMA: %d\n", suma);
     for (i = 0; i < 100; i++) {
         printf("-");
     }
@@ -357,9 +357,9 @@ void pantallaB(int *cartas,int ccartas,int x,int suma) {
 void botones2(int x,int y)
 {
     gotoxy(x+20,y+19);printf(" _______________________");
-    gotoxy(x+20,y+20);printf("| [1]P E D I R C A R T A|");
+    gotoxy(x+20,y+20);printf("| [1]Pedir Cartas       |");
     gotoxy(x+20,y+21);printf("|_______________________|");
     gotoxy(x+60,y+19);printf(" _______________________");
-    gotoxy(x+60,y+20);printf("|  [2]R E T I R A R S E |");
+    gotoxy(x+60,y+20);printf("|  [2]Retirarse         |");
     gotoxy(x+60,y+21);printf("|_______________________|");
 }

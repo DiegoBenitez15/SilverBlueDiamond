@@ -6,6 +6,7 @@
 #define PORTAFOLIO_2_FUNCIONES_H
 
 void casinoshow();
+void puerta();
 //Auxiliar
 
 void gotoxy(int x,int y);

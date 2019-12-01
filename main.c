@@ -4,60 +4,95 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+#include <windows.h>
 #include <ctype.h>
 #include "Funciones.h"
+
+struct JUEGO{
+    char nombre[20];
+    int puntualidad;
+    int dinero;
+}jugador;
+
 int main () {
 
     int opcion,opcion2;
-    char resp='s',resp2 ='s';
+    char resp='s',resp2 ='s',resp3='s';
+
     do
     {
         fflush (stdin);
         casinoshow();
-        printf("\t\t\t\t\tJugar[1]\n\n\n\t\t\t\t\tPuntuacion[2]\n\n\n\t\t\t\t\tCreditos[3]\n\n\n\t\t\t\t\tSalir[4]\n");
+        printf("\t\t\t\t\tJugar[1]\n\n\n\t\t\t\t\tPuntuacion[2]\n\n\n\t\t\t\t\tCreditos[3]\n\n\n\t\t\t\t\tSalir[4]\n\n\n\t\t\t\tCopyright (c) 2019 SilverDiamondBlue\n");
        scanf("%d",&opcion);
         switch (opcion)
         {
-            case 1:
+            case 1: {
                 do {
                     system("cls");
-                    printf("Juegos!\nBlackJack[1]\nCraps[2]\nJackpot[3]\nRed Hog[4]\nRuleta[5]\n");
-                    scanf("%d",&opcion2);
-                    switch (opcion2){
-                        case 1:{
+                    printf("\n\n\n\t\t\t\t\tBlackJack[1]\n\n\n\t\t\t\t\tCraps[2]\n\n\n\t\t\t\t\tJackpot[3]\n\n\n\t\t\t\t\tRed Hog[4]\n\n\n\t\t\t\t\tRuleta[5]\n");
+                    scanf("%d", &opcion2);
+                    switch (opcion2) {
+                        case 1: {
+                            do{
                             system("cls");
                             BlackJack();
+                            fflush(stdin);
+                            printf("\n\n%cJugar otra vez? [s][n]",168 );
+                            scanf("%c",&resp3);
+                            }while(toupper(resp3)=='S');
                             break;
                         }
                         case 2: {
-                            system("cls");
-                            Craps();
+                            do{
+                                system("cls");
+                                Craps();
+                                fflush(stdin);
+                                printf("\n\n%cJugar otra vez? [s][n]",168 );
+                                scanf("%c",&resp3);
+                            }while(toupper(resp3)=='S');
                             break;
                         }
-                        case 3:{
-                            system("cls");
-                            Jackpot();
+                        case 3: {
+                            do{
+                                system("cls");
+                                Jackpot();
+                                fflush(stdin);
+                                printf("\n\n%cJugar otra vez? [s][n]",168 );
+                                scanf("%c",&resp3);
+                            }while(toupper(resp3)=='S');
                             break;
                         }
-                        case 4:{
-                            system("cls");
-                            REDDOG();
+                        case 4: {
+                            do{
+                                system("cls");
+                                REDDOG();
+                                fflush(stdin);
+                                printf("\n\n%cJugar otra vez? [s][n]",168 );
+                                scanf("%c",&resp3);
+                            }while(toupper(resp3)=='S');
                             break;
                         }
-                        case 5:{
-                            system("cls");
-                            Ruleta();
-                            break;
-                        }
+                        case 5: {
+                            do{
+                                system("cls");
+                                Ruleta();
 
-
+                                fflush(stdin);
+                                printf("\n\n%cJugar otra vez? [s][n]",168 );
+                                scanf("%c",&resp3);
+                            }while(toupper(resp3)=='S');
+                            break;
+                        }
                     }
-                    fflush (stdin);
-                    printf("\n Deseas jugar otro juego? [s][n] \n");
-                    scanf("%c",&resp2);
+                    fflush(stdin);
+                    printf("\n\n Deseas jugar otro juego? [s][n] \n");
+                    scanf("%c", &resp2);
 
-                }while (toupper(resp2)=='S');
+                } while (toupper(resp2) == 'S');
                 break;
+            }
             case 2:{
                 system("cls");
                 printf("--------------------\n");
