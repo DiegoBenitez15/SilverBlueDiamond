@@ -15,12 +15,13 @@ int main () {
     int opcion,opcion2;
     JUGADOR *jugadores,*jug;
     char resp='s',resp2 ='s',resp3='s';
+    printf("\n\n\n\n\n\n\n");
+    bien();
+    system("pause");
 
     do
     {
         fflush (stdin);
-        bien();
-        system("pause");
         jugadores = leer();
         jug = jugador(jugadores);
         casinoshow();
@@ -31,7 +32,8 @@ int main () {
             case 1: {
                 do {
                     system("cls");
-                    printf("\n\n\n\t\t\t\t\tBlackJack[1]\n\n\n\t\t\t\t\tCraps[2]\n\n\n\t\t\t\t\tJackpot[3]\n\n\n\t\t\t\t\tRed Hog[4]\n\n\n\t\t\t\t\tRuleta[5]\n");
+                    printf("\t\t%c%c%c%c%c%c%c. J\tU\tE\tG\tO\tS .%c%c%c%c%c%c%c",219,219,219,178,177,178,178,178,178,177,178,219,219,219);
+                    printf("\n\n\n\t\t\t\t\tBlackJack [1]\n\n\n\t\t\t\t\tCraps [2]\n\n\n\t\t\t\t\tJackpot [3]\n\n\n\t\t\t\t\tRed Hog [4]\n\n\n\t\t\t\t\tRuleta [5]\n");
                     scanf("%d", &opcion2);
                     switch (opcion2) {
                         case 1: {

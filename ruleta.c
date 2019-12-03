@@ -18,13 +18,23 @@ void Ruleta()
     switch(c) {
         case 'A' :
             do {
-                printf ("1 - Apostarle a los pares \t 2 - Apostarle a los impares\n");
+                printf("\n\n\n");
+                for(int i=0; i< 85;i++){
+                    printf("%c",177);
+                }
+                printf ("\n\n\t\t\t\tApostarle a los pares [1]\n\n\n\n\t\t\t\tApostarle a los impares [2]\n");
+                printf("\n");
+                for(int i=0; i< 85;i++){
+                    printf("%c",177);
+                }
+                printf("\n");
                 scanf ("%d",&n);}while(n!=1 && n!=2);
             break;
 
         case 'B' :
             do {
-                printf ("Di tres numeros que quieres apostar! \n(Comprendidos entre 1 y 36):\n");
+                printf ("\n\n\t\t\t\t\t%c Tres numeros que quieres apostar! %c\n\t\t\t\t\t   %c(Comprendidos entre 1 y 36)%c\n",176,176,178,178);
+                printf("\n\n\t\t\t\t\t\t\t");
                 for (i=0;i<3;i++)
                     scanf ("%d",&m[i]);
             }
@@ -32,25 +42,25 @@ void Ruleta()
             break;
         case 'C' :
             do {
-                printf ("Di el numero al que le apostaras \n(Comprendido entre 1 y 36):\n");
+                printf ("\n\n\t\t\t\t\t%c Di el numero al que le apostaras %c\n\n\t\t\t\t\t   %c(Comprendido entre 1 y 36)%c\n",176,176,178,178);
+                printf("\n\n\t\t\t\t\t\t\t");
                 scanf ("%d",&n);
             }
             while(n<=0 || n>36); break;
         default:
         {
-            printf("ERROR");
+            printf("%c Error. Digite Nuevamente %c",176,176);
         }
     }
     system("cls");
-    printf ("\nUna vez hecha la apuesta, toca ver que numero sale en la ruleta :\n\n");
     for(i=1;i<=100;i++) rand();  //descartamos los 100 primeros números aleatorios
     premio = rand() % 37;      //almacenamos el número premiado
     espera (k);  //simulación de la bola moviéndose en la ruleta
     system("cls");
-    printf ("\nUna vez hecha la apuesta, toca ver que numero sale en la ruleta :\n\n");
-    printf ("\t%d\n\n",premio);
+    printf("\n\n\t\t\t\t\t");
+    printf ("\n\n\t\t\t\t\t%c%c%d\n\n",176,176,premio);
     if (premio==0) {
-        printf ("Gana la banca!");
+        printf ("%c %cGana la banca! %c ",176,168,176);
         system ("pause");
         }
     switch ( c ) {
@@ -76,7 +86,7 @@ void Ruleta()
             break;
         default:
         {
-            printf("ERROR");
+            printf("%c Error. Digita nuevamente %c",176,176);
         }
     }
     system ("pause");
@@ -108,7 +118,11 @@ void espera(int segundos)
     while((Seg2-Seg1) < segundos){
         if(clock()%400<10){
             system("cls");
-            printf ("\nUna vez hecha la apuesta, toca ver que numero sale en la ruleta :\n\n\t%d",rand() % 37);
+            printf("\n\n\t\t\t\t\t");
+            for (int i = 0; i < 5; i++){
+                printf("%c",176);
+            }
+            printf ("\n\n\n\t\t\t\t\t%c%c%d%c%c",178,178,rand() % 37,178,178);
         }
         Seg2=(int)clock()/CLOCKS_PER_SEC;
     }
