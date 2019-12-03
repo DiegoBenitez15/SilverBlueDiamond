@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <windows.h>
 #include <ctype.h>
 #include "Funciones.h"
 
@@ -15,15 +16,13 @@ int main () {
     int opcion,opcion2;
     JUGADOR *jugadores,*jug;
     char resp='s',resp2 ='s',resp3='s';
-    printf("\n\n\n\n\n\n\n");
-    bien();
-    system("pause");
+    jugadores = leer();
+    jug = jugador(&jugadores);
+    jug->dinero -= 1;
 
     do
     {
         fflush (stdin);
-        jugadores = leer();
-        jug = jugador(jugadores);
         casinoshow();
         printf("\n\n\t\t\t\t\tJugar[1]\n\n\n\t\t\t\t\tPuntuacion[2]\n\n\n\t\t\t\t\tCreditos[3]\n\n\n\t\t\t\t\tSalir[4]\n\n\n\t\t\t\tCopyright (c) 2019 SilverDiamondBlue\n");
        scanf("%d",&opcion);
@@ -32,8 +31,7 @@ int main () {
             case 1: {
                 do {
                     system("cls");
-                    printf("\t\t%c%c%c%c%c%c%c. J\tU\tE\tG\tO\tS .%c%c%c%c%c%c%c",219,219,219,178,177,178,178,178,178,177,178,219,219,219);
-                    printf("\n\n\n\t\t\t\t\tBlackJack [1]\n\n\n\t\t\t\t\tCraps [2]\n\n\n\t\t\t\t\tJackpot [3]\n\n\n\t\t\t\t\tRed Hog [4]\n\n\n\t\t\t\t\tRuleta [5]\n");
+                    printf("\n\n\n\t\t\t\t\tBlackJack[1]\n\n\n\t\t\t\t\tCraps[2]\n\n\n\t\t\t\t\tJackpot[3]\n\n\n\t\t\t\t\tRed Hog[4]\n\n\n\t\t\t\t\tRuleta[5]\n");
                     scanf("%d", &opcion2);
                     switch (opcion2) {
                         case 1: {
@@ -101,11 +99,6 @@ int main () {
                 printf("Puntuacion\n");
                 printf("--------------------\n");
                 break; }
-
-
-
-
-
             case 3:{
                 system("cls");
                 printf("--------------------\n");
@@ -114,10 +107,11 @@ int main () {
                 creditos();
                 break;}
             case 4:{
+
                 escribir(jug);
                 exit(0); }
             default:{
-                printf("Error. Digita nuevamente :/"); }
+                printf("error"); }
         }
         fflush (stdin);
         printf("\n\nDesea volver al menu principal?[s][n]\n");

@@ -20,7 +20,7 @@ JUGADOR* anadir(JUGADOR* cabeza,char *nombre,int dinero,int punt)
     return jugador;
 }
 
-JUGADOR* anadirnuevo(JUGADOR* cabeza,char *nombre)
+JUGADOR* anadirnuevo(JUGADOR **cabeza, char *nombre)
 {
     JUGADOR *jugador;
     jugador = malloc(sizeof(JUGADOR));
@@ -28,7 +28,8 @@ JUGADOR* anadirnuevo(JUGADOR* cabeza,char *nombre)
     strcpy(jugador->nombre,nombre);
     jugador->dinero = 1000;
     jugador->puntuacion = 0;
-    jugador->siguiente = cabeza;
+    jugador->siguiente = *cabeza;
+    *cabeza = jugador;
 
     return jugador;
 }
@@ -47,11 +48,11 @@ JUGADOR* busqueda(JUGADOR *cabeza,char *destino)
     return NULL;
 }
 
-JUGADOR* jugador(JUGADOR *jugadores)
+JUGADOR* jugador(JUGADOR **jugadores)
 {
     char *nombre = malloc(sizeof(char));
     gets(nombre);
-    JUGADOR* p = jugadores;
+    JUGADOR* p = *jugadores;
     p = busqueda(p,nombre);
 
     if(p != NULL)
@@ -60,9 +61,9 @@ JUGADOR* jugador(JUGADOR *jugadores)
     }
     else
     {
-        jugadores = anadirnuevo(jugadores,nombre);
+        *jugadores = anadirnuevo(jugadores,nombre);
         jugadores = jugadores;
-        return jugadores;
+        return *jugadores;
     }
 }
 

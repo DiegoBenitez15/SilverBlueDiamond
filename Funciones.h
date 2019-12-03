@@ -16,7 +16,7 @@ typedef struct jugador
 //Jugador
 JUGADOR* leer();
 FILE* escribir(JUGADOR *p);
-JUGADOR* jugador(JUGADOR *jugadores);
+JUGADOR* jugador(JUGADOR **jugadores);
 //Casino
 void casinoshow();
 void puerta();
