@@ -11,25 +11,21 @@
 void Jackpot(){
     srand(time(NULL));
     int jckscrn[7];
-    int apost, gns, acrt;
+    int apost, asrt;
     printf("\t\tBienvenido a JackPot!\n \t     Por favor ingrese su apuesta: ");
-    scanf("%d", &apost);
+    scanf("%d", &apost); // El usuario Ingresa la cantidad apostada
+    if (apost <= 0) {
+        printf("APUESTA ERRONEA");
+    }
     printf("\n");
+
     for (int i = 0; i < 7; i++) {
-        jckscrn[i] = 1 + rand() % (7 - 1);
+        jckscrn[i] = 1 + rand() % (7 - 1); // se llenan los 7 espacios con numeros random
     }
 
-    for (int x = 0; x < 7; x++) {
-        printf("%d\t", jckscrn[x]);
-    }
-
-    acrt = cantidad_acertados(jckscrn);
-
-    if(acrt >= 4 ){
-        gns = res_apost(acrt,apost);
-        printf(" %d %c%cACIERTOS!! Has ganado %d",acrt,173,173, gns);
-    }else printf("\n\tHas Perdido, Vuelve a intentarlo\n\t\tPerdiste -%d ",apost);
-
+    imprimir_pantalla(jckscrn); // Se imprime la pantalla
+    asrt = cantidad_acertados(jckscrn); // se comprueba la cantidad de aciertos con una funcion
+    ganancias(asrt,apost); // se calculan las ganancias con la candidad de aciertos
 }
 
 int cantidad_acertados(int res[]){
@@ -60,3 +56,17 @@ int res_apost(int result, int apost){
     }
 }
 
+void imprimir_pantalla (int pantalla_jackpot[]){
+    for (int x = 0; x < 7; x++) {
+        printf("|%d|\t", pantalla_jackpot[x]);
+    }
+}
+
+void ganancias(int aciertos, int apuesta){
+    int gns;
+    if(aciertos >= 4 ){
+        gns = res_apost(aciertos,apuesta);
+        printf(" %d %c%cACIERTOS!! Has ganado %d",aciertos,173,173, gns);
+    }else printf("\n\tHas Perdido, Vuelve a intentarlo\n\t\tPerdiste -%d ",apuesta);
+
+}
