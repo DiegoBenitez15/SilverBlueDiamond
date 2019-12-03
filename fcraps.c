@@ -30,7 +30,6 @@ void Craps()
         system("CLS");
         if (apst <= 0) {
             printf("APUESTA ERRONEA");
-            exit(0);
         }
         printf("\tElija el modo de apuesta que desea utilizar: ");
         printf("\n-Linea de pase [A]\n-Campo[C]\n-Gran Seis[S]\n-Gran Ocho[O]\n");

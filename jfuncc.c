@@ -14,6 +14,9 @@ void Jackpot(){
     int apost, asrt;
     printf("\t\tBienvenido a JackPot!\n \t     Por favor ingrese su apuesta: ");
     scanf("%d", &apost); // El usuario Ingresa la cantidad apostada
+    if (apost <= 0) {
+        printf("APUESTA ERRONEA");
+    }
     printf("\n");
 
     for (int i = 0; i < 7; i++) {
