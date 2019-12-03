@@ -12,7 +12,14 @@
 void Craps()
 {
     srand(time(NULL));
-    printf("\t\t    Bienvenido a CRAPS!\n");
+    for(int i=0; i< 85;i++){
+        printf("%c",177);
+    }
+    printf("\n\t\t\tC\tR\tA\tP\tS\n");
+    for(int i=0; i< 85;i++){
+        printf("%c",177);
+    }
+
     char respt, mdj;
     do {
         int apst = 0, nd1 = 0, nd2 = 0, gns = 0;

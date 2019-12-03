@@ -8,106 +8,106 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug"/>
+				<Option working_dir="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CASINO">
-				<Option output="C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/CASINO.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug"/>
+				<Option output="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/CASINO.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 CASINO"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 CASINO"/>
+					<CompileFile command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CASINO/fast">
-				<Option output="C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/CASINO.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug"/>
+				<Option output="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/CASINO.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 CASINO/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 CASINO/fast"/>
+					<CompileFile command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug"/>
+				<Option working_dir="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug"/>
+				<Option working_dir="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Desktop/SilverBlueDiamond42/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond42/BlackJack.c">
+		<Unit filename="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/BlackJack.c">
 			<Option target="CASINO"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond42/Funciones.h">
+		<Unit filename="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/Funciones.h">
 			<Option target="CASINO"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond42/Jugador.c">
+		<Unit filename="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/Jugador.c">
 			<Option target="CASINO"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond42/REDDOG-ESTETICA.c">
+		<Unit filename="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/REDDOG-ESTETICA.c">
 			<Option target="CASINO"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond42/REDDOG.c">
+		<Unit filename="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/REDDOG.c">
 			<Option target="CASINO"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond42/fcraps.c">
+		<Unit filename="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/fcraps.c">
 			<Option target="CASINO"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond42/jfuncc.c">
+		<Unit filename="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/jfuncc.c">
 			<Option target="CASINO"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond42/main.c">
+		<Unit filename="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/main.c">
 			<Option target="CASINO"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond42/ruleta.c">
+		<Unit filename="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/ruleta.c">
 			<Option target="CASINO"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond42/CMakeLists.txt">
+		<Unit filename="C:/Users/sebastian/CLionProjects/SilverBlueDiamondBa/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

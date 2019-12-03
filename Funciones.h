@@ -21,6 +21,7 @@ JUGADOR* jugador(JUGADOR *jugadores);
 void casinoshow();
 void puerta();
 void creditos();
+void bien();
 //Auxiliar
 
 void gotoxy(int x,int y);

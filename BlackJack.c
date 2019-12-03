@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include <windows.h>
+
 
 void BlackJack()
 {
@@ -63,7 +63,8 @@ void BlackJack()
                 }
                 default:
                 {
-                    printf("\nError opcion no valida");
+                    printf("\nError. Digita nuevamente.");
+                    system("pause");
                 }
             }
         }
@@ -91,7 +92,7 @@ void BlackJack()
     {
         printf("[%d] ",((J1[i]  % 13) + 1));
     }
-    printf("\t\t\tSuma del jugador: %d",sumaJ1);
+    printf("\t\t\t%cSuma del jugador %c = %d",176,176,sumaJ1);
 
     printf("\nCASINO:");
     for(i =0;i<ccartas2;i++)
@@ -333,11 +334,13 @@ void pantallaB(int *cartas,int ccartas,int x,int suma) {
     int i;
 
     for (i = 0; i < 100; i++) {
-        printf("-");
+        printf("%c",177);
     }
-    printf("\n\t\t\t\t B L A C K  J A C K\t\t\t\tSUMA: %d\n", suma);
-    for (i = 0; i < 100; i++) {
-        printf("-");
+    printf("\n\tB\tL\tA\tC\tK\tJ\tA\tC\tK\t\t\t\t%cSuma"
+           "as"
+           "%c %d\n",176,176,suma);
+    for (i = 0; i < 85; i++) {
+        printf("%c",177);
     }
     imprimirb(cartas, 0, ccartas, 17, 4);
 

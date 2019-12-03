@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <windows.h>
 #include <ctype.h>
 #include "Funciones.h"
 
@@ -16,12 +15,14 @@ int main () {
     int opcion,opcion2;
     JUGADOR *jugadores,*jug;
     char resp='s',resp2 ='s',resp3='s';
-    jugadores = leer();
-    jug = jugador(jugadores);
 
     do
     {
         fflush (stdin);
+        bien();
+        system("pause");
+        jugadores = leer();
+        jug = jugador(jugadores);
         casinoshow();
         printf("\n\n\t\t\t\t\tJugar[1]\n\n\n\t\t\t\t\tPuntuacion[2]\n\n\n\t\t\t\t\tCreditos[3]\n\n\n\t\t\t\t\tSalir[4]\n\n\n\t\t\t\tCopyright (c) 2019 SilverDiamondBlue\n");
        scanf("%d",&opcion);
@@ -98,6 +99,11 @@ int main () {
                 printf("Puntuacion\n");
                 printf("--------------------\n");
                 break; }
+
+
+
+
+
             case 3:{
                 system("cls");
                 printf("--------------------\n");
@@ -106,11 +112,10 @@ int main () {
                 creditos();
                 break;}
             case 4:{
-
                 escribir(jug);
                 exit(0); }
             default:{
-                printf("error"); }
+                printf("Error. Digita nuevamente :/"); }
         }
         fflush (stdin);
         printf("\n\nDesea volver al menu principal?[s][n]\n");
