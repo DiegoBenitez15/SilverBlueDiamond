@@ -71,6 +71,8 @@ void botones();
 void Jackpot();
 int cantidad_acertados(int res[]);
 int res_apost(int result, int apost);
+void imprimir_pantalla (int pantalla_jackpot[]);
+void ganancias(int aciertos, int apuesta);
 
 
 //MississipiStud
