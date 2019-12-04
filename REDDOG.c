@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <time.h>
 
-void REDDOG()
+int REDDOG()
 {
     int mazo[52],*m,ccmazo,apuesta,rd,i;
     m= mazo,ccmazo = 52;apuesta = 0;
@@ -121,7 +121,7 @@ void REDDOG()
     printf("\n");
     printf("\nDinero Obtenido: %d",apuesta);
 
-    return;
+    return apuesta;
 }
 
 void generarcarta(int *mazo)

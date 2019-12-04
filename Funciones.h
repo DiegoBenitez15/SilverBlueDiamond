@@ -15,6 +15,8 @@ typedef struct jugador
 }JUGADOR;
 //Jugador
 JUGADOR* leer();
+void imprimirpunt(JUGADOR * jug);
+void ordenarpuntuaciones(JUGADOR * jugador);
 FILE* escribir(JUGADOR *p);
 JUGADOR* jugador(JUGADOR **jugadores);
 //Casino
@@ -44,7 +46,7 @@ void pantallaB(int *cartas,int ccartas,int x,int suma);
 
 //Craps
 
-void Craps();
+int Craps();
 void dados (int dados);
 int lna_pase(int d1, int d2, int apst);
 int campo(int d1, int d2, int apst);
@@ -53,7 +55,7 @@ int grnoo(int d1, int d2, int apst);
 
 //Red Dogs
 
-void REDDOG();
+int REDDOG();
 void generarcarta(int *mazo);
 void eliminarcarta(int *mazo,int *cmazo,int pos);
 int carta(int *mazo,int *carta,int *cmazo,int ccarta);
@@ -72,11 +74,11 @@ void botones();
 
 
 //Jackpot
-void Jackpot();
+int Jackpot();
 int cantidad_acertados(int res[]);
 int res_apost(int result, int apost);
 void imprimir_pantalla (int pantalla_jackpot[]);
-void ganancias(int aciertos, int apuesta);
+int ganancias(int aciertos, int apuesta);
 
 
 //MississipiStud
@@ -87,6 +89,6 @@ void ganancias(int aciertos, int apuesta);
 
 char presentacion();
 void espera(int segundos);
-void Ruleta();
+int Ruleta();
 
 #endif //PORTAFOLIO_2_FUNCIONES_H

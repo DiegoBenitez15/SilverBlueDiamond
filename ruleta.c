@@ -9,7 +9,7 @@
 #include "Funciones.h"
 #define DIM 20
 
-void Ruleta()
+int Ruleta()
 {
     char c;
     int n=0,m[DIM],i,premio,k=4;
@@ -90,7 +90,7 @@ void Ruleta()
         }
     }
     system ("pause");
-    return;
+    return premio;
 }
 char presentacion()
 {
@@ -146,21 +146,21 @@ void casinoshow(){
 void creditos()
 {
 
-
-    printf("\t\t\t                  %c%c%c%c               \n",220,219,219,220);
-    printf("\t\t\t              .:||||||||:.            \n");
-    printf("\t\t\t            (   O      O   )          \n");
-    printf("\t\t\t ____@@@@_____________________@@@@___\n");
-    printf("\t\t\t|                                    |\n");
-    printf("\t\t\t|   Diego Ben%ctez    2018-1603       |\n",161);
-    printf("\t\t\t|                                    |\n");
-    printf("\t\t\t|                                    |\n");
-    printf("\t\t\t|   Sebasti%cn S%cnchez 2018-0032      |\n",160,160);
-    printf("\t\t\t|                                    |\n");
-    printf("\t\t\t|                                    |\n");
-    printf("\t\t\t|   Bryan Vargas Montero 2018-0585   |\n");
-    printf("\t\t\t|____________________________________|\n");
-
+    printf("\n\n");
+    printf("\t\t                  %c%c%c%c               \n",220,219,219,220);
+    printf("\t\t              .:||||||||:.            \n");
+    printf("\t\t            (   O      O   )          \n");
+    printf("\t\t ____@@@@_____________________@@@@___\n");
+    printf("\t\t|                                    |\n");
+    printf("\t\t|   Diego Ben%ctez    2018-1603       |\n",161);
+    printf("\t\t|                                    |\n");
+    printf("\t\t|                                    |\n");
+    printf("\t\t|   Sebasti%cn S%cnchez 2018-0032      |\n",160,160);
+    printf("\t\t|                                    |\n");
+    printf("\t\t|                                    |\n");
+    printf("\t\t|   Bryan Vargas Montero 2018-0585   |\n");
+    printf("\t\t|____________________________________|\n");
+    printf("\n\n\t\t    ");
     system("pause");
 }
 

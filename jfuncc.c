@@ -8,7 +8,7 @@
 #include <time.h>
 
 
-void Jackpot(){
+int Jackpot(){
     srand(time(NULL));
     int jckscrn[7];
     int apost, asrt;
@@ -25,7 +25,8 @@ void Jackpot(){
 
     imprimir_pantalla(jckscrn); // Se imprime la pantalla
     asrt = cantidad_acertados(jckscrn); // se comprueba la cantidad de aciertos con una funcion
-    ganancias(asrt,apost); // se calculan las ganancias con la candidad de aciertos
+    apost = ganancias(asrt,apost); // se calculan las ganancias con la candidad de aciertos
+    return apost;
 }
 
 int cantidad_acertados(int res[]){
@@ -62,11 +63,16 @@ void imprimir_pantalla (int pantalla_jackpot[]){
     }
 }
 
-void ganancias(int aciertos, int apuesta){
+int ganancias(int aciertos, int apuesta){
     int gns;
     if(aciertos >= 4 ){
         gns = res_apost(aciertos,apuesta);
         printf(" %d %c%cACIERTOS!! Has ganado %d",aciertos,173,173, gns);
-    }else printf("\n\tHas Perdido, Vuelve a intentarlo\n\t\tPerdiste -%d ",apuesta);
-
+        return gns;
+    }
+    else
+    {
+        printf("\n\tHas Perdido, Vuelve a intentarlo\n\t\tPerdiste -%d ",apuesta);
+        return -1 * apuesta;
+    }
 }

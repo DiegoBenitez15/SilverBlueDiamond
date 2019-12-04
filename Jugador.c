@@ -7,6 +7,54 @@
 #include <string.h>
 #include "Funciones.h"
 
+void ordenarpuntuaciones(JUGADOR *cabeza)
+{
+    JUGADOR *temp;
+    temp = cabeza;
+    if(temp != NULL)
+    {
+        JUGADOR *pivote = NULL,*actual = NULL;
+        int tmp;
+        double tmp2;
+        char *tmp3;
+        pivote = temp;
+        while(pivote != NULL)
+        {
+            actual = pivote->siguiente;
+            while(actual != NULL)
+            {
+                if(pivote->puntuacion < actual->puntuacion)
+                {
+                    tmp = pivote->dinero;
+                    pivote->dinero = actual->dinero;
+                    actual->dinero = tmp;
+
+                    tmp2 = pivote->puntuacion;
+                    pivote->puntuacion = actual->puntuacion;
+                    actual->puntuacion = tmp2;
+
+                    tmp3 = pivote->nombre;
+                    pivote->nombre = actual->nombre;
+                    actual->nombre = tmp3;
+                }
+                actual = actual->siguiente;
+            }
+            pivote = pivote->siguiente;
+        }
+        imprimirpunt(temp);
+    }
+}
+
+void imprimirpunt(JUGADOR * jug)
+{
+    JUGADOR *temp;
+
+    for(temp = jug;temp != NULL;temp = temp->siguiente)
+    {
+        printf("%7s ........................ %7u\n",temp->nombre,temp->puntuacion);
+    }
+}
+
 JUGADOR* anadir(JUGADOR* cabeza,char *nombre,int dinero,int punt)
 {
     JUGADOR *jugador;
@@ -61,8 +109,7 @@ JUGADOR* jugador(JUGADOR **jugadores)
     }
     else
     {
-        *jugadores = anadirnuevo(jugadores,nombre);
-        jugadores = jugadores;
+        anadirnuevo(jugadores,nombre);
         return *jugadores;
     }
 }

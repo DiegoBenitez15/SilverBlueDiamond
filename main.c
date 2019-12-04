@@ -12,19 +12,18 @@
 
 
 int main () {
-
+    srand(time(NULL));
     int opcion,opcion2;
     JUGADOR *jugadores,*jug;
     char resp='s',resp2 ='s',resp3='s';
     jugadores = leer();
     jug = jugador(&jugadores);
-    jug->dinero -= 1;
 
     do
     {
         fflush (stdin);
         casinoshow();
-        printf("\n\n\t\t\t\t\tJugar[1]\n\n\n\t\t\t\t\tPuntuacion[2]\n\n\n\t\t\t\t\tCreditos[3]\n\n\n\t\t\t\t\tSalir[4]\n\n\n\t\t\t\tCopyright (c) 2019 SilverDiamondBlue\n");
+        printf("\n\n\n\t\t\t\t\tJugar[1]\n\n\n\t\t\t\t      Puntuacion[2]\n\n\n\t\t\t\t       Creditos[3]\n\n\n\t\t\t\t\tSalir[4]\n\n\n\t\t\t    Copyright (c) 2019 SilverDiamondBlue\n");
        scanf("%d",&opcion);
         switch (opcion)
         {
@@ -47,7 +46,7 @@ int main () {
                         case 2: {
                             do{
                                 system("cls");
-                                Craps();
+                                jug->dinero += Craps();
                                 fflush(stdin);
                                 printf("\n\n%cJugar otra vez? [s][n]",168 );
                                 scanf("%c",&resp3);
@@ -57,7 +56,7 @@ int main () {
                         case 3: {
                             do{
                                 system("cls");
-                                Jackpot();
+                                jug->dinero += Jackpot();
                                 fflush(stdin);
                                 printf("\n\n%cJugar otra vez? [s][n]",168 );
                                 scanf("%c",&resp3);
@@ -67,7 +66,7 @@ int main () {
                         case 4: {
                             do{
                                 system("cls");
-                                REDDOG();
+                                jug->dinero += REDDOG();
                                 fflush(stdin);
                                 printf("\n\n%cJugar otra vez? [s][n]",168 );
                                 scanf("%c",&resp3);
@@ -77,7 +76,7 @@ int main () {
                         case 5: {
                             do{
                                 system("cls");
-                                Ruleta();
+                                jug->dinero = Ruleta();
 
                                 fflush(stdin);
                                 printf("\n\n%cJugar otra vez? [s][n]",168 );
@@ -85,9 +84,15 @@ int main () {
                             }while(toupper(resp3)=='S');
                             break;
                         }
+                        default:
+                            system("cls");
+                            printf("|ERROR| Opcion no disponible\n");
+                            system("pause");
+                            break;
                     }
+                    system("cls");
                     fflush(stdin);
-                    printf("\n\n Deseas jugar otro juego? [s][n] \n");
+                    printf("Deseas jugar otro juego? [s][n] \n");
                     scanf("%c", &resp2);
 
                 } while (toupper(resp2) == 'S');
@@ -95,28 +100,30 @@ int main () {
             }
             case 2:{
                 system("cls");
-                printf("--------------------\n");
-                printf("Puntuacion\n");
-                printf("--------------------\n");
+                printf("-----------------------------------------------\n");
+                printf("\t\tPuntuacion\n");
+                printf("-----------------------------------------------\n");
+                ordenarpuntuaciones(jugadores);
+                printf("\n\n\t");
+                system("pause");
                 break; }
             case 3:{
                 system("cls");
-                printf("--------------------\n");
-                printf("Creditos\n");
-                printf("--------------------\n");
+                printf("--------------------------------------------------------------------------------\n");
+                printf("\t\t\t\tCreditos\n");
+                printf("--------------------------------------------------------------------------------\n");
                 creditos();
                 break;}
             case 4:{
-
-                escribir(jug);
+                escribir(jugadores);
                 exit(0); }
             default:{
-                printf("error"); }
+                system("cls");
+                printf("|ERROR| Opcion no disponible\n");
+                system("pause");
+                break; }
         }
-        fflush (stdin);
-        printf("\n\nDesea volver al menu principal?[s][n]\n");
-        scanf("%c",&resp);
-    }while (toupper(resp)=='S');
+    }while (resp == 's');
 }
 
 
