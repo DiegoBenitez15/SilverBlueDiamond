@@ -270,30 +270,10 @@ int repartidor(int *cartas,int *mazo,int *cmazo,int *ccarta,int suma)
     return 1;
 }
 
-void cartainicial(const int *cartas,int x,int y)
-{
-    gotoxy(x,y);printf(" _______________________");
-    gotoxy(x,y+1);printf("%c                      %d|",186,(*(cartas) % 13) + 1);
-    gotoxy(x,y+2);printf("%c                       %c",186,186);
-    gotoxy(x,y+3);printf("%c                       %c",186,186);
-    gotoxy(x,y+4);printf("%c                       %c",186,186);
-    gotoxy(x,y+5);printf("%c                       %c",186,186);
-    gotoxy(x,y+6);printf("%c                       %c",186,186);
-    gotoxy(x,y+7);printf("%c                       %c",186,186);
-    gotoxy(x,y+8);printf("%c                       %c",186,186);
-    gotoxy(x,y+9);printf("%c                       %c",186,186);
-    gotoxy(x,y+10);printf("%c                       %c",186,186);
-    gotoxy(x,y+11);printf("%c                       %c",186,186);
-    gotoxy(x,y+12);printf("%c                       %c",186,186);
-    gotoxy(x,y+13);printf("%c                       %c",186,186);
-    gotoxy(x,y+14);printf("%c                       %c",186,186);
-    gotoxy(x,y+15);printf("%c%d______________________%c",186,(*(cartas) % 13) + 1,186);
-}
-
 void cartaposterior(const int *carta,int x,int y)
 {
     gotoxy(x,y);printf("_____");
-    gotoxy(x,y+1);printf("   %d|",(*(carta) % 13) + 1);
+    gotoxy(x,y+1);printf("   %2u|",(*(carta) % 13) + 1);
     gotoxy(x,y+2);printf("     %c",186);
     gotoxy(x,y+3);printf("     %c",186);
     gotoxy(x,y+4);printf("     %c",186);
@@ -318,7 +298,7 @@ void imprimirb(int *cartas,int ii,int ccartas,int x ,int y)
     }
     else if(ii == 0)
     {
-        cartainicial(cartas+ii,x,y);
+        impcarta(cartas,x);
         imprimirb(cartas,ii+1,ccartas,x+25,y);
     }
     else if(ii > 0)
