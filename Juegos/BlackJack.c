@@ -192,7 +192,7 @@ int sumando(int *cards,int ii,int is,int suma)
 
 int comparar(const int *cards,int suma)
 {
-    if((cards[0]  % 13) + 1 == 13 && (cards[1]  % 13) + 1 == 1) // BlackJack
+    if((cards[0]  % 13) + 1 == 1 && (cards[1]  % 13) + 1 == 13) // BlackJack
     {
         return 3;
     }

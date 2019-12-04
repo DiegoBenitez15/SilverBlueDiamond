@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "Funciones.h"
+#include "../Funciones.h"
 
 void ordenarpuntuaciones(JUGADOR *cabeza)
 {

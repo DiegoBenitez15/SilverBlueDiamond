@@ -54,4 +54,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/CASINO.dir/DependInfo.cmake"
+  "CMakeFiles/Minunit.dir/DependInfo.cmake"
   )

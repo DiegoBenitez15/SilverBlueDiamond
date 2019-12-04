@@ -63,4 +63,5 @@ void bienvenido(){
 
     printf("\n\n\n");
     printf("\t\t\t\t\t..::INGRESE SU USUARIO::..\n ");
+    printf("\t\t\t\t\t\t ");
 }

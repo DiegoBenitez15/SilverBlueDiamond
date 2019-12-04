@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = C:\Users\diego\Desktop\SilverBlueDiamond46\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -76,6 +65,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,6 +122,19 @@ CASINO/fast:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/build
 .PHONY : CASINO/fast
 
+#=============================================================================
+# Target rules for targets named Minunit
+
+# Build rule for target.
+Minunit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Minunit
+.PHONY : Minunit
+
+# fast build rule for target.
+Minunit/fast:
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/build
+.PHONY : Minunit/fast
+
 Estetica/Blackjack-Estetica.obj: Estetica/Blackjack-Estetica.c.obj
 
 .PHONY : Estetica/Blackjack-Estetica.obj
@@ -129,6 +142,7 @@ Estetica/Blackjack-Estetica.obj: Estetica/Blackjack-Estetica.c.obj
 # target to build an object file
 Estetica/Blackjack-Estetica.c.obj:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Blackjack-Estetica.c.obj
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/Blackjack-Estetica.c.obj
 .PHONY : Estetica/Blackjack-Estetica.c.obj
 
 Estetica/Blackjack-Estetica.i: Estetica/Blackjack-Estetica.c.i
@@ -138,6 +152,7 @@ Estetica/Blackjack-Estetica.i: Estetica/Blackjack-Estetica.c.i
 # target to preprocess a source file
 Estetica/Blackjack-Estetica.c.i:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Blackjack-Estetica.c.i
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/Blackjack-Estetica.c.i
 .PHONY : Estetica/Blackjack-Estetica.c.i
 
 Estetica/Blackjack-Estetica.s: Estetica/Blackjack-Estetica.c.s
@@ -147,6 +162,7 @@ Estetica/Blackjack-Estetica.s: Estetica/Blackjack-Estetica.c.s
 # target to generate assembly for a file
 Estetica/Blackjack-Estetica.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Blackjack-Estetica.c.s
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/Blackjack-Estetica.c.s
 .PHONY : Estetica/Blackjack-Estetica.c.s
 
 Estetica/Craps-Estetica.obj: Estetica/Craps-Estetica.c.obj
@@ -156,6 +172,7 @@ Estetica/Craps-Estetica.obj: Estetica/Craps-Estetica.c.obj
 # target to build an object file
 Estetica/Craps-Estetica.c.obj:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Craps-Estetica.c.obj
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/Craps-Estetica.c.obj
 .PHONY : Estetica/Craps-Estetica.c.obj
 
 Estetica/Craps-Estetica.i: Estetica/Craps-Estetica.c.i
@@ -165,6 +182,7 @@ Estetica/Craps-Estetica.i: Estetica/Craps-Estetica.c.i
 # target to preprocess a source file
 Estetica/Craps-Estetica.c.i:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Craps-Estetica.c.i
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/Craps-Estetica.c.i
 .PHONY : Estetica/Craps-Estetica.c.i
 
 Estetica/Craps-Estetica.s: Estetica/Craps-Estetica.c.s
@@ -174,6 +192,7 @@ Estetica/Craps-Estetica.s: Estetica/Craps-Estetica.c.s
 # target to generate assembly for a file
 Estetica/Craps-Estetica.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Craps-Estetica.c.s
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/Craps-Estetica.c.s
 .PHONY : Estetica/Craps-Estetica.c.s
 
 Estetica/Jackpot-Estetica.obj: Estetica/Jackpot-Estetica.c.obj
@@ -183,6 +202,7 @@ Estetica/Jackpot-Estetica.obj: Estetica/Jackpot-Estetica.c.obj
 # target to build an object file
 Estetica/Jackpot-Estetica.c.obj:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Jackpot-Estetica.c.obj
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/Jackpot-Estetica.c.obj
 .PHONY : Estetica/Jackpot-Estetica.c.obj
 
 Estetica/Jackpot-Estetica.i: Estetica/Jackpot-Estetica.c.i
@@ -192,6 +212,7 @@ Estetica/Jackpot-Estetica.i: Estetica/Jackpot-Estetica.c.i
 # target to preprocess a source file
 Estetica/Jackpot-Estetica.c.i:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Jackpot-Estetica.c.i
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/Jackpot-Estetica.c.i
 .PHONY : Estetica/Jackpot-Estetica.c.i
 
 Estetica/Jackpot-Estetica.s: Estetica/Jackpot-Estetica.c.s
@@ -201,6 +222,7 @@ Estetica/Jackpot-Estetica.s: Estetica/Jackpot-Estetica.c.s
 # target to generate assembly for a file
 Estetica/Jackpot-Estetica.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Jackpot-Estetica.c.s
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/Jackpot-Estetica.c.s
 .PHONY : Estetica/Jackpot-Estetica.c.s
 
 Estetica/Main-Estetica.obj: Estetica/Main-Estetica.c.obj
@@ -210,6 +232,7 @@ Estetica/Main-Estetica.obj: Estetica/Main-Estetica.c.obj
 # target to build an object file
 Estetica/Main-Estetica.c.obj:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Main-Estetica.c.obj
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/Main-Estetica.c.obj
 .PHONY : Estetica/Main-Estetica.c.obj
 
 Estetica/Main-Estetica.i: Estetica/Main-Estetica.c.i
@@ -219,6 +242,7 @@ Estetica/Main-Estetica.i: Estetica/Main-Estetica.c.i
 # target to preprocess a source file
 Estetica/Main-Estetica.c.i:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Main-Estetica.c.i
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/Main-Estetica.c.i
 .PHONY : Estetica/Main-Estetica.c.i
 
 Estetica/Main-Estetica.s: Estetica/Main-Estetica.c.s
@@ -228,6 +252,7 @@ Estetica/Main-Estetica.s: Estetica/Main-Estetica.c.s
 # target to generate assembly for a file
 Estetica/Main-Estetica.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Main-Estetica.c.s
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/Main-Estetica.c.s
 .PHONY : Estetica/Main-Estetica.c.s
 
 Estetica/REDDOG-ESTETICA.obj: Estetica/REDDOG-ESTETICA.c.obj
@@ -237,6 +262,7 @@ Estetica/REDDOG-ESTETICA.obj: Estetica/REDDOG-ESTETICA.c.obj
 # target to build an object file
 Estetica/REDDOG-ESTETICA.c.obj:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/REDDOG-ESTETICA.c.obj
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/REDDOG-ESTETICA.c.obj
 .PHONY : Estetica/REDDOG-ESTETICA.c.obj
 
 Estetica/REDDOG-ESTETICA.i: Estetica/REDDOG-ESTETICA.c.i
@@ -246,6 +272,7 @@ Estetica/REDDOG-ESTETICA.i: Estetica/REDDOG-ESTETICA.c.i
 # target to preprocess a source file
 Estetica/REDDOG-ESTETICA.c.i:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/REDDOG-ESTETICA.c.i
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/REDDOG-ESTETICA.c.i
 .PHONY : Estetica/REDDOG-ESTETICA.c.i
 
 Estetica/REDDOG-ESTETICA.s: Estetica/REDDOG-ESTETICA.c.s
@@ -255,6 +282,7 @@ Estetica/REDDOG-ESTETICA.s: Estetica/REDDOG-ESTETICA.c.s
 # target to generate assembly for a file
 Estetica/REDDOG-ESTETICA.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/REDDOG-ESTETICA.c.s
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Estetica/REDDOG-ESTETICA.c.s
 .PHONY : Estetica/REDDOG-ESTETICA.c.s
 
 Juegos/BlackJack.obj: Juegos/BlackJack.c.obj
@@ -264,6 +292,7 @@ Juegos/BlackJack.obj: Juegos/BlackJack.c.obj
 # target to build an object file
 Juegos/BlackJack.c.obj:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/BlackJack.c.obj
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/BlackJack.c.obj
 .PHONY : Juegos/BlackJack.c.obj
 
 Juegos/BlackJack.i: Juegos/BlackJack.c.i
@@ -273,6 +302,7 @@ Juegos/BlackJack.i: Juegos/BlackJack.c.i
 # target to preprocess a source file
 Juegos/BlackJack.c.i:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/BlackJack.c.i
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/BlackJack.c.i
 .PHONY : Juegos/BlackJack.c.i
 
 Juegos/BlackJack.s: Juegos/BlackJack.c.s
@@ -282,7 +312,38 @@ Juegos/BlackJack.s: Juegos/BlackJack.c.s
 # target to generate assembly for a file
 Juegos/BlackJack.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/BlackJack.c.s
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/BlackJack.c.s
 .PHONY : Juegos/BlackJack.c.s
+
+Juegos/Jugador.obj: Juegos/Jugador.c.obj
+
+.PHONY : Juegos/Jugador.obj
+
+# target to build an object file
+Juegos/Jugador.c.obj:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/Jugador.c.obj
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/Jugador.c.obj
+.PHONY : Juegos/Jugador.c.obj
+
+Juegos/Jugador.i: Juegos/Jugador.c.i
+
+.PHONY : Juegos/Jugador.i
+
+# target to preprocess a source file
+Juegos/Jugador.c.i:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/Jugador.c.i
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/Jugador.c.i
+.PHONY : Juegos/Jugador.c.i
+
+Juegos/Jugador.s: Juegos/Jugador.c.s
+
+.PHONY : Juegos/Jugador.s
+
+# target to generate assembly for a file
+Juegos/Jugador.c.s:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/Jugador.c.s
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/Jugador.c.s
+.PHONY : Juegos/Jugador.c.s
 
 Juegos/REDDOG.obj: Juegos/REDDOG.c.obj
 
@@ -291,6 +352,7 @@ Juegos/REDDOG.obj: Juegos/REDDOG.c.obj
 # target to build an object file
 Juegos/REDDOG.c.obj:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/REDDOG.c.obj
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/REDDOG.c.obj
 .PHONY : Juegos/REDDOG.c.obj
 
 Juegos/REDDOG.i: Juegos/REDDOG.c.i
@@ -300,6 +362,7 @@ Juegos/REDDOG.i: Juegos/REDDOG.c.i
 # target to preprocess a source file
 Juegos/REDDOG.c.i:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/REDDOG.c.i
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/REDDOG.c.i
 .PHONY : Juegos/REDDOG.c.i
 
 Juegos/REDDOG.s: Juegos/REDDOG.c.s
@@ -309,6 +372,7 @@ Juegos/REDDOG.s: Juegos/REDDOG.c.s
 # target to generate assembly for a file
 Juegos/REDDOG.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/REDDOG.c.s
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/REDDOG.c.s
 .PHONY : Juegos/REDDOG.c.s
 
 Juegos/fcraps.obj: Juegos/fcraps.c.obj
@@ -318,6 +382,7 @@ Juegos/fcraps.obj: Juegos/fcraps.c.obj
 # target to build an object file
 Juegos/fcraps.c.obj:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/fcraps.c.obj
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/fcraps.c.obj
 .PHONY : Juegos/fcraps.c.obj
 
 Juegos/fcraps.i: Juegos/fcraps.c.i
@@ -327,6 +392,7 @@ Juegos/fcraps.i: Juegos/fcraps.c.i
 # target to preprocess a source file
 Juegos/fcraps.c.i:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/fcraps.c.i
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/fcraps.c.i
 .PHONY : Juegos/fcraps.c.i
 
 Juegos/fcraps.s: Juegos/fcraps.c.s
@@ -336,6 +402,7 @@ Juegos/fcraps.s: Juegos/fcraps.c.s
 # target to generate assembly for a file
 Juegos/fcraps.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/fcraps.c.s
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/fcraps.c.s
 .PHONY : Juegos/fcraps.c.s
 
 Juegos/jfuncc.obj: Juegos/jfuncc.c.obj
@@ -345,6 +412,7 @@ Juegos/jfuncc.obj: Juegos/jfuncc.c.obj
 # target to build an object file
 Juegos/jfuncc.c.obj:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/jfuncc.c.obj
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/jfuncc.c.obj
 .PHONY : Juegos/jfuncc.c.obj
 
 Juegos/jfuncc.i: Juegos/jfuncc.c.i
@@ -354,6 +422,7 @@ Juegos/jfuncc.i: Juegos/jfuncc.c.i
 # target to preprocess a source file
 Juegos/jfuncc.c.i:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/jfuncc.c.i
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/jfuncc.c.i
 .PHONY : Juegos/jfuncc.c.i
 
 Juegos/jfuncc.s: Juegos/jfuncc.c.s
@@ -363,6 +432,7 @@ Juegos/jfuncc.s: Juegos/jfuncc.c.s
 # target to generate assembly for a file
 Juegos/jfuncc.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/jfuncc.c.s
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/jfuncc.c.s
 .PHONY : Juegos/jfuncc.c.s
 
 Juegos/ruleta.obj: Juegos/ruleta.c.obj
@@ -372,6 +442,7 @@ Juegos/ruleta.obj: Juegos/ruleta.c.obj
 # target to build an object file
 Juegos/ruleta.c.obj:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/ruleta.c.obj
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/ruleta.c.obj
 .PHONY : Juegos/ruleta.c.obj
 
 Juegos/ruleta.i: Juegos/ruleta.c.i
@@ -381,6 +452,7 @@ Juegos/ruleta.i: Juegos/ruleta.c.i
 # target to preprocess a source file
 Juegos/ruleta.c.i:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/ruleta.c.i
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/ruleta.c.i
 .PHONY : Juegos/ruleta.c.i
 
 Juegos/ruleta.s: Juegos/ruleta.c.s
@@ -390,34 +462,8 @@ Juegos/ruleta.s: Juegos/ruleta.c.s
 # target to generate assembly for a file
 Juegos/ruleta.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/ruleta.c.s
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/ruleta.c.s
 .PHONY : Juegos/ruleta.c.s
-
-Jugador.obj: Jugador.c.obj
-
-.PHONY : Jugador.obj
-
-# target to build an object file
-Jugador.c.obj:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Jugador.c.obj
-.PHONY : Jugador.c.obj
-
-Jugador.i: Jugador.c.i
-
-.PHONY : Jugador.i
-
-# target to preprocess a source file
-Jugador.c.i:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Jugador.c.i
-.PHONY : Jugador.c.i
-
-Jugador.s: Jugador.c.s
-
-.PHONY : Jugador.s
-
-# target to generate assembly for a file
-Jugador.c.s:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Jugador.c.s
-.PHONY : Jugador.c.s
 
 main.obj: main.c.obj
 
@@ -446,6 +492,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/main.c.s
 .PHONY : main.c.s
 
+minunit.obj: minunit.c.obj
+
+.PHONY : minunit.obj
+
+# target to build an object file
+minunit.c.obj:
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/minunit.c.obj
+.PHONY : minunit.c.obj
+
+minunit.i: minunit.c.i
+
+.PHONY : minunit.i
+
+# target to preprocess a source file
+minunit.c.i:
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/minunit.c.i
+.PHONY : minunit.c.i
+
+minunit.s: minunit.c.s
+
+.PHONY : minunit.s
+
+# target to generate assembly for a file
+minunit.c.s:
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/minunit.c.s
+.PHONY : minunit.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -453,8 +526,9 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... CASINO
-	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Minunit
+	@echo ... edit_cache
 	@echo ... Estetica/Blackjack-Estetica.obj
 	@echo ... Estetica/Blackjack-Estetica.i
 	@echo ... Estetica/Blackjack-Estetica.s
@@ -473,6 +547,9 @@ help:
 	@echo ... Juegos/BlackJack.obj
 	@echo ... Juegos/BlackJack.i
 	@echo ... Juegos/BlackJack.s
+	@echo ... Juegos/Jugador.obj
+	@echo ... Juegos/Jugador.i
+	@echo ... Juegos/Jugador.s
 	@echo ... Juegos/REDDOG.obj
 	@echo ... Juegos/REDDOG.i
 	@echo ... Juegos/REDDOG.s
@@ -485,12 +562,12 @@ help:
 	@echo ... Juegos/ruleta.obj
 	@echo ... Juegos/ruleta.i
 	@echo ... Juegos/ruleta.s
-	@echo ... Jugador.obj
-	@echo ... Jugador.i
-	@echo ... Jugador.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... minunit.obj
+	@echo ... minunit.i
+	@echo ... minunit.s
 .PHONY : help
 
 

@@ -4,7 +4,6 @@
 
 #include "../Funciones.h"
 
-
 void cartaposterior(const int *carta,int x,int y)
 {
     gotoxy(x,y);printf("_____");
@@ -77,3 +76,4 @@ void botones2(int x,int y)
     gotoxy(x+60,y+20);printf("%c  [2]Retirarse         %c",186,186);
     gotoxy(x+60,y+21);printf("%c_______________________%c",186,186);
 }
+
