@@ -45,16 +45,6 @@ void ordenarpuntuaciones(JUGADOR *cabeza)
     }
 }
 
-void imprimirpunt(JUGADOR * jug)
-{
-    JUGADOR *temp;
-
-    for(temp = jug;temp != NULL;temp = temp->siguiente)
-    {
-        printf("%7s ........................ %7u\n",temp->nombre,temp->puntuacion);
-    }
-}
-
 JUGADOR* anadir(JUGADOR* cabeza,char *nombre,int dinero,int punt)
 {
     JUGADOR *jugador;

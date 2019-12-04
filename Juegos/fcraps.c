@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <ctype.h>
-#include "Funciones.h"
+#include "../Funciones.h"
 #include <stdio.h>
 
 int Craps()
@@ -122,49 +122,3 @@ int grnoo(int d1, int d2, int apst) {
     return apst * -1;
 }
 
-void dados (int dados){
-    if (dados == 1){
-        printf("%c%c%c%c%c%c%c%c%c\n",218,196,196,196,196,196,196,196,191);
-        printf("%c       %c\n",179,179);
-        printf("%c   %c   %c\n",179,254,179);
-        printf("%c       %c\n",179,179);
-        printf("%c%c%c%c%c%c%c%c%c\n",192,196,196,196,196,196,196,196,217);
-    }
-    if(dados == 2){
-        printf("%c%c%c%c%c%c%c%c%c\n",218,196,196,196,196,196,196,196,191);
-        printf("%c %c     %c\n",179,254,179);
-        printf("%c       %c\n",179,179);
-        printf("%c     %c %c\n",179,254,179);
-        printf("%c%c%c%c%c%c%c%c%c\n",192,196,196,196,196,196,196,196,217);
-    }
-    if(dados == 3){
-        printf("%c%c%c%c%c%c%c%c%c\n",218,196,196,196,196,196,196,196,191);
-        printf("%c %c     %c\n",179,254,179);
-        printf("%c   %c   %c\n",179,254,179);
-        printf("%c     %c %c\n",179,254,179);
-        printf("%c%c%c%c%c%c%c%c%c\n",192,196,196,196,196,196,196,196,217);
-
-    }
-    if(dados == 4){
-        printf("%c%c%c%c%c%c%c%c%c\n",218,196,196,196,196,196,196,196,191);
-        printf("%c %c   %c %c\n",179,254,254,179);
-        printf("%c       %c\n",179,179);
-        printf("%c %c   %c %c\n",179,254,254,179);
-        printf("%c%c%c%c%c%c%c%c%c\n",192,196,196,196,196,196,196,196,217);
-
-    }
-    if(dados == 5){
-        printf("%c%c%c%c%c%c%c%c%c\n",218,196,196,196,196,196,196,196,191);
-        printf("%c %c   %c %c\n",179,254,254,179);
-        printf("%c   %c   %c\n",179,254,179);
-        printf("%c %c   %c %c\n",179,254,254,179);
-        printf("%c%c%c%c%c%c%c%c%c\n",192,196,196,196,196,196,196,196,217);
-    }
-    if(dados == 6){
-        printf("%c%c%c%c%c%c%c%c%c\n",218,196,196,196,196,196,196,196,191);
-        printf("%c %c   %c %c\n",179,254,254,179);
-        printf("%c %c   %c %c\n",179,254,254,179);
-        printf("%c %c   %c %c\n",179,254,254,179);
-        printf("%c%c%c%c%c%c%c%c%c\n",192,196,196,196,196,196,196,196,217);
-    }
-}

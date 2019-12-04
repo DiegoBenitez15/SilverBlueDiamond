@@ -14,6 +14,7 @@ typedef struct jugador
     struct jugador *siguiente;
 }JUGADOR;
 //Jugador
+void bienvenido();
 JUGADOR* leer();
 void imprimirpunt(JUGADOR * jug);
 void ordenarpuntuaciones(JUGADOR * jugador);

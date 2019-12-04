@@ -17,10 +17,12 @@ int main () {
     JUGADOR *jugadores,*jug;
     char resp='s',resp2 ='s',resp3='s';
     jugadores = leer();
+    bienvenido();
     jug = jugador(&jugadores);
 
     do
     {
+        system("cls");
         fflush (stdin);
         casinoshow();
         printf("\n\n\n\t\t\t\t\tJugar[1]\n\n\n\t\t\t\t      Puntuacion[2]\n\n\n\t\t\t\t       Creditos[3]\n\n\n\t\t\t\t\tSalir[4]\n\n\n\t\t\t    Copyright (c) 2019 SilverDiamondBlue\n");

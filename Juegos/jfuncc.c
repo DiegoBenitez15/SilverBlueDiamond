@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "Funciones.h"
+#include "../Funciones.h"
 #include <time.h>
 
 
@@ -54,12 +54,6 @@ int res_apost(int result, int apost){
     }
     if (result < 4){
         return 0;
-    }
-}
-
-void imprimir_pantalla (int pantalla_jackpot[]){
-    for (int x = 0; x < 7; x++) {
-        printf("|%d|\t", pantalla_jackpot[x]);
     }
 }
 

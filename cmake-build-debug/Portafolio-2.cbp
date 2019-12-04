@@ -80,31 +80,43 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/BlackJack.c">
+		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/Estetica/Blackjack-Estetica.c">
+			<Option target="CASINO"/>
+		</Unit>
+		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/Estetica/Craps-Estetica.c">
+			<Option target="CASINO"/>
+		</Unit>
+		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/Estetica/Jackpot-Estetica.c">
+			<Option target="CASINO"/>
+		</Unit>
+		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/Estetica/Main-Estetica.c">
+			<Option target="CASINO"/>
+		</Unit>
+		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/Estetica/REDDOG-ESTETICA.c">
 			<Option target="CASINO"/>
 		</Unit>
 		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/Funciones.h">
 			<Option target="CASINO"/>
 		</Unit>
+		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/Juegos/BlackJack.c">
+			<Option target="CASINO"/>
+		</Unit>
+		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/Juegos/REDDOG.c">
+			<Option target="CASINO"/>
+		</Unit>
+		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/Juegos/fcraps.c">
+			<Option target="CASINO"/>
+		</Unit>
+		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/Juegos/jfuncc.c">
+			<Option target="CASINO"/>
+		</Unit>
+		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/Juegos/ruleta.c">
+			<Option target="CASINO"/>
+		</Unit>
 		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/Jugador.c">
 			<Option target="CASINO"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/REDDOG-ESTETICA.c">
-			<Option target="CASINO"/>
-		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/REDDOG.c">
-			<Option target="CASINO"/>
-		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/fcraps.c">
-			<Option target="CASINO"/>
-		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/jfuncc.c">
-			<Option target="CASINO"/>
-		</Unit>
 		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/main.c">
-			<Option target="CASINO"/>
-		</Unit>
-		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/ruleta.c">
 			<Option target="CASINO"/>
 		</Unit>
 		<Unit filename="C:/Users/diego/Desktop/SilverBlueDiamond46/CMakeLists.txt">

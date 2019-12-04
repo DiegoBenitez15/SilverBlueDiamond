@@ -122,32 +122,275 @@ CASINO/fast:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/build
 .PHONY : CASINO/fast
 
-BlackJack.obj: BlackJack.c.obj
+Estetica/Blackjack-Estetica.obj: Estetica/Blackjack-Estetica.c.obj
 
-.PHONY : BlackJack.obj
+.PHONY : Estetica/Blackjack-Estetica.obj
 
 # target to build an object file
-BlackJack.c.obj:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/BlackJack.c.obj
-.PHONY : BlackJack.c.obj
+Estetica/Blackjack-Estetica.c.obj:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Blackjack-Estetica.c.obj
+.PHONY : Estetica/Blackjack-Estetica.c.obj
 
-BlackJack.i: BlackJack.c.i
+Estetica/Blackjack-Estetica.i: Estetica/Blackjack-Estetica.c.i
 
-.PHONY : BlackJack.i
+.PHONY : Estetica/Blackjack-Estetica.i
 
 # target to preprocess a source file
-BlackJack.c.i:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/BlackJack.c.i
-.PHONY : BlackJack.c.i
+Estetica/Blackjack-Estetica.c.i:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Blackjack-Estetica.c.i
+.PHONY : Estetica/Blackjack-Estetica.c.i
 
-BlackJack.s: BlackJack.c.s
+Estetica/Blackjack-Estetica.s: Estetica/Blackjack-Estetica.c.s
 
-.PHONY : BlackJack.s
+.PHONY : Estetica/Blackjack-Estetica.s
 
 # target to generate assembly for a file
-BlackJack.c.s:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/BlackJack.c.s
-.PHONY : BlackJack.c.s
+Estetica/Blackjack-Estetica.c.s:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Blackjack-Estetica.c.s
+.PHONY : Estetica/Blackjack-Estetica.c.s
+
+Estetica/Craps-Estetica.obj: Estetica/Craps-Estetica.c.obj
+
+.PHONY : Estetica/Craps-Estetica.obj
+
+# target to build an object file
+Estetica/Craps-Estetica.c.obj:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Craps-Estetica.c.obj
+.PHONY : Estetica/Craps-Estetica.c.obj
+
+Estetica/Craps-Estetica.i: Estetica/Craps-Estetica.c.i
+
+.PHONY : Estetica/Craps-Estetica.i
+
+# target to preprocess a source file
+Estetica/Craps-Estetica.c.i:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Craps-Estetica.c.i
+.PHONY : Estetica/Craps-Estetica.c.i
+
+Estetica/Craps-Estetica.s: Estetica/Craps-Estetica.c.s
+
+.PHONY : Estetica/Craps-Estetica.s
+
+# target to generate assembly for a file
+Estetica/Craps-Estetica.c.s:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Craps-Estetica.c.s
+.PHONY : Estetica/Craps-Estetica.c.s
+
+Estetica/Jackpot-Estetica.obj: Estetica/Jackpot-Estetica.c.obj
+
+.PHONY : Estetica/Jackpot-Estetica.obj
+
+# target to build an object file
+Estetica/Jackpot-Estetica.c.obj:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Jackpot-Estetica.c.obj
+.PHONY : Estetica/Jackpot-Estetica.c.obj
+
+Estetica/Jackpot-Estetica.i: Estetica/Jackpot-Estetica.c.i
+
+.PHONY : Estetica/Jackpot-Estetica.i
+
+# target to preprocess a source file
+Estetica/Jackpot-Estetica.c.i:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Jackpot-Estetica.c.i
+.PHONY : Estetica/Jackpot-Estetica.c.i
+
+Estetica/Jackpot-Estetica.s: Estetica/Jackpot-Estetica.c.s
+
+.PHONY : Estetica/Jackpot-Estetica.s
+
+# target to generate assembly for a file
+Estetica/Jackpot-Estetica.c.s:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Jackpot-Estetica.c.s
+.PHONY : Estetica/Jackpot-Estetica.c.s
+
+Estetica/Main-Estetica.obj: Estetica/Main-Estetica.c.obj
+
+.PHONY : Estetica/Main-Estetica.obj
+
+# target to build an object file
+Estetica/Main-Estetica.c.obj:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Main-Estetica.c.obj
+.PHONY : Estetica/Main-Estetica.c.obj
+
+Estetica/Main-Estetica.i: Estetica/Main-Estetica.c.i
+
+.PHONY : Estetica/Main-Estetica.i
+
+# target to preprocess a source file
+Estetica/Main-Estetica.c.i:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Main-Estetica.c.i
+.PHONY : Estetica/Main-Estetica.c.i
+
+Estetica/Main-Estetica.s: Estetica/Main-Estetica.c.s
+
+.PHONY : Estetica/Main-Estetica.s
+
+# target to generate assembly for a file
+Estetica/Main-Estetica.c.s:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/Main-Estetica.c.s
+.PHONY : Estetica/Main-Estetica.c.s
+
+Estetica/REDDOG-ESTETICA.obj: Estetica/REDDOG-ESTETICA.c.obj
+
+.PHONY : Estetica/REDDOG-ESTETICA.obj
+
+# target to build an object file
+Estetica/REDDOG-ESTETICA.c.obj:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/REDDOG-ESTETICA.c.obj
+.PHONY : Estetica/REDDOG-ESTETICA.c.obj
+
+Estetica/REDDOG-ESTETICA.i: Estetica/REDDOG-ESTETICA.c.i
+
+.PHONY : Estetica/REDDOG-ESTETICA.i
+
+# target to preprocess a source file
+Estetica/REDDOG-ESTETICA.c.i:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/REDDOG-ESTETICA.c.i
+.PHONY : Estetica/REDDOG-ESTETICA.c.i
+
+Estetica/REDDOG-ESTETICA.s: Estetica/REDDOG-ESTETICA.c.s
+
+.PHONY : Estetica/REDDOG-ESTETICA.s
+
+# target to generate assembly for a file
+Estetica/REDDOG-ESTETICA.c.s:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Estetica/REDDOG-ESTETICA.c.s
+.PHONY : Estetica/REDDOG-ESTETICA.c.s
+
+Juegos/BlackJack.obj: Juegos/BlackJack.c.obj
+
+.PHONY : Juegos/BlackJack.obj
+
+# target to build an object file
+Juegos/BlackJack.c.obj:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/BlackJack.c.obj
+.PHONY : Juegos/BlackJack.c.obj
+
+Juegos/BlackJack.i: Juegos/BlackJack.c.i
+
+.PHONY : Juegos/BlackJack.i
+
+# target to preprocess a source file
+Juegos/BlackJack.c.i:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/BlackJack.c.i
+.PHONY : Juegos/BlackJack.c.i
+
+Juegos/BlackJack.s: Juegos/BlackJack.c.s
+
+.PHONY : Juegos/BlackJack.s
+
+# target to generate assembly for a file
+Juegos/BlackJack.c.s:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/BlackJack.c.s
+.PHONY : Juegos/BlackJack.c.s
+
+Juegos/REDDOG.obj: Juegos/REDDOG.c.obj
+
+.PHONY : Juegos/REDDOG.obj
+
+# target to build an object file
+Juegos/REDDOG.c.obj:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/REDDOG.c.obj
+.PHONY : Juegos/REDDOG.c.obj
+
+Juegos/REDDOG.i: Juegos/REDDOG.c.i
+
+.PHONY : Juegos/REDDOG.i
+
+# target to preprocess a source file
+Juegos/REDDOG.c.i:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/REDDOG.c.i
+.PHONY : Juegos/REDDOG.c.i
+
+Juegos/REDDOG.s: Juegos/REDDOG.c.s
+
+.PHONY : Juegos/REDDOG.s
+
+# target to generate assembly for a file
+Juegos/REDDOG.c.s:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/REDDOG.c.s
+.PHONY : Juegos/REDDOG.c.s
+
+Juegos/fcraps.obj: Juegos/fcraps.c.obj
+
+.PHONY : Juegos/fcraps.obj
+
+# target to build an object file
+Juegos/fcraps.c.obj:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/fcraps.c.obj
+.PHONY : Juegos/fcraps.c.obj
+
+Juegos/fcraps.i: Juegos/fcraps.c.i
+
+.PHONY : Juegos/fcraps.i
+
+# target to preprocess a source file
+Juegos/fcraps.c.i:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/fcraps.c.i
+.PHONY : Juegos/fcraps.c.i
+
+Juegos/fcraps.s: Juegos/fcraps.c.s
+
+.PHONY : Juegos/fcraps.s
+
+# target to generate assembly for a file
+Juegos/fcraps.c.s:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/fcraps.c.s
+.PHONY : Juegos/fcraps.c.s
+
+Juegos/jfuncc.obj: Juegos/jfuncc.c.obj
+
+.PHONY : Juegos/jfuncc.obj
+
+# target to build an object file
+Juegos/jfuncc.c.obj:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/jfuncc.c.obj
+.PHONY : Juegos/jfuncc.c.obj
+
+Juegos/jfuncc.i: Juegos/jfuncc.c.i
+
+.PHONY : Juegos/jfuncc.i
+
+# target to preprocess a source file
+Juegos/jfuncc.c.i:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/jfuncc.c.i
+.PHONY : Juegos/jfuncc.c.i
+
+Juegos/jfuncc.s: Juegos/jfuncc.c.s
+
+.PHONY : Juegos/jfuncc.s
+
+# target to generate assembly for a file
+Juegos/jfuncc.c.s:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/jfuncc.c.s
+.PHONY : Juegos/jfuncc.c.s
+
+Juegos/ruleta.obj: Juegos/ruleta.c.obj
+
+.PHONY : Juegos/ruleta.obj
+
+# target to build an object file
+Juegos/ruleta.c.obj:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/ruleta.c.obj
+.PHONY : Juegos/ruleta.c.obj
+
+Juegos/ruleta.i: Juegos/ruleta.c.i
+
+.PHONY : Juegos/ruleta.i
+
+# target to preprocess a source file
+Juegos/ruleta.c.i:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/ruleta.c.i
+.PHONY : Juegos/ruleta.c.i
+
+Juegos/ruleta.s: Juegos/ruleta.c.s
+
+.PHONY : Juegos/ruleta.s
+
+# target to generate assembly for a file
+Juegos/ruleta.c.s:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/ruleta.c.s
+.PHONY : Juegos/ruleta.c.s
 
 Jugador.obj: Jugador.c.obj
 
@@ -176,114 +419,6 @@ Jugador.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Jugador.c.s
 .PHONY : Jugador.c.s
 
-REDDOG-ESTETICA.obj: REDDOG-ESTETICA.c.obj
-
-.PHONY : REDDOG-ESTETICA.obj
-
-# target to build an object file
-REDDOG-ESTETICA.c.obj:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/REDDOG-ESTETICA.c.obj
-.PHONY : REDDOG-ESTETICA.c.obj
-
-REDDOG-ESTETICA.i: REDDOG-ESTETICA.c.i
-
-.PHONY : REDDOG-ESTETICA.i
-
-# target to preprocess a source file
-REDDOG-ESTETICA.c.i:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/REDDOG-ESTETICA.c.i
-.PHONY : REDDOG-ESTETICA.c.i
-
-REDDOG-ESTETICA.s: REDDOG-ESTETICA.c.s
-
-.PHONY : REDDOG-ESTETICA.s
-
-# target to generate assembly for a file
-REDDOG-ESTETICA.c.s:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/REDDOG-ESTETICA.c.s
-.PHONY : REDDOG-ESTETICA.c.s
-
-REDDOG.obj: REDDOG.c.obj
-
-.PHONY : REDDOG.obj
-
-# target to build an object file
-REDDOG.c.obj:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/REDDOG.c.obj
-.PHONY : REDDOG.c.obj
-
-REDDOG.i: REDDOG.c.i
-
-.PHONY : REDDOG.i
-
-# target to preprocess a source file
-REDDOG.c.i:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/REDDOG.c.i
-.PHONY : REDDOG.c.i
-
-REDDOG.s: REDDOG.c.s
-
-.PHONY : REDDOG.s
-
-# target to generate assembly for a file
-REDDOG.c.s:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/REDDOG.c.s
-.PHONY : REDDOG.c.s
-
-fcraps.obj: fcraps.c.obj
-
-.PHONY : fcraps.obj
-
-# target to build an object file
-fcraps.c.obj:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/fcraps.c.obj
-.PHONY : fcraps.c.obj
-
-fcraps.i: fcraps.c.i
-
-.PHONY : fcraps.i
-
-# target to preprocess a source file
-fcraps.c.i:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/fcraps.c.i
-.PHONY : fcraps.c.i
-
-fcraps.s: fcraps.c.s
-
-.PHONY : fcraps.s
-
-# target to generate assembly for a file
-fcraps.c.s:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/fcraps.c.s
-.PHONY : fcraps.c.s
-
-jfuncc.obj: jfuncc.c.obj
-
-.PHONY : jfuncc.obj
-
-# target to build an object file
-jfuncc.c.obj:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/jfuncc.c.obj
-.PHONY : jfuncc.c.obj
-
-jfuncc.i: jfuncc.c.i
-
-.PHONY : jfuncc.i
-
-# target to preprocess a source file
-jfuncc.c.i:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/jfuncc.c.i
-.PHONY : jfuncc.c.i
-
-jfuncc.s: jfuncc.c.s
-
-.PHONY : jfuncc.s
-
-# target to generate assembly for a file
-jfuncc.c.s:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/jfuncc.c.s
-.PHONY : jfuncc.c.s
-
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -311,33 +446,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/main.c.s
 .PHONY : main.c.s
 
-ruleta.obj: ruleta.c.obj
-
-.PHONY : ruleta.obj
-
-# target to build an object file
-ruleta.c.obj:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/ruleta.c.obj
-.PHONY : ruleta.c.obj
-
-ruleta.i: ruleta.c.i
-
-.PHONY : ruleta.i
-
-# target to preprocess a source file
-ruleta.c.i:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/ruleta.c.i
-.PHONY : ruleta.c.i
-
-ruleta.s: ruleta.c.s
-
-.PHONY : ruleta.s
-
-# target to generate assembly for a file
-ruleta.c.s:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/ruleta.c.s
-.PHONY : ruleta.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -347,30 +455,42 @@ help:
 	@echo ... CASINO
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... BlackJack.obj
-	@echo ... BlackJack.i
-	@echo ... BlackJack.s
+	@echo ... Estetica/Blackjack-Estetica.obj
+	@echo ... Estetica/Blackjack-Estetica.i
+	@echo ... Estetica/Blackjack-Estetica.s
+	@echo ... Estetica/Craps-Estetica.obj
+	@echo ... Estetica/Craps-Estetica.i
+	@echo ... Estetica/Craps-Estetica.s
+	@echo ... Estetica/Jackpot-Estetica.obj
+	@echo ... Estetica/Jackpot-Estetica.i
+	@echo ... Estetica/Jackpot-Estetica.s
+	@echo ... Estetica/Main-Estetica.obj
+	@echo ... Estetica/Main-Estetica.i
+	@echo ... Estetica/Main-Estetica.s
+	@echo ... Estetica/REDDOG-ESTETICA.obj
+	@echo ... Estetica/REDDOG-ESTETICA.i
+	@echo ... Estetica/REDDOG-ESTETICA.s
+	@echo ... Juegos/BlackJack.obj
+	@echo ... Juegos/BlackJack.i
+	@echo ... Juegos/BlackJack.s
+	@echo ... Juegos/REDDOG.obj
+	@echo ... Juegos/REDDOG.i
+	@echo ... Juegos/REDDOG.s
+	@echo ... Juegos/fcraps.obj
+	@echo ... Juegos/fcraps.i
+	@echo ... Juegos/fcraps.s
+	@echo ... Juegos/jfuncc.obj
+	@echo ... Juegos/jfuncc.i
+	@echo ... Juegos/jfuncc.s
+	@echo ... Juegos/ruleta.obj
+	@echo ... Juegos/ruleta.i
+	@echo ... Juegos/ruleta.s
 	@echo ... Jugador.obj
 	@echo ... Jugador.i
 	@echo ... Jugador.s
-	@echo ... REDDOG-ESTETICA.obj
-	@echo ... REDDOG-ESTETICA.i
-	@echo ... REDDOG-ESTETICA.s
-	@echo ... REDDOG.obj
-	@echo ... REDDOG.i
-	@echo ... REDDOG.s
-	@echo ... fcraps.obj
-	@echo ... fcraps.i
-	@echo ... fcraps.s
-	@echo ... jfuncc.obj
-	@echo ... jfuncc.i
-	@echo ... jfuncc.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... ruleta.obj
-	@echo ... ruleta.i
-	@echo ... ruleta.s
 .PHONY : help
 
 
