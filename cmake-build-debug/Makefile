@@ -345,35 +345,35 @@ Juegos/Jugador.c.s:
 	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/Jugador.c.s
 .PHONY : Juegos/Jugador.c.s
 
-Juegos/REDDOG.obj: Juegos/REDDOG.c.obj
+Juegos/Reddo.obj: Juegos/Reddo.c.obj
 
-.PHONY : Juegos/REDDOG.obj
+.PHONY : Juegos/Reddo.obj
 
 # target to build an object file
-Juegos/REDDOG.c.obj:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/REDDOG.c.obj
-	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/REDDOG.c.obj
-.PHONY : Juegos/REDDOG.c.obj
+Juegos/Reddo.c.obj:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/Reddo.c.obj
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/Reddo.c.obj
+.PHONY : Juegos/Reddo.c.obj
 
-Juegos/REDDOG.i: Juegos/REDDOG.c.i
+Juegos/Reddo.i: Juegos/Reddo.c.i
 
-.PHONY : Juegos/REDDOG.i
+.PHONY : Juegos/Reddo.i
 
 # target to preprocess a source file
-Juegos/REDDOG.c.i:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/REDDOG.c.i
-	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/REDDOG.c.i
-.PHONY : Juegos/REDDOG.c.i
+Juegos/Reddo.c.i:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/Reddo.c.i
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/Reddo.c.i
+.PHONY : Juegos/Reddo.c.i
 
-Juegos/REDDOG.s: Juegos/REDDOG.c.s
+Juegos/Reddo.s: Juegos/Reddo.c.s
 
-.PHONY : Juegos/REDDOG.s
+.PHONY : Juegos/Reddo.s
 
 # target to generate assembly for a file
-Juegos/REDDOG.c.s:
-	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/REDDOG.c.s
-	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/REDDOG.c.s
-.PHONY : Juegos/REDDOG.c.s
+Juegos/Reddo.c.s:
+	$(MAKE) -f CMakeFiles\CASINO.dir\build.make CMakeFiles/CASINO.dir/Juegos/Reddo.c.s
+	$(MAKE) -f CMakeFiles\Minunit.dir\build.make CMakeFiles/Minunit.dir/Juegos/Reddo.c.s
+.PHONY : Juegos/Reddo.c.s
 
 Juegos/fcraps.obj: Juegos/fcraps.c.obj
 
@@ -550,9 +550,9 @@ help:
 	@echo ... Juegos/Jugador.obj
 	@echo ... Juegos/Jugador.i
 	@echo ... Juegos/Jugador.s
-	@echo ... Juegos/REDDOG.obj
-	@echo ... Juegos/REDDOG.i
-	@echo ... Juegos/REDDOG.s
+	@echo ... Juegos/Reddo.obj
+	@echo ... Juegos/Reddo.i
+	@echo ... Juegos/Reddo.s
 	@echo ... Juegos/fcraps.obj
 	@echo ... Juegos/fcraps.i
 	@echo ... Juegos/fcraps.s

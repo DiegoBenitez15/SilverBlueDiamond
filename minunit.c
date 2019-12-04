@@ -121,7 +121,7 @@ MU_TEST(CAMPO) {
     d2 = 1;
 
 
-    mu_assert_int_eq(50, lna_pase(d1,d2,10));
+    mu_assert_int_eq(50, campo(d1,d2,10));
 }
 
 MU_TEST(CAMPO2) {
@@ -129,18 +129,38 @@ MU_TEST(CAMPO2) {
     d1 = 6;
     d2 = 6;
 
-    mu_assert_int_eq(100, lna_pase(d1,d2,10));
+    mu_assert_int_eq(100, campo(d1,d2,10));
 }
 
 MU_TEST(CAMPO3) {
     int d1,d2;
-    d1 = 3;
-    d2 = 4;
+    d1 = 2;
+    d2 = 5;
 
-    mu_assert_int_eq(-10, lna_pase(d1,d2,10));
+    mu_assert_int_eq(-10, campo(d1,d2,10));
 }
 
+MU_TEST(BIGEIGHT) {
+    int d1,d2;
+    d1 = 6;
+    d2 = 6;
+
+    mu_assert_int_eq(250, grnss(d1,d2,10));
+}
+
+MU_TEST(BIGSIX) {
+    int d1,d2;
+    d1 = 3;
+    d2 = 3;
+
+    mu_assert_int_eq(250, grnoo(d1,d2,10));
+}
+
+//Jackpot
+
+
 MU_TEST_SUITE(test_suite) {
+//    BlackJack
     MU_RUN_TEST(PEDIRCARTA);
     MU_RUN_TEST(PEDIRCARTA2);
     MU_RUN_TEST(SUMANDO_CARTAS);
@@ -149,6 +169,15 @@ MU_TEST_SUITE(test_suite) {
     MU_RUN_TEST(COMPARARACARTAS);
     MU_RUN_TEST(COMPARARACARTAS2);
     MU_RUN_TEST(COMPARARACARTAS3);
+//    Craps
+    MU_RUN_TEST(CAMPO);
+    MU_RUN_TEST(CAMPO2);
+    MU_RUN_TEST(CAMPO3);
+    MU_RUN_TEST(LINEADEPASE);
+    MU_RUN_TEST(LINEADEPASE2);
+    MU_RUN_TEST(BIGEIGHT);
+    MU_RUN_TEST(BIGSIX);
+//    Jackpot
 }
 
 int main(int argc, char *argv[]) {
