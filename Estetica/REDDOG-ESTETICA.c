@@ -21,6 +21,7 @@ void gotoxy(int x,int y)
 
 void pantalla(int *cartas,int ccartas,int x,int rd,JUGADOR * player)
 {
+    system("cls");
     int i;
 
     for(i=0;i<100;i++)
@@ -48,7 +49,7 @@ void pantalla(int *cartas,int ccartas,int x,int rd,JUGADOR * player)
     {
         printf("-");
     }
-    gotoxy(x,30);
+    gotoxy(x,26);
 }
 
 void imprimir(int *cartas,int ii,int ccartas,int x)

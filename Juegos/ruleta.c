@@ -11,6 +11,7 @@
 
 JUGADOR* Ruleta(JUGADOR* jugador)
 {
+    srand(time(NULL));
     char c;
     int n=0,m[DIM],i,premio,k=4,apuesta;
     do{
@@ -39,7 +40,7 @@ JUGADOR* Ruleta(JUGADOR* jugador)
                 scanf ("%d",&n);}while(n!=1 && n!=2);
             break;
 
-        case 'B' :
+        case 'C' :
             do {
                 printf ("\n\n\t\t\t\t\t%c Tres numeros que quieres apostar! %c\n\t\t\t\t\t"
                         "   %c(Comprendidos entre 1 y 36)%c\n\n\t\t\t\t\t{Ganas si sale al menos un numero apostado}",176,176,178,178);
@@ -49,7 +50,7 @@ JUGADOR* Ruleta(JUGADOR* jugador)
             }
             while((m[0]<=0 || m[0]>36) || (m[1]<=0 || m[1]>36) || (m[2]<=0 || m[2]>36));
             break;
-        case 'C' :
+        case 'D' :
             do {
                 printf ("\n\n\t\t\t\t\t%c Di el numero al que le apostaras %c\n\n\t\t\t\t\t"
                         "   %c(Comprendido entre 1 y 36)%c\n\n\t\t\t\t\t{Ganas si sale el numero apostado}",176,176,178,178);
@@ -117,7 +118,7 @@ JUGADOR* Ruleta(JUGADOR* jugador)
             {
                 printf("\n\n\t\t\t\t%c |Has Ganado!| %c\n", 176, 176);
                 apuesta += apuesta *3;
-                jugador->dinero += 25;
+                jugador->puntuacion += 25;
             }
             else
             {
@@ -144,7 +145,7 @@ char presentacion(JUGADOR* jugador)
             printf("%c",205);
         }
         printf ("\n\t\t\t\t%cQu%c tipo de apuesta quieres realizar?\n\n",168,130);
-        printf ("Pares o Impares[A]\n\n\n\nTerna[B]\n\n\n\nPleno[C]\n");
+        printf ("Pares o Impares[A]\n\n\n\nTerna[C]\n\n\n\nPleno[D]\n");
         scanf ("%c",&c);
         system("cls"); } while (c!='A' && c!='B' && c!='C' && c!='D');
     return c;

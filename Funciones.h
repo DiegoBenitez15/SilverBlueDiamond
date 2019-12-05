@@ -49,6 +49,7 @@ void cartaposterior(const int *carta,int x,int y);
 void cartainicial(const int *cartas,int x,int y);
 void botones2(int x,int y);
 void pantallaB(int *cartas,int ccartas,int x,int suma,JUGADOR *jugador);
+void ordenar2(int *cartas,int ccartas);
 
 //Craps
 

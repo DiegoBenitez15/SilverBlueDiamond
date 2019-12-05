@@ -49,7 +49,8 @@ JUGADOR* anadir(JUGADOR* cabeza,char *nombre,int dinero,int punt)
 {
     JUGADOR *jugador;
     jugador = malloc(sizeof(JUGADOR));
-    jugador->nombre = malloc(strlen(nombre) * sizeof(char));
+    jugador->nombre = malloc((strlen(nombre)+1) * sizeof(char));
+    jugador->nombre[(strlen(nombre))] = '\0';
     strcpy(jugador->nombre,nombre);
     jugador->dinero = dinero;
     jugador->puntuacion = punt;
@@ -62,7 +63,7 @@ JUGADOR* anadirnuevo(JUGADOR **cabeza, char *nombre)
 {
     JUGADOR *jugador;
     jugador = malloc(sizeof(JUGADOR));
-    jugador->nombre = malloc(strlen(nombre) * sizeof(char));
+    jugador->nombre = malloc((strlen(nombre)+1) * sizeof(char));
     strcpy(jugador->nombre,nombre);
     jugador->dinero = 1000;
     jugador->puntuacion = 0;
@@ -88,7 +89,7 @@ JUGADOR* busqueda(JUGADOR *cabeza,char *destino)
 
 JUGADOR* jugador(JUGADOR **jugadores)
 {
-    char *nombre = malloc(sizeof(char));
+    char nombre[45];
     gets(nombre);
     JUGADOR* p = *jugadores;
     p = busqueda(p,nombre);
