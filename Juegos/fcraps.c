@@ -41,7 +41,7 @@ JUGADOR* Craps(JUGADOR* jugador)
         case 'A': {
             gns = lna_pase(nd1, nd1, apst);
             if (gns > 1){
-                jugador->dinero = gns;
+                jugador->dinero += gns;
                 jugador->puntuacion += 5;
                 printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
             }
@@ -51,7 +51,7 @@ JUGADOR* Craps(JUGADOR* jugador)
         case 'C': {
             gns = campo(nd1, nd2, apst);
             if (gns > 1){
-                jugador->dinero = gns;
+                jugador->dinero += gns;
                 jugador->puntuacion += 2.5;
                 printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
             }
@@ -62,7 +62,7 @@ JUGADOR* Craps(JUGADOR* jugador)
             gns = grnss(nd1, nd2, apst);
             if (gns > 1){
                 printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
-                jugador->dinero = gns;
+                jugador->dinero += gns;
                 jugador->puntuacion += 15;
             }
             break;
@@ -71,7 +71,7 @@ JUGADOR* Craps(JUGADOR* jugador)
         case 'O': {
             gns = grnoo(nd1, nd2, apst);
             if (gns > 1){
-                jugador->dinero = gns;
+                jugador->dinero += gns;
                 jugador->puntuacion += 15;
                 printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
             }

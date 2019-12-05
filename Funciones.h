@@ -13,6 +13,7 @@ typedef struct jugador
     int puntuacion;
     struct jugador *siguiente;
 }JUGADOR;
+
 //Jugador
 void bienvenido();
 JUGADOR* leer();

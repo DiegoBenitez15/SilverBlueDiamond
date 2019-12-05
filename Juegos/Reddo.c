@@ -44,7 +44,7 @@ JUGADOR* REDDOG(JUGADOR* player)
         ccartas = carta(m,c,&ccmazo,ccartas);
         pantalla(cartas,ccartas,0,rd,player);
 
-        if(c[2] == c[0])
+        if((c[2] % 13)+1 == (c[0]% 13)+1)
         {
             apuesta += apuesta;
             player->puntuacion += 5;
@@ -77,7 +77,7 @@ JUGADOR* REDDOG(JUGADOR* player)
                     {
                         printf("-");
                     }
-                    apuesta += ((apuesta*2) *(-1));
+                    apuesta = apuesta * -1;
                 }
                 else if(p == 1)
                 {
@@ -91,7 +91,7 @@ JUGADOR* REDDOG(JUGADOR* player)
                     {
                         printf("-");
                     }
-                    apuesta += (apuesta) * tasadeapuestas(rd);
+                    apuesta += ((apuesta) * tasadeapuestas(rd));
                     player->puntuacion += 2.5;
                 }
 
@@ -99,7 +99,7 @@ JUGADOR* REDDOG(JUGADOR* player)
             }
             case 2:
             {
-                apuesta += apuesta * (-1);
+                apuesta = 0;
                 break;
             }
             default:
