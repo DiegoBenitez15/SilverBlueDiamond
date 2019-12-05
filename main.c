@@ -41,6 +41,7 @@ int main () {
                     scanf("%d", &opcion2);
                     switch (opcion2) {
                         case 1: {
+                            instrucciones_bj();
                             do{
                             system("cls");
                             BlackJack(jug);
@@ -51,6 +52,7 @@ int main () {
                             break;
                         }
                         case 2: {
+                            instrucciones_craps();
                             do{
                                 system("cls");
                                 jug = Craps(jug);
@@ -61,6 +63,7 @@ int main () {
                             break;
                         }
                         case 3: {
+                            instrucciones_jp();
                             do{
                                 system("cls");
                                 jug = Jackpot(jug);
@@ -71,6 +74,7 @@ int main () {
                             break;
                         }
                         case 4: {
+                            instrucciones_reddog();
                             do{
                                 system("cls");
                                 jug = REDDOG(jug);
@@ -84,7 +88,6 @@ int main () {
                             do{
                                 system("cls");
                                 jug = Ruleta(jug);
-
                                 fflush(stdin);
                                 printf("\n\n%cJugar otra vez? [s][n]",168 );
                                 scanf("%c",&resp3);

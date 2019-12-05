@@ -119,4 +119,90 @@ void mesacraps(){
     printf("\t\t\t%c\n",188);
 }
 
+void instrucciones_bj(){
+    printf("\t  __^__                                                         __^__ \n");
+    printf("\t ( ___ )-------------------------------------------------------( ___ ) \n");
+    printf("\t  | | |                                                         | | |  \n");
+    printf("\t  | | |     El blackjack consiste en un juego de cartas en      | | |  \n");
+    printf("\t  | | |        donde la suma de ellas debe dar 21 tienes        | | |  \n");
+    printf("\t  | | |    dos opciones pedir una nueva carta del mazo o si     | | |  \n");
+    printf("\t  | | |   no te quieres rriesgar tienes la opcion de quedarte.  | | |  \n");
+    printf("\t  | | |               Cada carta posee un valor:                | | |  \n");
+    printf("\t  | | |                                                         | | |  \n");
+    printf("\t  | | |                    1 = A = 1 o 11                       | | |  \n");
+    printf("\t  | | |                    1 = A = 1 o 11                       | | |  \n");
+    printf("\t  | | |        2 al 10 = su valor nominal [Ejemplo 2 = 2]       | | |  \n");
+    printf("\t  | | |                    10 al 13 = 10                        | | |  \n");
+    printf("\t  | | |                                                         | | |  \n");
+    printf("\t  | | |     La regla fundamental es no debes pasarte de 21,     | | |  \n");
+    printf("\t  | | |       tienes que tener una suma menor o igual a 21      | | |  \n");
+    printf("\t  | | |           y tener un numero mayor en la suma            | | |  \n");
+    printf("\t  | | |              que el repartidor para ganar               | | |  \n");
+    printf("\t  |_|_|                                                         |_|_|  \n");
+    printf("\t (_____)-------------------------------------------------------(_____) \n");
+    system("pause");
+}
 
+void instrucciones_reddog(){
+    printf("\t  __^__                                                       __^__  \n");
+    printf("\t ( ___ )-----------------------------------------------------( ___ ) \n");
+    printf("\t  | | |                                                       | | |  \n");
+    printf("\t  | | |        Red dog debes de conseguir una carta que       | | |  \n");
+    printf("\t  | | |     se encuentre entre el valor de las dos cartas     | | |  \n");
+    printf("\t  | | |       repartidas por el repatidor, tu decides si      | | |  \n");
+    printf("\t  | | |    seguir o quedarte, el red dog indica la cantidad   | | |  \n");
+    printf("\t  | | |      de cartas entre cada intervalo mientras menor    | | |  \n");
+    printf("\t  | | |              sea mayor sera la recompesa              | | |  \n");
+    printf("\t  | | |                                                       | | |  \n");
+    printf("\t  | | |        Apuesta                     Valor carta        | | |  \n");
+    printf("\t  | | |          1:5                          1= 14           | | |  \n");
+    printf("\t  | | |          2:4               2 al 13 = Su valor nominal | | |  \n");
+    printf("\t  | | |          3:2                                          | | |  \n");
+    printf("\t  | | |         n>3:1                                         | | |  \n");
+    printf("\t (_____)-----------------------------------------------------(_____) \n");
+    printf("\n");
+    system("pause");
+}
+void instrucciones_jp(){
+    printf("\t  __^__                                                        __^__  \n");
+    printf("\t ( ___ )------------------------------------------------------( ___ ) \n");
+    printf("\t  | | |                                                        | | |  \n");
+    printf("\t  | | |          Jackpot es un juego totalmente de azar,       | | |  \n");
+    printf("\t  | | |              consiste en accionar una maquina          | | |  \n");
+    printf("\t  | | |           y sacar todos los numeros consecutivos       | | |  \n");
+    printf("\t  | | |        posibles, las recompensas por apuestas son:     | | |  \n");
+    printf("\t  | | |                                                        | | |  \n");
+    printf("\t  | | |      4 aciertos la apuesta se multiplica por 5         | | |  \n");
+    printf("\t  | | |      5 aciertos la apuesta se multiplica por 10        | | |  \n");
+    printf("\t  | | |      6 aciertos la apuesta se multiplica por 15        | | |  \n");
+    printf("\t  | | |  7 aciertos la apuesta se multiplica por 100 [JACKPOT] | | |  \n");
+    printf("\t  | | |                                                        | | |  \n");
+    printf("\t (_____)------------------------------------------------------(_____) \n");
+    printf("\n");
+    system("pause");
+}
+void instrucciones_craps(){
+    printf("\t  __^__                                                                      __^__ \n");
+    printf("\t ( ___ )--------------------------------------------------------------------( ___ ) \n");
+    printf("\t  | | |                                                                      | | |  \n");
+    printf("\t  | | |            Craps consiste en apostar a la posible combinacion        | | |  \n");
+    printf("\t  | | |               de numeros que sumen dos dados, hay varias             | | |  \n");
+    printf("\t  | | |                       uniones para apostar que son:                  | | |  \n");
+    printf("\t  |_|_|                                                                      |_|_|  \n");
+    printf("\t  | | |          Linea de pase: se ganan cuando los dados suman 7 y 11.      | | |  \n");
+    printf("\t  | | |                   [La apuesta se multiplica por 10]                  | | |  \n");
+    printf("\t  | | |                                                                      | | |  \n");
+    printf("\t  | | |                 Campo: se gana cuando los dados suman                | | |  \n");
+    printf("\t  |_|_|                         2, 3, 4, 9, 10, 11, 12.                      |_|_|  \n");
+    printf("\t  | | |                  [La apuesta se multiplica por 5 y si                | | |  \n");
+    printf("\t  | | |                          son 2 y 12 se por 10]                       | | |  \n");
+    printf("\t  |_|_|                                                                      |_|_|  \n");
+    printf("\t  | | |                Big 6 y Big 8: ambos con el mismo concepto,           | | |  \n");
+    printf("\t  |_|_|                   se gana cuando los dados suman 6 u 8.              |_|_|  \n");
+    printf("\t  | | |                     [la apuesta se multiplica por 25]                | | |  \n");
+    printf("\t  |_|_|                                                                      |_|_|  \n");
+    printf("\t (_____)--------------------------------------------------------------------(_____) \n");
+    printf("\n");
+    system("pause");
+
+}

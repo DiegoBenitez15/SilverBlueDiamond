@@ -23,9 +23,11 @@ FILE* escribir(JUGADOR *p);
 JUGADOR* jugador(JUGADOR **jugadores);
 //Casino
 void casinoshow();
-void puerta();
 void creditos();
-void bien();
+void instrucciones_bj();
+void instrucciones_reddog();
+void instrucciones_jp();
+void instrucciones_craps();
 
 //Auxiliar
 
@@ -45,7 +47,7 @@ void imprimirb(int *cartas,int ii,int ccartas,int x ,int y);
 void cartaposterior(const int *carta,int x,int y);
 void cartainicial(const int *cartas,int x,int y);
 void botones2(int x,int y);
-void pantallaB(int *cartas,int ccartas,int x,int suma);
+void pantallaB(int *cartas,int ccartas,int x,int suma,JUGADOR *jugador);
 
 //Craps
 

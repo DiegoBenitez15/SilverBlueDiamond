@@ -41,7 +41,7 @@ JUGADOR* BlackJack(JUGADOR* jugador)
         {
             char op;
             system("cls");
-            pantallaB(J1,ccartas,0,sumaJ1);
+            pantallaB(J1,ccartas,0,sumaJ1,jugador);
             printf("\n%c Seleccionar %c = ",176,176);
             fflush(stdin);
             scanf(" %c",&op);
