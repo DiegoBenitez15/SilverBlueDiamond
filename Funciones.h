@@ -28,6 +28,7 @@ void instrucciones_bj();
 void instrucciones_reddog();
 void instrucciones_jp();
 void instrucciones_craps();
+void Perdiste();
 
 //Auxiliar
 
