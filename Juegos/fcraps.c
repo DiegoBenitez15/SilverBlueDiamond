@@ -12,7 +12,7 @@
 JUGADOR* Craps(JUGADOR* jugador)
 {
 
-    printf("\nDinero: $\t\t\tC\tR\tA\tP\tS\n");
+    printf("\nDinero: $%d\t\t\tC\tR\tA\tP\tS\n",jugador->dinero);
     for(int i=0; i< 85;i++){
         printf("%c",205);
     }

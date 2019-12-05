@@ -12,7 +12,7 @@ JUGADOR* Jackpot(JUGADOR* jugador){
     srand(time(NULL));
     int jckscrn[7];
     int apost, asrt;
-    printf("\n\t\t\tJ   A   C   K       P   O   T \t\t\t\n");
+    printf("\nDinero: $%d\t\t\tJ   A   C   K       P   O   T \t\t\t\n",jugador->dinero);
     for (int i  = 0; i < 100; i++) {
         printf("%c",205);
     }
@@ -79,12 +79,12 @@ int ganancias(int aciertos, int apuesta){
     int gns;
     if(aciertos >= 4 ){
         gns = res_apost(aciertos,apuesta);
-        printf("\n%d %c%cACIERTOS!! Has ganado %d",aciertos,173,173, gns);
+        printf("\n\n%d %c%c aciertos!!\n\n\t\tHas ganado +$%d",aciertos,173,173, gns);
         return gns;
     }
     else
     {
-        printf("\n\n\tHas Perdido, Vuelve a intentarlo\n\n\t\tPerdiste -$%d ",apuesta);
+        printf("\n\n\tHas Perdido\n\n\t\tPerdiste -$%d ",apuesta);
         return -1 * apuesta;
     }
 }
