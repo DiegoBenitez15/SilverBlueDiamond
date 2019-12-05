@@ -9,6 +9,7 @@
 
 JUGADOR* REDDOG(JUGADOR* player)
 {
+    srand(time(NULL));
     int mazo[52],*m,ccmazo,apuesta,rd,i;
     m= mazo,ccmazo = 52;apuesta = 0;
     int cartas[3],*c,ccartas;
@@ -21,12 +22,17 @@ JUGADOR* REDDOG(JUGADOR* player)
     }
     ordenar(c,ccartas);
     do{
-        printf("Cuanto es su apuesta: ");
+        system("cls");
+        printf("\nDinero: %d\t\t\t\t R E D  D O G\t\t\t\t\n",player->dinero);
+        for(i=0;i<100;i++)
+        {
+            printf("-");
+        }
+        printf("\nCuanto es su apuesta: ");
         scanf("%d",&apuesta);
     }while(apuesta > 500 || apuesta > player->dinero);
     player->dinero -= apuesta;
     rd = RedDog(cartas);
-    system("cls");
 
     if(rd == 12)
     {
@@ -93,13 +99,25 @@ JUGADOR* REDDOG(JUGADOR* player)
                         printf("-");
                     }
                     apuesta += ((apuesta) * tasadeapuestas(rd));
-                    player->puntuacion += 2.5;
+                    player->puntuacion += 3;
                 }
 
                 break;
             }
             case 2:
             {
+                system("cls");
+                for(i=0;i<100;i++)
+                {
+                    printf("-");
+                }
+
+                printf("\n\t\t\t\t\tT E   R E T I R A S T E\n");
+
+                for(i=0;i<100;i++)
+                {
+                    printf("-");
+                }
                 apuesta = 0;
                 break;
             }
@@ -110,14 +128,10 @@ JUGADOR* REDDOG(JUGADOR* player)
         }
     }
 
-    imprimir(cartas,0,ccartas,0);
+    imprimir(cartas,0,ccartas,0);;
 
-    printf("\n");
 
-    for(i=0;i<100;i++)
-    {
-        printf("-");
-    }
+
 
     printf("\n");
     printf("\nDinero Obtenido: %d",apuesta);

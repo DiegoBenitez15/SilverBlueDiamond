@@ -10,6 +10,7 @@
 
 JUGADOR* BlackJack(JUGADOR* jugador)
 {
+    srand(time(NULL));
     int mazo[52],cmazo; //Variables del mazo
     cmazo = 52;
     int ccartas,*J1,sumaJ1,r1; //Variables del jugador
@@ -19,16 +20,22 @@ JUGADOR* BlackJack(JUGADOR* jugador)
     int i,y,p1,p2,apuesta; //Variables para el programa
     p1 = 0;p2 = 0;
     srand(time(NULL));
+
     generar(mazo);
     ccartas = pedircartas(mazo,J1,ccartas,&cmazo);
-    ordenar(J1,ccartas);
+    ordenar2(J1,ccartas);
     sumaJ1 =sumando(J1,0,ccartas,sumaJ1);
     ccartas2 = pedircartas(mazo,J2,ccartas2,&cmazo);
-    ordenar(J2,ccartas2);
+    ordenar2(J2,ccartas2);
     sumaJ2 = sumando(J2,0,ccartas2,sumaJ2);
     do
     {
-        printf("\n%cCu%cnto va a apostar? ",168,160);
+        system("cls");
+        printf("\nDinero: $%d\t\t\t\t\tB  L  A  C  K     J  A  C  K\t\t\t\n",jugador->dinero);
+        for (i = 0; i < 100; i++) {
+            printf("%c",205);
+        }
+        printf("\nCuanto es su apuesta: ");
         scanf("%d",&apuesta);
     }while(apuesta > 500 || apuesta > jugador->dinero);
     jugador->dinero -= apuesta;
@@ -37,7 +44,7 @@ JUGADOR* BlackJack(JUGADOR* jugador)
     {
         if(p2 == 0)
         {
-            ordenar(J2,ccartas2);
+            ordenar2(J2,ccartas2);
             p2 = repartidor(J2,mazo,&cmazo,&ccartas2,sumaJ2);
             sumaJ2 = sumando(J2,0,ccartas2,0);
         }
@@ -56,7 +63,7 @@ JUGADOR* BlackJack(JUGADOR* jugador)
                 case '1':
                 {
                     ccartas = pedircartas(mazo,J1,ccartas,&cmazo);
-                    ordenar(J1,ccartas);
+                    ordenar2(J1,ccartas);
                     sumaJ1 = sumando(J1,0,ccartas,0);
                     break;
                 }
@@ -87,8 +94,8 @@ JUGADOR* BlackJack(JUGADOR* jugador)
     else if(y == 1)
     {
         printf("\n\n\t\t\t%c |H A S  G A N A D O| %c",176,176);
-        apuesta += apuesta *2;
-        jugador->puntuacion = 7;
+        apuesta += apuesta *3;
+        jugador->puntuacion += 7;
     }
     else if(y == 2)
     {
@@ -279,3 +286,20 @@ int repartidor(int *cartas,int *mazo,int *cmazo,int *ccarta,int suma)
     return 1;
 }
 
+void ordenar2(int *cartas,int ccartas)
+{
+    int i, j, aux;
+
+    for (i = 0 ; i < ccartas - 1; i++)
+    {
+        for (j = 0 ; j < ccartas - i - 1; j++)
+        {
+            if ((cartas[j] % 13)+1 < (cartas[j+1] % 13)+1)
+            {
+                aux       = cartas[j];
+                cartas[j]   = cartas[j+1];
+                cartas[j+1] = aux;
+            }
+        }
+    }
+}

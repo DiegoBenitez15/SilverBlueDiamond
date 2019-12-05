@@ -12,7 +12,6 @@ JUGADOR* Jackpot(JUGADOR* jugador){
     srand(time(NULL));
     int jckscrn[7];
     int apost, asrt;
-
     do
     {
         system("cls");
@@ -20,12 +19,11 @@ JUGADOR* Jackpot(JUGADOR* jugador){
         for (int i  = 0; i < 100; i++) {
             printf("%c",205);
         }
-        printf("\n%cCu%cnto va a apostar? ",168,160);
+        printf("\nCuanto es su apuesta: ");
         scanf("%d",&apost);
     }while(apost > 500 || apost > jugador->dinero); // El usuario Ingresa la cantidad apostada
     if (apost <= 0) {
         printf("\n%c Error. Digita nuevamente. %c",176,176);
-        system("cls");
     }
     printf("\n");
 
@@ -90,7 +88,7 @@ int ganancias(int aciertos, int apuesta){
     }
     else
     {
-        printf("\n\n\t\tHas Perdido\n\n\t\tPerdiste -$%d ",apuesta);
+        printf("\n\n\tHas Perdido\n\n\t\tPerdiste -$%d ",apuesta);
         return -1 * apuesta;
     }
 }
