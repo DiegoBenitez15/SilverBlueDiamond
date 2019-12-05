@@ -48,6 +48,7 @@ JUGADOR* Craps(JUGADOR* jugador)
                 jugador->puntuacion += 5;
                 printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
             }
+            jugador->dinero += gns;
             break;
         }
 
@@ -58,6 +59,7 @@ JUGADOR* Craps(JUGADOR* jugador)
                 jugador->puntuacion += 2.5;
                 printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
             }
+            jugador->dinero += gns;
             break;
         }
 
@@ -68,6 +70,7 @@ JUGADOR* Craps(JUGADOR* jugador)
                 jugador->dinero += gns;
                 jugador->puntuacion += 15;
             }
+            jugador->dinero += gns;
             break;
         }
 
@@ -78,6 +81,7 @@ JUGADOR* Craps(JUGADOR* jugador)
                 jugador->puntuacion += 15;
                 printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
             }
+            jugador->dinero += gns;
             break;
         }
         default: {
