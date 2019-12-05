@@ -116,6 +116,8 @@ JUGADOR* BlackJack(JUGADOR* jugador)
     }
     printf("\t\t\t\t%c Suma del Casino %c = %d",176,176,sumaJ2);
 
+    printf("\n\nDinero Obtenido: %d",apuesta);
+
     jugador->dinero += apuesta;
     return jugador;
 }
