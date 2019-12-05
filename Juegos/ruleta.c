@@ -12,9 +12,14 @@
 JUGADOR* Ruleta(JUGADOR* jugador)
 {
     char c;
-    int n=0,m[DIM],i,premio,k=4;
+    int n=0,m[DIM],i,premio,k=4,apuesta;
+    do{
+        printf("Cuanto es su apuesta: ");
+        scanf("%d",&apuesta);
+    }while(apuesta > 500 && apuesta > jugador->dinero);
+    jugador->dinero -= apuesta;
     srand(time(NULL));
-    c=presentacion ();
+    c=presentacion();
     switch(c) {
         case 'A' :
             do {
@@ -69,23 +74,33 @@ JUGADOR* Ruleta(JUGADOR* jugador)
         }
     switch ( c ) {
         case 'A' :
-            if ((n==1 && premio%2 == 0) || (n==2 && premio%2 == 1))
-                printf("\n\n\t\t\t\t  %c |Has Ganado!| %c\n",176,176);
-            else printf("\n\n\t\t\t\t  %c |Has Perdido!| %c\n",176,176);
+            if ((n == 1 && premio % 2 == 0) || (n == 2 && premio % 2 == 1)) {
+                printf("\n\n\t\t\t\t  %c |Has Ganado!| %c\n", 176, 176);
+                apuesta += apuesta;
+                jugador->puntuacion += 5;
+            } else printf("\n\n\t\t\t\t  %c |Has Perdido!| %c\n", 176, 176);
             break;
         case 'B' :
-            if ((n==1 && premio%3 == 1) || (n==2 && premio%3 == 2) || (n==3 && premio%2 == 0))
-                printf("\n\n\t\t\t\t  %c |Has Ganado!| %c\n",176,176);
-            else printf("\n\n\t\t\t\t  %c |Has Perdido!| %c\n",176,176);
+            if ((n == 1 && premio % 3 == 1) || (n == 2 && premio % 3 == 2) || (n == 3 && premio % 2 == 0)) {
+                printf("\n\n\t\t\t\t  %c |Has Ganado!| %c\n", 176, 176);
+                apuesta += apuesta;
+                jugador->puntuacion += 5;
+            } else printf("\n\n\t\t\t\t  %c |Has Perdido!| %c\n", 176, 176);
             break;
         case 'C' :
-            if ((m[0]==premio) || (m[1]==premio) || (m[2]==premio))
-                printf("\n\n\t\t\t\t%c |Has Ganado!| %c\n",176,176);
-            else printf("\n\n\t\t\t\t%c |Has Perdido!| %c\n",176,176);
+            if ((m[0] == premio) || (m[1] == premio) || (m[2] == premio)) {
+                printf("\n\n\t\t\t\t%c |Has Ganado!| %c\n", 176, 176);
+                apuesta += apuesta * 2;
+                jugador->puntuacion += 10;
+            } else printf("\n\n\t\t\t\t%c |Has Perdido!| %c\n", 176, 176);
             break;
         case 'D' :
-            if (n==premio)
-                printf("\n\n\t\t\t\t%c |Has Ganado!| %c\n",176,176);
+            if (n == premio)
+            {
+                printf("\n\n\t\t\t\t%c |Has Ganado!| %c\n", 176, 176);
+                apuesta += apuesta *3;
+                jugador->dinero += 25;
+            }
             else printf("\n\n\t\t\t\t%c |Has Perdido!| %c\n",176,176);
             break;
         default:
@@ -93,6 +108,7 @@ JUGADOR* Ruleta(JUGADOR* jugador)
             printf("%c Error. Digita nuevamente %c",176,176);
         }
     }
+    jugador += apuesta;
     system ("pause");
     return jugador;
 }

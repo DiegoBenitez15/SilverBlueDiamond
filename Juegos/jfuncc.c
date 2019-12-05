@@ -16,8 +16,11 @@ JUGADOR* Jackpot(JUGADOR* jugador){
     for (int i  = 0; i < 100; i++) {
         printf("%c",205);
     }
-    printf("\n%cCuanto va a apostar?",168);
-    scanf("%d", &apost); // El usuario Ingresa la cantidad apostada
+    do
+    {
+        printf("Cuanto es su apuesta: ");
+        scanf("%d",&apost);
+    }while(apost > 500 && apost > jugador->dinero); // El usuario Ingresa la cantidad apostada
     if (apost <= 0) {
         printf("\n%c Error. Digita nuevamente. %c",176,176);
     }

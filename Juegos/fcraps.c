@@ -21,8 +21,11 @@ JUGADOR* Craps(JUGADOR* jugador)
 
     int apst = 0, nd1 = 0, nd2 = 0, gns = 0;
     printf("\n");
-    printf("\t%cCu%cnto quieres apostar?\t",168,160);
-    scanf("%d", &apst);
+    do
+    {
+        printf("Cuanto es su apuesta: ");
+        scanf("%d",&apst);
+    }while(apst > 500 && apst > jugador->dinero);
     fflush(stdin);
     system("CLS");
     if (apst <= 0) {

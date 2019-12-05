@@ -20,9 +20,10 @@ JUGADOR* REDDOG(JUGADOR* player)
         ccartas = carta(m,c,&ccmazo,ccartas);
     }
     ordenar(c,ccartas);
-
-    printf("\nRealice su apuesta inicial: ");
-    scanf(" %d",&apuesta);
+    do{
+        printf("Cuanto es su apuesta: ");
+        scanf("%d",&apuesta);
+    }while(apuesta > 500 && apuesta > player->dinero);
     player->dinero -= apuesta;
     rd = RedDog(cartas);
     system("cls");

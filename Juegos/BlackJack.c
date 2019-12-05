@@ -16,7 +16,7 @@ JUGADOR* BlackJack(JUGADOR* jugador)
     J1 = (int*) calloc(10, sizeof(int));ccartas = 1; sumaJ1 = 0;
     int ccartas2,*J2,sumaJ2,r2; //Variables de la Casa
     J2 = (int*) calloc(10, sizeof(int));ccartas2 = 1; sumaJ2 = 0;
-    int i,y,p1,p2; //Variables para el programa
+    int i,y,p1,p2,apuesta; //Variables para el programa
     p1 = 0;p2 = 0;
     srand(time(NULL));
 
@@ -27,6 +27,12 @@ JUGADOR* BlackJack(JUGADOR* jugador)
     ccartas2 = pedircartas(mazo,J2,ccartas2,&cmazo);
     ordenar(J2,ccartas2);
     sumaJ2 = sumando(J2,0,ccartas2,sumaJ2);
+    do
+    {
+        printf("Cuanto es su apuesta: ");
+        scanf("%d",&apuesta);
+    }while(apuesta > 500 && apuesta > jugador->dinero);
+    jugador->dinero -= apuesta;
 
     while(p1 == 0 || p2 == 0)
     {
@@ -77,10 +83,13 @@ JUGADOR* BlackJack(JUGADOR* jugador)
     if(y == 0)
     {
         printf("\n\n\t\t\t%c |H A S   P E R D I D O| %c",176,176);
+        apuesta = 0;
     }
     else if(y == 1)
     {
         printf("\n\n\t\t\t%c |H A S  G A N A D O| %c",176,176);
+        apuesta += apuesta *2;
+        jugador->puntuacion = 7;
     }
     else if(y == 2)
     {
@@ -101,6 +110,7 @@ JUGADOR* BlackJack(JUGADOR* jugador)
     }
     printf("\t\t\t\t%c Suma del Casino %c = %d",176,176,sumaJ2);
 
+    jugador += apuesta;
     return jugador;
 }
 
