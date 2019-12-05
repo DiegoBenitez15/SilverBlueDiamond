@@ -43,12 +43,13 @@ JUGADOR* Craps(JUGADOR* jugador)
     printf("\n\n");
     switch (toupper(mdj)) {
         case 'A': {
-            gns = lna_pase(nd1, nd1, apst);
+            gns = lna_pase(nd1, nd2, apst);
             if (gns > 1){
                 jugador->dinero += gns;
                 jugador->puntuacion += 5;
                 printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
             }
+            jugador->dinero += gns;
             break;
         }
 
@@ -59,6 +60,7 @@ JUGADOR* Craps(JUGADOR* jugador)
                 jugador->puntuacion += 2.5;
                 printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
             }
+            jugador->dinero += gns;
             break;
         }
 
@@ -69,6 +71,7 @@ JUGADOR* Craps(JUGADOR* jugador)
                 jugador->dinero += gns;
                 jugador->puntuacion += 15;
             }
+            jugador->dinero += gns;
             break;
         }
 
@@ -79,6 +82,7 @@ JUGADOR* Craps(JUGADOR* jugador)
                 jugador->puntuacion += 15;
                 printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
             }
+            jugador->dinero += gns;
             break;
         }
         default: {
@@ -94,13 +98,16 @@ JUGADOR* Craps(JUGADOR* jugador)
 
 int lna_pase(int d1, int d2, int apst) {
     int gn = apst * 10;
-    if (d1 + d2 == 7) {
+    if ((d1 + d2) == 7) {
         return gn;
-    } else if (d1 +d2 == 11) {
+    } else if ((d1 +d2) == 11) {
         return gn;
-    } else
+    }
+    else
+    {
         printf("%cPerdiste! has perdido -%d Intentalo de nuevo",173,apst);
-    return -1 * apst;
+        return (-1) * apst;
+    }
 }
 
 int campo(int d1, int d2, int apst){
@@ -115,7 +122,7 @@ int campo(int d1, int d2, int apst){
         for (i = 5; i < 8; i++) {
             if ( d1 + d2 == i){
                 printf("%cPerdiste! has perdido -%d Intentalo de nuevo",173,apst);
-                return apst * -1;
+                return apst * (-1);
             }
         }
         return apst * 5;
@@ -128,9 +135,11 @@ int grnss(int d1, int d2, int apst){
     {
         return apst * 25;
     }
-
-    printf("%cPerdiste! has perdido -%d Intentalo de nuevo",173,apst);
-    return apst * -1;
+    else
+    {
+        printf("%cPerdiste! has perdido -%d Intentalo de nuevo",173,apst);
+        return (-1) * apst;
+    }
 }
 
 int grnoo(int d1, int d2, int apst) {
@@ -139,7 +148,10 @@ int grnoo(int d1, int d2, int apst) {
     {
         return apst * 25;
     }
-    printf("%cPerdiste! has perdido -%d Intentalo de nuevo",173,apst);
-    return apst * -1;
+    else
+    {
+        printf("%cPerdiste! has perdido -%d Intentalo de nuevo",173,apst);
+        return (-1) * apst;
+    }
 }
 

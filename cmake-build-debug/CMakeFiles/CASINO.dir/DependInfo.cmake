@@ -4,18 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/Estetica/Blackjack-Estetica.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/CASINO.dir/Estetica/Blackjack-Estetica.c.obj"
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/Estetica/Craps-Estetica.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/CASINO.dir/Estetica/Craps-Estetica.c.obj"
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/Estetica/Jackpot-Estetica.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/CASINO.dir/Estetica/Jackpot-Estetica.c.obj"
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/Estetica/Main-Estetica.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/CASINO.dir/Estetica/Main-Estetica.c.obj"
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/Estetica/REDDOG-ESTETICA.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/CASINO.dir/Estetica/REDDOG-ESTETICA.c.obj"
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/Juegos/BlackJack.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/CASINO.dir/Juegos/BlackJack.c.obj"
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/Juegos/Jugador.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/CASINO.dir/Juegos/Jugador.c.obj"
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/Juegos/Reddo.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/CASINO.dir/Juegos/Reddo.c.obj"
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/Juegos/fcraps.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/CASINO.dir/Juegos/fcraps.c.obj"
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/Juegos/jfuncc.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/CASINO.dir/Juegos/jfuncc.c.obj"
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/Juegos/ruleta.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/CASINO.dir/Juegos/ruleta.c.obj"
-  "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/main.c" "C:/Users/Bryan/Documents/Universidad/Fundamentos de Programacion/SilverBlueDiamond/cmake-build-debug/CMakeFiles/CASINO.dir/main.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond66/Estetica/Blackjack-Estetica.c" "C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/CASINO.dir/Estetica/Blackjack-Estetica.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond66/Estetica/Craps-Estetica.c" "C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/CASINO.dir/Estetica/Craps-Estetica.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond66/Estetica/Jackpot-Estetica.c" "C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/CASINO.dir/Estetica/Jackpot-Estetica.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond66/Estetica/Main-Estetica.c" "C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/CASINO.dir/Estetica/Main-Estetica.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond66/Estetica/REDDOG-ESTETICA.c" "C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/CASINO.dir/Estetica/REDDOG-ESTETICA.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond66/Juegos/BlackJack.c" "C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/CASINO.dir/Juegos/BlackJack.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond66/Juegos/Jugador.c" "C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/CASINO.dir/Juegos/Jugador.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond66/Juegos/Reddo.c" "C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/CASINO.dir/Juegos/Reddo.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond66/Juegos/fcraps.c" "C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/CASINO.dir/Juegos/fcraps.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond66/Juegos/jfuncc.c" "C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/CASINO.dir/Juegos/jfuncc.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond66/Juegos/ruleta.c" "C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/CASINO.dir/Juegos/ruleta.c.obj"
+  "C:/Users/diego/Desktop/SilverBlueDiamond66/main.c" "C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/CASINO.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
