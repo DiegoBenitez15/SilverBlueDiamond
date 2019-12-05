@@ -26,9 +26,9 @@ JUGADOR* REDDOG(JUGADOR* player)
         printf("\nDinero: %d\t\t\t\t R E D  D O G\t\t\t\t\n",player->dinero);
         for(i=0;i<100;i++)
         {
-            printf("-");
+            printf("%c",205);
         }
-        printf("\nCuanto es su apuesta: ");
+        printf("\n%cCu%cnto va a apostar?",168,160);
         scanf("%d",&apuesta);
     }while(apuesta > 500 || apuesta > player->dinero);
     player->dinero -= apuesta;
@@ -38,12 +38,12 @@ JUGADOR* REDDOG(JUGADOR* player)
     {
         for(i=0;i<100;i++)
         {
-            printf("-");
+            printf("%c",205);
         }
         printf("\n\t\t\t|EMPATE|Juego Consecutivo\n");
         for(i=0;i<100;i++)
         {
-            printf("-");
+            printf("%c",205);
         }
     }
     else if(rd == 13)
@@ -77,12 +77,12 @@ JUGADOR* REDDOG(JUGADOR* player)
                     system("cls");
                     for(i=0;i<100;i++)
                     {
-                        printf("-");
+                        printf("%c",205);
                     }
                     printf("\n\t\t\t\t\tLA CASA HA GANADO\n");
                     for(i=0;i<100;i++)
                     {
-                        printf("-");
+                        printf("%c",205);
                     }
                     apuesta = apuesta * -1;
                 }
@@ -91,12 +91,12 @@ JUGADOR* REDDOG(JUGADOR* player)
                     system("cls");
                     for(i=0;i<100;i++)
                     {
-                        printf("-");
+                        printf("%c",205);
                     }
                     printf("\n\t\t\t\t\tTU HAS GANADO\n");
                     for(i=0;i<100;i++)
                     {
-                        printf("-");
+                        printf("%c",205);
                     }
                     apuesta += ((apuesta) * tasadeapuestas(rd));
                     player->puntuacion += 3;
@@ -109,14 +109,14 @@ JUGADOR* REDDOG(JUGADOR* player)
                 system("cls");
                 for(i=0;i<100;i++)
                 {
-                    printf("-");
+                    printf("%c",205);
                 }
 
                 printf("\n\t\t\t\t\tT E   R E T I R A S T E\n");
 
                 for(i=0;i<100;i++)
                 {
-                    printf("-");
+                    printf("%c",205);
                 }
                 apuesta = 0;
                 break;

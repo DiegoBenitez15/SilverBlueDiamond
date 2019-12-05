@@ -31,11 +31,11 @@ JUGADOR* BlackJack(JUGADOR* jugador)
     do
     {
         system("cls");
-        printf("\nDinero: $%d\t\t\t\t\tB  L  A  C  K     J  A  C  K\t\t\t\n",jugador->dinero);
+        printf("\nDinero: $%d\t\t\t\tB  L  A  C  K     J  A  C  K\t\t\t\n",jugador->dinero);
         for (i = 0; i < 100; i++) {
             printf("%c",205);
         }
-        printf("\nCuanto es su apuesta: ");
+        printf("\n%cCu%cnto va a apostar?",168,160);
         scanf("%d",&apuesta);
     }while(apuesta > 500 || apuesta > jugador->dinero);
     jugador->dinero -= apuesta;

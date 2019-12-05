@@ -23,7 +23,7 @@ void pantalla(int *cartas,int ccartas,int x,int rd,JUGADOR * player)
 {
     system("cls");
     int i;
-    printf("\nDinero: %d\t\t\t\t\t R  E  D    D  O  G\t\t\t\tred dog: %d\n",player->dinero,rd);
+    printf("\nDinero: $%d\t\t\t\t\t R  E  D    D  O  G\t\t\t   red dog: %d\n",player->dinero,rd);
     for(i=0;i<100;i++)
     {
         printf("%c",205);
@@ -33,7 +33,7 @@ void pantalla(int *cartas,int ccartas,int x,int rd,JUGADOR * player)
     gotoxy(x,21);
     for(i=0;i<100;i++)
     {
-        printf("-");
+        printf("%c",205);
     }
     printf("\n");
 
@@ -42,7 +42,7 @@ void pantalla(int *cartas,int ccartas,int x,int rd,JUGADOR * player)
     printf("\n\n");
     for(i=0;i<100;i++)
     {
-        printf("-");
+        printf("%c",205);
     }
     gotoxy(x,26);
 }

@@ -104,7 +104,7 @@ MU_TEST(LINEADEPASE) {
     d2 = 4;
 
 
-    mu_assert_int_eq(100, lna_pase(d1,d2,10));
+    mu_assert_int_eq(50, lna_pase(d1,d2,10));
 }
 
 MU_TEST(LINEADEPASE2) {
@@ -129,7 +129,7 @@ MU_TEST(CAMPO2) {
     d1 = 6;
     d2 = 6;
 
-    mu_assert_int_eq(100, campo(d1,d2,10));
+    mu_assert_int_eq(20, campo(d1,d2,10));
 }
 
 MU_TEST(CAMPO3) {
@@ -145,7 +145,7 @@ MU_TEST(BIGEIGHT) {
     d1 = 4;
     d2 = 4;
 
-    mu_assert_int_eq(250, grnoo(d1,d2,10));
+    mu_assert_int_eq(70, grnoo(d1,d2,10));
 }
 
 MU_TEST(BIGSIX) {
@@ -153,7 +153,7 @@ MU_TEST(BIGSIX) {
     d1 = 3;
     d2 = 3;
 
-    mu_assert_int_eq(250, grnss(d1,d2,10));
+    mu_assert_int_eq(70, grnss(d1,d2,10));
 }
 
 //Jackpot

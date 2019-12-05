@@ -22,7 +22,7 @@ int main () {
         jug = jugador(&jugadores);
         if(jug->dinero <= 0)
         {
-            printf("\t\t\t\t\t    No tiene fondos\n\t\t\t\t\t");
+            printf("\t\t\t\t\t    %cNo tiene fondos!\n\t\t\t\t\t",173);
             system("pause");
         }
     }while(jug->dinero <= 0);
@@ -138,9 +138,9 @@ int main () {
                     case 3:{
                         system("cls");
                         printf("\n");
-                        printf("\t\t\t\tCreditos\n\n");
-                        for(int i =0; i < 50; i++){
-                            printf("%c",176);
+                        printf("\n\t\t%c%c%c%c%c%c%c  C  R  E  D  I  T  O  S   %c%c%c%c%c%c%c\n",219,219,219,178,177,178,178,178,178,177,178,219,219,219);
+                        for(int i =0; i < 100; i++){
+                            printf("%c",205);
                         }
                         creditos();
                         break;}
