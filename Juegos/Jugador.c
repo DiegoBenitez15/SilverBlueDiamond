@@ -89,7 +89,7 @@ JUGADOR* busqueda(JUGADOR *cabeza,char *destino)
 
 JUGADOR* jugador(JUGADOR **jugadores)
 {
-    char nombre[45];
+    char *nombre = malloc(20 * sizeof(char));
     gets(nombre);
     JUGADOR* p = *jugadores;
     p = busqueda(p,nombre);
@@ -127,7 +127,7 @@ JUGADOR* leer()
 {
     FILE* archivo;
     archivo = fopen("Jugadores","rt");
-    char *nombre = malloc(sizeof(char));
+    char *nombre = malloc(20 * sizeof(char));
     int dinero,puntuacion;
     JUGADOR *p = NULL;
 
