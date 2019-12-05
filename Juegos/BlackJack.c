@@ -19,7 +19,6 @@ JUGADOR* BlackJack(JUGADOR* jugador)
     int i,y,p1,p2,apuesta; //Variables para el programa
     p1 = 0;p2 = 0;
     srand(time(NULL));
-
     generar(mazo);
     ccartas = pedircartas(mazo,J1,ccartas,&cmazo);
     ordenar(J1,ccartas);
@@ -29,8 +28,7 @@ JUGADOR* BlackJack(JUGADOR* jugador)
     sumaJ2 = sumando(J2,0,ccartas2,sumaJ2);
     do
     {
-        system("cls");
-        printf("Cuanto es su apuesta: ");
+        printf("\n%cCu%cnto va a apostar? ",168,160);
         scanf("%d",&apuesta);
     }while(apuesta > 500 || apuesta > jugador->dinero);
     jugador->dinero -= apuesta;

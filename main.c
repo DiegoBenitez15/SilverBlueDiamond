@@ -33,7 +33,7 @@ int main () {
                 do {
                     system("cls");
                     printf("\n");
-                    printf("\t\t\t  %c%c%c%c%c%c%c  J   U   E   G   O  S    %c%c%c%c%c%c%c\n",219,219,219,178,177,178,178,178,178,177,178,219,219,219);
+                    printf("\t\t\t  %c%c%c%c%c%c%c    J   U   E   G   O  S    %c%c%c%c%c%c%c\n",219,219,219,178,177,178,178,178,178,177,178,219,219,219);
                     for (int i = 0; i < 100; i++) {
                         printf("%c",205);
                     }
@@ -110,7 +110,7 @@ int main () {
             }
             case 2:{
                 system("cls");
-                printf("\n\t\t%c%c%c%c%c%c%c  P  U  N  T  U  A  C  I  O  N   %c%c%c%c%c%c%c\n",219,219,219,178,177,178,178,178,178,177,178,219,219,219);
+                printf("\n\t\t%c%c%c%c%c%c%c   P  U  N  T  U  A  C  I  O  N   %c%c%c%c%c%c%c\n",219,219,219,178,177,178,178,178,178,177,178,219,219,219);
                 for(int i =0; i < 80; i++){
                     printf("%c",205);
                 }
@@ -122,9 +122,9 @@ int main () {
             case 3:{
                 system("cls");
                 printf("\n");
-                printf("\t\t\t\tCreditos\n\n");
-                for(int i =0; i < 50; i++){
-                    printf("%c",176);
+                printf("\n\t\t%c%c%c%c%c%c%c    C  R  E  D  I  T  O  S     %c%c%c%c%c%c%c\n",219,219,219,178,177,178,178,178,178,177,178,219,219,219);
+                for(int i =0; i < 80; i++){
+                    printf("%c",205);
                 }
                 creditos();
                 break;}
@@ -133,7 +133,7 @@ int main () {
                 exit(0); }
             default:{
                 system("cls");
-                printf("%c |ERROR| Opcion no disponible %c\n",176,176);
+                printf("%c Error. Digite Nuevamente %c",176,176);
                 system("pause");
                 break; }
         }

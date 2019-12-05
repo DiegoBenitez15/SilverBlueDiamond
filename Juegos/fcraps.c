@@ -11,20 +11,15 @@
 
 JUGADOR* Craps(JUGADOR* jugador)
 {
-
-    printf("\nDinero: $%d\t\t\tC\tR\tA\tP\tS\n",jugador->dinero);
-    for(int i=0; i< 85;i++){
-        printf("%c",205);
-    }
-
     char respt, mdj;
-
     int apst = 0, nd1 = 0, nd2 = 0, gns = 0;
-    printf("\n");
     do
     {
-        system("cls");
-        printf("Cuanto es su apuesta: ");
+        printf("\nDinero: $%d\t\t\tC\tR\tA\tP\tS\n",jugador->dinero);
+        for(int i=0; i< 85;i++){
+            printf("%c",205);
+        }
+        printf("\n%cCu%cnto va a apostar? ",168,160);
         scanf("%d",&apst);
     }while(apst > 500 || apst > jugador->dinero);
     fflush(stdin);
@@ -32,7 +27,7 @@ JUGADOR* Craps(JUGADOR* jugador)
     if (apst <= 0) {
         printf("\n%c Error. Digita nuevamente. %c",176,176);
     }
-    printf("\tElija el modo de apuesta que desea utilizar: \n\n\t\t\t\t");
+    printf("\t\t %cElija el modo de apuesta que desea utilizar: \n\n\t\t\t\t",176);
     mesacraps();
     mdj = getc(stdin);
     nd1 = 1 + rand() % (6 - 1);
@@ -47,7 +42,7 @@ JUGADOR* Craps(JUGADOR* jugador)
             if (gns > 1){
                 jugador->dinero += gns;
                 jugador->puntuacion += 5;
-                printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
+                printf("%cGanaste!  Tu ganancia fue de +$%d", 173, gns);
             }
             break;
         }
@@ -57,7 +52,7 @@ JUGADOR* Craps(JUGADOR* jugador)
             if (gns > 1){
                 jugador->dinero += gns;
                 jugador->puntuacion += 2.5;
-                printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
+                printf("%cGanaste! Tu ganancia fue de +$%d", 173, gns);
             }
             break;
         }
@@ -65,7 +60,7 @@ JUGADOR* Craps(JUGADOR* jugador)
         case 'S': {
             gns = grnss(nd1, nd2, apst);
             if (gns > 1){
-                printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
+                printf("%cGanaste! Tu ganancia fue de +$%d", 173, gns);
                 jugador->dinero += gns;
                 jugador->puntuacion += 15;
             }
@@ -77,7 +72,7 @@ JUGADOR* Craps(JUGADOR* jugador)
             if (gns > 1){
                 jugador->dinero += gns;
                 jugador->puntuacion += 15;
-                printf("%cGanaste! Tu ganancia fue de %d", 173, gns);
+                printf("%cGanaste! Tu ganancia fue de +$%d", 173, gns);
             }
             break;
         }
@@ -99,7 +94,7 @@ int lna_pase(int d1, int d2, int apst) {
     } else if (d1 +d2 == 11) {
         return gn;
     } else
-        printf("%cPerdiste! has perdido -%d Intentalo de nuevo",173,apst);
+        printf("%cPerdiste! Has perdido -$%d",173,apst);
     return -1 * apst;
 }
 
@@ -114,7 +109,7 @@ int campo(int d1, int d2, int apst){
     {
         for (i = 5; i < 8; i++) {
             if ( d1 + d2 == i){
-                printf("%cPerdiste! has perdido -%d Intentalo de nuevo",173,apst);
+                printf("%cPerdiste! Has perdido -$%d",173,apst);
                 return apst * -1;
             }
         }
@@ -129,7 +124,7 @@ int grnss(int d1, int d2, int apst){
         return apst * 25;
     }
 
-    printf("%cPerdiste! has perdido -%d Intentalo de nuevo",173,apst);
+    printf("%cPerdiste! Has perdido -$%d",173,apst);
     return apst * -1;
 }
 
@@ -139,7 +134,7 @@ int grnoo(int d1, int d2, int apst) {
     {
         return apst * 25;
     }
-    printf("%cPerdiste! has perdido -%d Intentalo de nuevo",173,apst);
+    printf("%cPerdiste! Has perdido -$%d",173,apst);
     return apst * -1;
 }
 

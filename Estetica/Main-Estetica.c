@@ -67,7 +67,7 @@ void bienvenido(){
 }
 
 void mesacraps(){
-    printf("\t\t\t%c",201);
+    printf("%c",201);
     for(int i = 0; i < 28; i++)
         printf("%c",205);
     printf("%c",203);

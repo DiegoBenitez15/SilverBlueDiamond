@@ -47,7 +47,7 @@ void imprimirb(int *cartas,int ii,int ccartas,int x ,int y)
 void pantallaB(int *cartas,int ccartas,int x,int suma, JUGADOR *jugador) {
     int i;
 
-    printf("\nDinero: $%d\t\t\t\t\tB  L  A  C  K     J  A  C  K\t\t\t%c Suma %c = %d\n",jugador->dinero,176,176,suma);
+    printf("\nDinero: $%d\t\t\t\tB  L  A  C  K     J  A  C  K\t\t\t%c Suma %c = %d\n",jugador->dinero,176,176,suma);
     for (i = 0; i < 100; i++) {
         printf("%c",205);
     }
