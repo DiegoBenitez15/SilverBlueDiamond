@@ -67,6 +67,8 @@ void bienvenido(){
 }
 
 void mesacraps(){
+    printf("-[A] Linea de Pase\n-[C] Campo\n-[S] Gran Seis\n-[O] Gran Ocho\n");
+
     printf("\t\t\t%c",201);
     for(int i = 0; i < 28; i++)
         printf("%c",205);

@@ -11,19 +11,18 @@
 
 JUGADOR* Craps(JUGADOR* jugador)
 {
-
-    printf("\nDinero: $%d\t\t\tC\tR\tA\tP\tS\n",jugador->dinero);
     for(int i=0; i< 85;i++){
         printf("%c",205);
     }
 
-    char respt, mdj;
+    char mdj;
 
     int apst = 0, nd1 = 0, nd2 = 0, gns = 0;
     printf("\n");
     do
     {
         system("cls");
+        printf("\nDinero:  $%d\n\n\t\t\tC\tR\tA\tP\tS\n",jugador->dinero);
         printf("Cuanto es su apuesta: ");
         scanf("%d",&apst);
     }while(apst > 500 || apst > jugador->dinero);
@@ -32,7 +31,7 @@ JUGADOR* Craps(JUGADOR* jugador)
     if (apst <= 0) {
         printf("\n%c Error. Digita nuevamente. %c",176,176);
     }
-    printf("\tElija el modo de apuesta que desea utilizar: \n\n\t\t\t\t");
+    printf("\t\t\tElija el modo de apuesta que desea utilizar: \n\n");
     mesacraps();
     mdj = getc(stdin);
     nd1 = 1 + rand() % (6 - 1);
