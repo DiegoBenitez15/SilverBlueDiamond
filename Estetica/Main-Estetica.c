@@ -207,3 +207,41 @@ void instrucciones_craps(){
     system("pause");
 
 }
+
+void Perdiste(){
+    printf("                                                             ..\n");
+    printf("                                  ,,,                         MM .M\n");
+    printf("                              ,!MMMMMMM!,                     MM MM  ,.\n");
+    printf("      ., .M                .MMMMMMMMMMMMMMMM.,          'MM.  MM MM .M'\n");
+    printf("    . M: M;  M          .MMMMMMMMMMMMMMMMMMMMMM,          'MM,:M M'!M'\n");
+    printf("   ;M MM M: .M        .MMMMMMMMMMMMMMMMMMMMMMMMMM,         'MM'...'M\n");
+    printf("    M;MM;M :MM      .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.       .MMMMMMMM\n");
+    printf("    'M;M'M MM      MMMMMM  MMMMMMMMMMMMMMMMM  MMMMMM.    ,,M.M.'MMM'\n");
+    printf("     MM'MMMM      MMMMMM @@ MMMMMMMMMMMMMMM @@ MMMMMMM.'M''MMMM;MM'\n");
+    printf("    MM., ,MM     MMMMMMMM  MMMMMMMMMMMMMMMMM  MMMMMMMMM      '.MMM\n");
+    printf("    'MM;MMMMMMMM.MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.      'MMM\n");
+    printf("     ''.'MMM'  .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM       MMMM\n");
+    printf("      MMC      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.      'MMMM\n");
+    printf("     .MM      :MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM''MMM       MMMMM\n");
+    printf("     MMM      :M  'MMMMMMMMMMMMM.MMMMM.MMMMMMMMMM'.MM  MM:M.    'MMMMM\n");
+    printf("    .MMM   ...:M: :M.'MMMMMMMMMMMMMMMMMMMMMMMMM'.M''   MM:MMMMMMMMMMMM'\n");
+    printf("   AMMM..MMMMM:M.    :M.'MMMMMMMMMMMMMMMMMMMM'.MM'     MM''''''''''''\n");
+    printf("   MMMMMMMMMMM:MM     'M'.M'MMMMMMMMMMMMMM'.MC'M'     .MM\n");
+    printf("    '''''''''':MM.       'MM!M.'M-M-M-M'M.'MM'        MMM\n");
+    printf("               MMM.            'MMMM!MMMM'            .MM\n");
+    printf("                MMM.             '''   ''            .MM'\n");
+    printf("                 MMM.                               MMM'\n");
+    printf("                  MMMM            ,.J.JJJJ.       .MMM'\n");
+    printf("                   MMMM.       'JJJJJJJ'JJJM   CMMMMM\n");
+    printf("                     MMMMM.    'JJJJJJJJ'JJJ .MMMMM'\n");
+    printf("                       MMMMMMMM.'  'JJJJJ'JJMMMMM'\n");
+    printf("                         'MMMMMMMMM'JJJJJ JJJJJ'\n");
+    printf("                            ''MMMMMMJJJJJJJJJJ'\n");
+    printf("                                    'JJJJJJJJ'\n\n");
+
+
+
+    printf("\t\t%c%c%c%c%c %c%c%c%c%c %c%c%c%c%c %c%c%c%c%c %c%c%c %c%c%c%c%c%c %c%c%c%c%c %c%c%c%c%c\n",177,219,223,223,219,177,219,223,223,223,177,219,223,223,219,177,219,223,223,220,223,219,223,177,219,223,223,223,219,223,223,219,223,223,177,219,223,223,223);
+    printf("\t\t%c%c%c%c%c %c%c%c%c%c %c%c%c%c%c %c%c  %c %c%c  %c%c%c%c%c%c  %c%c   %c%c%c%c%c\n",177,219,220,220,219,177,219,223,223,223,177,219,220,220,223,177,219,219,178,219,178,223,223,223,220,220,178,219,177,219,223,223,223);
+    printf("\t\t%c%c    %c%c%c%c%c %c%c  %c %c%c%c%c%c %c%c%c %c%c%c%c%c%c  %c%c   %c%c%c%c%c\n",177,219,177,219,220,220,220,177,219,219,177,219,220,220,223,220,219,220,177,219,220,220,220,219,178,219,177,219,220,220,220);
+}
