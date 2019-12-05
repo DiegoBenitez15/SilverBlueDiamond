@@ -32,7 +32,7 @@ void gotoxy(int x,int y);
 
 //BlackJack
 
-void BlackJack();
+JUGADOR* BlackJack(JUGADOR * jugador);
 void generar(int *p);
 int elimazo(int* mazo,int cmazo,int pos);
 int pedircartas(int *mazo,int *cartas,int ccartas,int *cmazo);
@@ -48,7 +48,7 @@ void pantallaB(int *cartas,int ccartas,int x,int suma);
 
 //Craps
 
-int Craps();
+JUGADOR* Craps(JUGADOR* jugador);
 void dados (int dados);
 int lna_pase(int d1, int d2, int apst);
 int campo(int d1, int d2, int apst);
@@ -58,7 +58,7 @@ void mesacraps();
 
 //Red Dogs
 
-int REDDOG();
+JUGADOR* REDDOG(JUGADOR* jugador);
 void generarcarta(int *mazo);
 void eliminarcarta(int *mazo,int *cmazo,int pos);
 int carta(int *mazo,int *carta,int *cmazo,int ccarta);
@@ -77,7 +77,7 @@ void botones();
 
 
 //Jackpot
-int Jackpot();
+JUGADOR* Jackpot(JUGADOR* jugador);
 int cantidad_acertados(int res[]);
 int res_apost(int result, int apost);
 void imprimir_pantalla (int pantalla_jackpot[]);
@@ -87,6 +87,6 @@ int ganancias(int aciertos, int apuesta);
 
 char presentacion();
 void espera(int segundos);
-int Ruleta();
+JUGADOR* Ruleta(JUGADOR* jugador);
 
 #endif //PORTAFOLIO_2_FUNCIONES_H

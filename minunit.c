@@ -109,7 +109,7 @@ MU_TEST(LINEADEPASE) {
 
 MU_TEST(LINEADEPASE2) {
     int d1,d2;
-    d1 = 3;
+    d1 = 2;
     d2 = 4;
 
     mu_assert_int_eq(-10, lna_pase(d1,d2,10));
@@ -142,10 +142,10 @@ MU_TEST(CAMPO3) {
 
 MU_TEST(BIGEIGHT) {
     int d1,d2;
-    d1 = 6;
-    d2 = 6;
+    d1 = 4;
+    d2 = 4;
 
-    mu_assert_int_eq(250, grnss(d1,d2,10));
+    mu_assert_int_eq(250, grnoo(d1,d2,10));
 }
 
 MU_TEST(BIGSIX) {
@@ -153,10 +153,114 @@ MU_TEST(BIGSIX) {
     d1 = 3;
     d2 = 3;
 
-    mu_assert_int_eq(250, grnoo(d1,d2,10));
+    mu_assert_int_eq(250, grnss(d1,d2,10));
 }
 
 //Jackpot
+
+MU_TEST(REPETIDOS)
+{
+    int result[] = {1,2,3,1,5,1,1};
+
+    mu_assert_int_eq(4,cantidad_acertados(result));
+}
+
+MU_TEST(REPETIDOS2)
+{
+    int result[] = {4,4,3,4,4,4,4};
+
+    mu_assert_int_eq(6,cantidad_acertados(result));
+}
+
+MU_TEST(JP_RESULT)
+{
+    int result = 4;
+
+    mu_assert_int_eq(50,res_apost(result,10));
+}
+
+MU_TEST(JP_RESULT2)
+{
+    int result = 6;
+
+    mu_assert_int_eq(150,res_apost(result,10));
+}
+
+MU_TEST(GANANCIAS)
+{
+    int result = 7;
+
+    mu_assert_int_eq(50,res_apost(result,50));
+}
+
+// Red Dog
+
+MU_TEST(SIESTAENELINTERVALO)
+{
+    int *cartas = malloc(3 * sizeof(int));
+    cartas[0] = 2;
+    cartas[1] = 8;
+    cartas[2] = 5;
+
+    mu_assert_int_eq(1,intervalo(cartas));
+}
+
+MU_TEST(SIESTAENELINTERVALO2)
+{
+    int *cartas = malloc(3 * sizeof(int));
+    cartas[0] = 2;
+    cartas[1] = 12;
+    cartas[2] = 5;
+
+    mu_assert_int_eq(1,intervalo(cartas));
+}
+
+MU_TEST(NOESTAENELINTERVALO)
+{
+    int *cartas = malloc(3 * sizeof(int));
+    cartas[0] = 0;
+    cartas[1] = 12;
+    cartas[2] = 4;
+
+    mu_assert_int_eq(0,intervalo(cartas));
+}
+
+MU_TEST(NOESTAENELINTERVALO2)
+{
+    int *cartas = malloc(3 * sizeof(int));
+    cartas[0] = 1;
+    cartas[1] = 10;
+    cartas[2] = 12;
+
+    mu_assert_int_eq(0,intervalo(cartas));
+}
+
+MU_TEST(REDDOG1)
+{
+    int *cartas = malloc(2 * sizeof(int));
+    cartas[0] = 2;
+    cartas[1] = 8;
+
+    mu_assert_int_eq(5,RedDog(cartas));
+}
+
+MU_TEST(REDDOG2)
+{
+    int *cartas = malloc(2 * sizeof(int));
+    cartas[0] = 2;
+    cartas[1] = 12;
+
+    mu_assert_int_eq(9,RedDog(cartas));
+}
+
+MU_TEST(REDDOG3)
+{
+    int *cartas = malloc(2 * sizeof(int));
+    cartas[0] = 0;
+    cartas[1] = 11;
+
+    mu_assert_int_eq(1,RedDog(cartas));
+}
 
 
 MU_TEST_SUITE(test_suite) {
@@ -178,6 +282,18 @@ MU_TEST_SUITE(test_suite) {
     MU_RUN_TEST(BIGEIGHT);
     MU_RUN_TEST(BIGSIX);
 //    Jackpot
+    MU_RUN_TEST(REPETIDOS);
+    MU_RUN_TEST(REPETIDOS2);
+    MU_RUN_TEST(JP_RESULT);
+    MU_RUN_TEST(JP_RESULT2);
+//    RedDog
+    MU_RUN_TEST(SIESTAENELINTERVALO);
+    MU_RUN_TEST(SIESTAENELINTERVALO2);
+    MU_RUN_TEST(NOESTAENELINTERVALO);
+    MU_RUN_TEST(NOESTAENELINTERVALO2);
+    MU_RUN_TEST(REDDOG1);
+    MU_RUN_TEST(REDDOG2);
+    MU_RUN_TEST(REDDOG3);
 }
 
 int main(int argc, char *argv[]) {

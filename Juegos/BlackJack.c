@@ -8,7 +8,7 @@
 #include <stdio.h>
 
 
-void BlackJack()
+JUGADOR* BlackJack(JUGADOR* jugador)
 {
     int mazo[52],cmazo; //Variables del mazo
     cmazo = 52;
@@ -101,7 +101,7 @@ void BlackJack()
     }
     printf("\t\t\t\t%c Suma del Casino %c = %d",176,176,sumaJ2);
 
-    return;
+    return jugador;
 }
 
 

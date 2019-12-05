@@ -43,7 +43,7 @@ int main () {
                         case 1: {
                             do{
                             system("cls");
-                            BlackJack();
+                            BlackJack(jug);
                             fflush(stdin);
                             printf("\n\n%cJugar otra vez? [s][n]",168 );
                             scanf("%c",&resp3);
@@ -53,7 +53,7 @@ int main () {
                         case 2: {
                             do{
                                 system("cls");
-                                jug->dinero += Craps();
+                                jug = Craps(jug);
                                 fflush(stdin);
                                 printf("\n\n%cJugar otra vez? [s][n]",168 );
                                 scanf("%c",&resp3);
@@ -63,7 +63,7 @@ int main () {
                         case 3: {
                             do{
                                 system("cls");
-                                jug->dinero += Jackpot();
+                                jug = Jackpot(jug);
                                 fflush(stdin);
                                 printf("\n\n%cJugar otra vez? [s][n]",168 );
                                 scanf("%c",&resp3);
@@ -73,7 +73,7 @@ int main () {
                         case 4: {
                             do{
                                 system("cls");
-                                jug->dinero += REDDOG();
+                                jug = REDDOG(jug);
                                 fflush(stdin);
                                 printf("\n\n%cJugar otra vez? [s][n]",168 );
                                 scanf("%c",&resp3);
@@ -83,7 +83,7 @@ int main () {
                         case 5: {
                             do{
                                 system("cls");
-                                jug->dinero = Ruleta();
+                                jug = Ruleta(jug);
 
                                 fflush(stdin);
                                 printf("\n\n%cJugar otra vez? [s][n]",168 );
