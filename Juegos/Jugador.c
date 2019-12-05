@@ -113,7 +113,7 @@ FILE* escribir(JUGADOR *p)
 
     while(p != NULL)
     {
-        fprintf(archivo,"\t\t%s\n%d\n%d\n",p->nombre,p->dinero,p->puntuacion);
+        fprintf(archivo,"%s\n%d\n%d\n",p->nombre,p->dinero,p->puntuacion);
         p = p->siguiente;
     }
 
@@ -129,7 +129,7 @@ JUGADOR* leer()
     char *nombre = malloc(sizeof(char));
     int dinero,puntuacion;
     JUGADOR *p = NULL;
-    printf("\t\t");
+
     while(fscanf(archivo,"%s\n%d\n%d\n",nombre,&dinero,&puntuacion) != EOF)
     {
         p = anadir(p,nombre,dinero,puntuacion);
