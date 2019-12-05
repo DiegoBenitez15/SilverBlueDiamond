@@ -121,6 +121,7 @@ void mesacraps(){
 }
 
 void instrucciones_bj(){
+    system("cls");
     printf("\t  __^__                                                         __^__ \n");
     printf("\t ( ___ )-------------------------------------------------------( ___ ) \n");
     printf("\t  | | |                                                         | | |  \n");
@@ -145,6 +146,7 @@ void instrucciones_bj(){
 }
 
 void instrucciones_reddog(){
+    system("cls");
     printf("\t  __^__                                                       __^__  \n");
     printf("\t ( ___ )-----------------------------------------------------( ___ ) \n");
     printf("\t  | | |                                                       | | |  \n");
@@ -165,6 +167,7 @@ void instrucciones_reddog(){
     system("pause");
 }
 void instrucciones_jp(){
+    system("cls");
     printf("\t  __^__                                                        __^__  \n");
     printf("\t ( ___ )------------------------------------------------------( ___ ) \n");
     printf("\t  | | |                                                        | | |  \n");
@@ -183,6 +186,7 @@ void instrucciones_jp(){
     system("pause");
 }
 void instrucciones_craps(){
+    system("cls");
     printf("\t  __^__                                                                      __^__ \n");
     printf("\t ( ___ )--------------------------------------------------------------------( ___ ) \n");
     printf("\t  | | |                                                                      | | |  \n");
