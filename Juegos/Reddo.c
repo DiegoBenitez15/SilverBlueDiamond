@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <time.h>
 
-JUGADOR* REDDOG(JUGADOR* jugador)
+JUGADOR* REDDOG(JUGADOR* player)
 {
     int mazo[52],*m,ccmazo,apuesta,rd,i;
     m= mazo,ccmazo = 52;apuesta = 0;
@@ -23,6 +23,7 @@ JUGADOR* REDDOG(JUGADOR* jugador)
 
     printf("\nRealice su apuesta inicial: ");
     scanf(" %d",&apuesta);
+    player->dinero -= apuesta;
     rd = RedDog(cartas);
     system("cls");
 
@@ -41,17 +42,18 @@ JUGADOR* REDDOG(JUGADOR* jugador)
     else if(rd == 13)
     {
         ccartas = carta(m,c,&ccmazo,ccartas);
-        pantalla(cartas,ccartas,0,rd);
+        pantalla(cartas,ccartas,0,rd,player);
 
         if(c[2] == c[0])
         {
-            jugador->dinero += apuesta + apuesta;
+            apuesta += apuesta;
+            player->puntuacion += 5;
         }
     }
     else
     {
         int op;
-        pantalla(cartas,ccartas,0,rd);
+        pantalla(cartas,ccartas,0,rd,player);
         fflush(stdin);
         scanf(" %d",&op);
 
@@ -75,7 +77,7 @@ JUGADOR* REDDOG(JUGADOR* jugador)
                     {
                         printf("-");
                     }
-                    jugador->dinero = (apuesta*2) *(-1);
+                    apuesta += ((apuesta*2) *(-1));
                 }
                 else if(p == 1)
                 {
@@ -89,15 +91,15 @@ JUGADOR* REDDOG(JUGADOR* jugador)
                     {
                         printf("-");
                     }
-                    jugador->dinero += (apuesta) * tasadeapuestas(rd);
-                    jugador->puntuacion += 2.5;
+                    apuesta += (apuesta) * tasadeapuestas(rd);
+                    player->puntuacion += 2.5;
                 }
 
                 break;
             }
             case 2:
             {
-                jugador->dinero += apuesta * (-1);
+                apuesta += apuesta * (-1);
                 break;
             }
             default:
@@ -119,7 +121,8 @@ JUGADOR* REDDOG(JUGADOR* jugador)
     printf("\n");
     printf("\nDinero Obtenido: %d",apuesta);
 
-    return jugador;
+    player->dinero += apuesta;
+    return player;
 }
 
 void generarcarta(int *mazo)

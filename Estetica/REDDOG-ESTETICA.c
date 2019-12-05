@@ -19,7 +19,7 @@ void gotoxy(int x,int y)
     SetConsoleCursorPosition(hCon,dwPos);
 }
 
-void pantalla(int *cartas,int ccartas,int x,int rd)
+void pantalla(int *cartas,int ccartas,int x,int rd,JUGADOR * player)
 {
     int i;
 
@@ -27,7 +27,7 @@ void pantalla(int *cartas,int ccartas,int x,int rd)
     {
         printf("-");
     }
-    printf("\n\t\t\t\t\t R E D  D O G\t\t\t\tred dog: %d\n",rd);
+    printf("\nDinero: %d\t\t\t\t\t R E D  D O G\t\t\t\tred dog: %d\n",player->dinero,rd);
     for(i=0;i<100;i++)
     {
         printf("-");

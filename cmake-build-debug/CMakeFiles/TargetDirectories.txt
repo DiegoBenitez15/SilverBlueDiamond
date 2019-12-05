@@ -1,4 +1,4 @@
-C:/Users/sebastian/CLionProjects/SilverBlueDiamond0/cmake-build-debug/CMakeFiles/CASINO.dir
-C:/Users/sebastian/CLionProjects/SilverBlueDiamond0/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/sebastian/CLionProjects/SilverBlueDiamond0/cmake-build-debug/CMakeFiles/Minunit.dir
-C:/Users/sebastian/CLionProjects/SilverBlueDiamond0/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/CASINO.dir
+C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/Minunit.dir
+C:/Users/diego/Desktop/SilverBlueDiamond66/cmake-build-debug/CMakeFiles/edit_cache.dir

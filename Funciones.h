@@ -72,7 +72,7 @@ void impcartadiamante(const int *cards,int x);
 void impcartatrebol(const int *cards,int x);
 void impcartacorazones(const int *cards,int x);
 void imprimir(int *cartas,int ii,int ccartas,int x);
-void pantalla(int *cartas,int ccartas,int x,int rd);
+void pantalla(int *cartas,int ccartas,int x,int rd,JUGADOR * player);
 void botones();
 
 
