@@ -44,7 +44,7 @@ int main () {
                             instrucciones_bj();
                             do{
                             system("cls");
-                            BlackJack(jug);
+                            jug = BlackJack(jug);
                             fflush(stdin);
                             printf("\n\n%cJugar otra vez? [s][n]",168 );
                             scanf("%c",&resp3);
