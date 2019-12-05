@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <time.h>
 
-int REDDOG()
+JUGADOR* REDDOG(JUGADOR* jugador)
 {
     int mazo[52],*m,ccmazo,apuesta,rd,i;
     m= mazo,ccmazo = 52;apuesta = 0;
@@ -45,7 +45,7 @@ int REDDOG()
 
         if(c[2] == c[0])
         {
-            apuesta += apuesta;
+            jugador->dinero += apuesta + apuesta;
         }
     }
     else
@@ -75,7 +75,7 @@ int REDDOG()
                     {
                         printf("-");
                     }
-                    apuesta = (apuesta*2) *(-1);
+                    jugador->dinero = (apuesta*2) *(-1);
                 }
                 else if(p == 1)
                 {
@@ -89,14 +89,15 @@ int REDDOG()
                     {
                         printf("-");
                     }
-                    apuesta += (apuesta) * tasadeapuestas(rd);
+                    jugador->dinero += (apuesta) * tasadeapuestas(rd);
+                    jugador->puntuacion += 2.5;
                 }
 
                 break;
             }
             case 2:
             {
-                apuesta = apuesta * (-1);
+                jugador->dinero += apuesta * (-1);
                 break;
             }
             default:
@@ -104,7 +105,6 @@ int REDDOG()
                 printf("\nLa opcion ingresada no es valida");
             }
         }
-
     }
 
     imprimir(cartas,0,ccartas,0);
@@ -119,7 +119,7 @@ int REDDOG()
     printf("\n");
     printf("\nDinero Obtenido: %d",apuesta);
 
-    return apuesta;
+    return jugador;
 }
 
 void generarcarta(int *mazo)
@@ -195,7 +195,7 @@ int intervalo(const int *cartas)
     }
     else
     {
-        if(((cartas[2] % 13)+1) > ((cartas[0] % 13)+1) && ((cartas[2] % 13)+1) < ((cartas[1] % 13)+1))
+        if(((cartas[2] % 13)+1) > ((cartas[0] %   13)+1) && ((cartas[2] % 13)+1) < ((cartas[1] % 13)+1))
         {
             return 1;
         }

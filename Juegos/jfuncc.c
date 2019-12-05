@@ -8,7 +8,7 @@
 #include <time.h>
 
 
-int Jackpot(){
+JUGADOR* Jackpot(JUGADOR* jugador){
     srand(time(NULL));
     int jckscrn[7];
     int apost, asrt;
@@ -26,14 +26,28 @@ int Jackpot(){
     imprimir_pantalla(jckscrn); // Se imprime la pantalla
     asrt = cantidad_acertados(jckscrn); // se comprueba la cantidad de aciertos con una funcion
     apost = ganancias(asrt,apost); // se calculan las ganancias con la candidad de aciertos
-    return apost;
+    jugador->dinero += apost;
+    jugador->puntuacion += 25;
+
+    return  jugador;
 }
 
 int cantidad_acertados(int res[]){
-    int c=0;
-    for(int i=0; i < 7; i++){
-        if (res[i] == i+1){
-            c++;
+    int c = 0,i,j,temp;
+
+    for(j = 0;j < 7;j++)
+    {
+        temp = 0;
+        for(i = j; i < 7; i++)
+        {
+            if (res[j] == res[i])
+             {
+                temp++;
+             }
+         }
+        if(temp > c)
+        {
+            c = temp;
         }
     }
     return c;
@@ -43,16 +57,16 @@ int res_apost(int result, int apost){
     if (result == 4){
         return apost * 5;
     }
-    if  (result == 5){
+    else if  (result == 5){
         return apost * 10;
     }
-    if (result == 6){
+    else if (result == 6){
         return apost * 15;
     }
-    if (result == 7){
+    else if (result == 7){
         return apost * 100;
     }
-    if (result < 4){
+    else{
         return 0;
     }
 }

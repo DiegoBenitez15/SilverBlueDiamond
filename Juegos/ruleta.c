@@ -9,7 +9,7 @@
 #include "../Funciones.h"
 #define DIM 20
 
-int Ruleta()
+JUGADOR* Ruleta(JUGADOR* jugador)
 {
     char c;
     int n=0,m[DIM],i,premio,k=4;
@@ -19,12 +19,12 @@ int Ruleta()
         case 'A' :
             do {
                 printf("\n\n\n");
-                for(int i=0; i< 85;i++){
+                for(i=0; i< 85;i++){
                     printf("%c",177);
                 }
                 printf ("\n\n\t\t\t\tApostarle a los pares [1]\n\n\n\n\t\t\t\tApostarle a los impares [2]\n");
                 printf("\n");
-                for(int i=0; i< 85;i++){
+                for(i=0; i< 85;i++){
                     printf("%c",177);
                 }
                 printf("\n");
@@ -90,7 +90,7 @@ int Ruleta()
         }
     }
     system ("pause");
-    return premio;
+    return jugador;
 }
 char presentacion()
 {
