@@ -14,9 +14,10 @@ JUGADOR* Ruleta(JUGADOR* jugador)
     char c;
     int n=0,m[DIM],i,premio,k=4,apuesta;
     do{
+        system("cls");
         printf("Cuanto es su apuesta: ");
         scanf("%d",&apuesta);
-    }while(apuesta > 500 && apuesta > jugador->dinero);
+    }while(apuesta > 500 || apuesta > jugador->dinero);
     jugador->dinero -= apuesta;
     srand(time(NULL));
     c=presentacion();

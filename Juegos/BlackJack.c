@@ -29,9 +29,10 @@ JUGADOR* BlackJack(JUGADOR* jugador)
     sumaJ2 = sumando(J2,0,ccartas2,sumaJ2);
     do
     {
+        system("cls");
         printf("Cuanto es su apuesta: ");
         scanf("%d",&apuesta);
-    }while(apuesta > 500 && apuesta > jugador->dinero);
+    }while(apuesta > 500 || apuesta > jugador->dinero);
     jugador->dinero -= apuesta;
 
     while(p1 == 0 || p2 == 0)
@@ -110,7 +111,7 @@ JUGADOR* BlackJack(JUGADOR* jugador)
     }
     printf("\t\t\t\t%c Suma del Casino %c = %d",176,176,sumaJ2);
 
-    jugador += apuesta;
+    jugador->dinero += apuesta;
     return jugador;
 }
 
