@@ -25,6 +25,7 @@ void casinoshow();
 void puerta();
 void creditos();
 void bien();
+
 //Auxiliar
 
 void gotoxy(int x,int y);
@@ -53,6 +54,7 @@ int lna_pase(int d1, int d2, int apst);
 int campo(int d1, int d2, int apst);
 int grnss(int d1, int d2, int apst);
 int grnoo(int d1, int d2, int apst);
+void mesacraps();
 
 //Red Dogs
 
@@ -80,11 +82,6 @@ int cantidad_acertados(int res[]);
 int res_apost(int result, int apost);
 void imprimir_pantalla (int pantalla_jackpot[]);
 int ganancias(int aciertos, int apuesta);
-
-
-//MississipiStud
-
-
 
 //Ruleta
 

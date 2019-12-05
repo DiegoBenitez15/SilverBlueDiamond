@@ -1,4 +1,0 @@
-C:/Users/diego/Desktop/SilverBlueDiamond46/cmake-build-debug/CMakeFiles/CASINO.dir
-C:/Users/diego/Desktop/SilverBlueDiamond46/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/diego/Desktop/SilverBlueDiamond46/cmake-build-debug/CMakeFiles/Minunit.dir
-C:/Users/diego/Desktop/SilverBlueDiamond46/cmake-build-debug/CMakeFiles/edit_cache.dir

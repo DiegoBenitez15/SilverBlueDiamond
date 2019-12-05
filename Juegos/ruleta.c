@@ -22,7 +22,9 @@ int Ruleta()
                 for(int i=0; i< 85;i++){
                     printf("%c",177);
                 }
-                printf ("\n\n\t\t\t\tApostarle a los pares [1]\n\n\n\n\t\t\t\tApostarle a los impares [2]\n");
+                printf ("\n\n\t\t\t\tApostarle a los pares [1]\n\t\t\t\t"
+                        "{Ganas si sale un numero par}\n\n\n\n\t\t\t\tApostarle a los impares [2]\n\t\t\t\t"
+                        "{Ganas si sale un numero impar}\n");
                 printf("\n");
                 for(int i=0; i< 85;i++){
                     printf("%c",177);
@@ -33,7 +35,8 @@ int Ruleta()
 
         case 'B' :
             do {
-                printf ("\n\n\t\t\t\t\t%c Tres numeros que quieres apostar! %c\n\t\t\t\t\t   %c(Comprendidos entre 1 y 36)%c\n",176,176,178,178);
+                printf ("\n\n\t\t\t\t\t%c Tres numeros que quieres apostar! %c\n\t\t\t\t\t"
+                        "   %c(Comprendidos entre 1 y 36)%c\n\n\t\t\t\t\t{Ganas si sale al menos un numero apostado}",176,176,178,178);
                 printf("\n\n\t\t\t\t\t\t\t");
                 for (i=0;i<3;i++)
                     scanf ("%d",&m[i]);
@@ -42,7 +45,8 @@ int Ruleta()
             break;
         case 'C' :
             do {
-                printf ("\n\n\t\t\t\t\t%c Di el numero al que le apostaras %c\n\n\t\t\t\t\t   %c(Comprendido entre 1 y 36)%c\n",176,176,178,178);
+                printf ("\n\n\t\t\t\t\t%c Di el numero al que le apostaras %c\n\n\t\t\t\t\t"
+                        "   %c(Comprendido entre 1 y 36)%c\n\n\t\t\t\t\t{Ganas si sale el numero apostado}",176,176,178,178);
                 printf("\n\n\t\t\t\t\t\t\t");
                 scanf ("%d",&n);
             }
@@ -58,31 +62,31 @@ int Ruleta()
     espera (k);  //simulación de la bola moviéndose en la ruleta
     system("cls");
     printf("\n\n\t\t\t\t\t");
-    printf ("\n\n\t\t\t\t\t%c%c%d\n\n",176,176,premio);
+    printf ("\n\n\t\t\t\t\t%c%c%d%c%c\n\n",176,176,premio,176,176);
     if (premio==0) {
-        printf ("%c %cGana la banca! %c ",176,168,176);
+        printf("\n\n\t\t\t\t %c |Gana la banca!| %c\n",176,176);
         system ("pause");
         }
     switch ( c ) {
         case 'A' :
             if ((n==1 && premio%2 == 0) || (n==2 && premio%2 == 1))
-                printf ("Has ganado!\tGanaste: $0.00\n");
-            else printf ("Perdiste!\tPerdiste: $0.00\n");
+                printf("\n\n\t\t\t\t  %c |Has Ganado!| %c\n",176,176);
+            else printf("\n\n\t\t\t\t  %c |Has Perdido!| %c\n",176,176);
             break;
         case 'B' :
             if ((n==1 && premio%3 == 1) || (n==2 && premio%3 == 2) || (n==3 && premio%2 == 0))
-                printf ("Has ganado!\tGanaste: $0.00 \n");
-            else printf ("Perdiste!\tPerdiste: $0.00\n");
+                printf("\n\n\t\t\t\t  %c |Has Ganado!| %c\n",176,176);
+            else printf("\n\n\t\t\t\t  %c |Has Perdido!| %c\n",176,176);
             break;
         case 'C' :
             if ((m[0]==premio) || (m[1]==premio) || (m[2]==premio))
-                printf ("Has ganado!\tGanaste: $0.00\n");
-            else printf ("Perdiste\tPerdiste: $0.00\n");
+                printf("\n\n\t\t\t\t%c |Has Ganado!| %c\n",176,176);
+            else printf("\n\n\t\t\t\t%c |Has Perdido!| %c\n",176,176);
             break;
         case 'D' :
             if (n==premio)
-                printf ("Has ganado!\tGanaste: $0.00 \n");
-            else printf ("Perdiste!\tPerdiste: $0.00\n");
+                printf("\n\n\t\t\t\t%c |Has Ganado!| %c\n",176,176);
+            else printf("\n\n\t\t\t\t%c |Has Perdido!| %c\n",176,176);
             break;
         default:
         {
@@ -96,14 +100,12 @@ char presentacion()
 {
     char c;
     do {
-        for(int i=0; i< 85;i++){
-            printf("%c",177);
+
+        printf("\n\t\t\t\tR\tU\tL\tE\tT\tA\n");
+        for (int i = 0; i < 100; i++) {
+            printf("%c",205);
         }
-        printf("\n\t\t\tR\tU\tL\tE\tT\tA\n");
-        for(int i=0; i< 85;i++){
-            printf("%c",177);
-        }
-        printf ("\n\t\t%cQu%c tipo de apuesta quieres realizar?\n\n",168,130);
+        printf ("\n\t\t\t\t%cQu%c tipo de apuesta quieres realizar?\n\n",168,130);
         printf ("Pares o Impares[A]\n\n\n\nTerna[B]\n\n\n\nPleno[C]\n");
         scanf ("%c",&c);
         system("cls"); } while (c!='A' && c!='B' && c!='C' && c!='D');
@@ -119,9 +121,6 @@ void espera(int segundos)
         if(clock()%400<10){
             system("cls");
             printf("\n\n\t\t\t\t\t");
-            for (int i = 0; i < 5; i++){
-                printf("%c",176);
-            }
             printf ("\n\n\n\t\t\t\t\t%c%c%d%c%c",178,178,rand() % 37,178,178);
         }
         Seg2=(int)clock()/CLOCKS_PER_SEC;

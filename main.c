@@ -25,13 +25,18 @@ int main () {
         system("cls");
         fflush (stdin);
         casinoshow();
-        printf("\n\n\n\t\t\t\t\tJugar[1]\n\n\n\t\t\t\t      Puntuacion[2]\n\n\n\t\t\t\t       Creditos[3]\n\n\n\t\t\t\t\tSalir[4]\n\n\n\t\t\t    Copyright (c) 2019 SilverDiamondBlue\n");
+        printf("\n\n\n\t\t\t\t\tJugar[1]\n\n\n\t\t\t\t\tPuntuacion[2]\n\n\n\t\t\t\t\tCreditos[3]\n\n\n\t\t\t\t\tSalir[4]\n\n\n\t\t\t\tCopyright (C) 2019 SilverDiamondBlue\n");
        scanf("%d",&opcion);
         switch (opcion)
         {
             case 1: {
                 do {
                     system("cls");
+                    printf("\n");
+                    printf("\t\t\t  %c%c%c%c%c%c%c  J   U   E   G   O  S    %c%c%c%c%c%c%c\n",219,219,219,178,177,178,178,178,178,177,178,219,219,219);
+                    for (int i = 0; i < 100; i++) {
+                        printf("%c",205);
+                    }
                     printf("\n\n\n\t\t\t\t\tBlackJack[1]\n\n\n\t\t\t\t\tCraps[2]\n\n\n\t\t\t\t\tJackpot[3]\n\n\n\t\t\t\t\tRed Hog[4]\n\n\n\t\t\t\t\tRuleta[5]\n");
                     scanf("%d", &opcion2);
                     switch (opcion2) {
@@ -102,18 +107,22 @@ int main () {
             }
             case 2:{
                 system("cls");
-                printf("-----------------------------------------------\n");
-                printf("\t\tPuntuacion\n");
-                printf("-----------------------------------------------\n");
+                printf("\n\t\t%c%c%c%c%c%c%c  P  U  N  T  U  A  C  I  O  N   %c%c%c%c%c%c%c\n",219,219,219,178,177,178,178,178,178,177,178,219,219,219);
+                for(int i =0; i < 80; i++){
+                    printf("%c",205);
+                }
+                printf("\n\n\t\t");
                 ordenarpuntuaciones(jugadores);
-                printf("\n\n\t");
+                printf("\n\n\t\t");
                 system("pause");
                 break; }
             case 3:{
                 system("cls");
-                printf("--------------------------------------------------------------------------------\n");
-                printf("\t\t\t\tCreditos\n");
-                printf("--------------------------------------------------------------------------------\n");
+                printf("\n");
+                printf("\t\t\t\tCreditos\n\n");
+                for(int i =0; i < 50; i++){
+                    printf("%c",176);
+                }
                 creditos();
                 break;}
             case 4:{
@@ -121,7 +130,7 @@ int main () {
                 exit(0); }
             default:{
                 system("cls");
-                printf("|ERROR| Opcion no disponible\n");
+                printf("%c |ERROR| Opcion no disponible %c\n",176,176);
                 system("pause");
                 break; }
         }

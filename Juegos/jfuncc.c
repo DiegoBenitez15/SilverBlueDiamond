@@ -12,10 +12,14 @@ int Jackpot(){
     srand(time(NULL));
     int jckscrn[7];
     int apost, asrt;
-    printf("\t\tBienvenido a JackPot!\n \t     Por favor ingrese su apuesta: ");
+    printf("\n\t\t\tJ   A   C   K       P   O   T \t\t\t\n");
+    for (int i  = 0; i < 100; i++) {
+        printf("%c",205);
+    }
+    printf("\n%cCuanto va a apostar?",168);
     scanf("%d", &apost); // El usuario Ingresa la cantidad apostada
     if (apost <= 0) {
-        printf("APUESTA ERRONEA");
+        printf("\n%c Error. Digita nuevamente. %c",176,176);
     }
     printf("\n");
 
@@ -61,12 +65,12 @@ int ganancias(int aciertos, int apuesta){
     int gns;
     if(aciertos >= 4 ){
         gns = res_apost(aciertos,apuesta);
-        printf(" %d %c%cACIERTOS!! Has ganado %d",aciertos,173,173, gns);
+        printf("\n%d %c%cACIERTOS!! Has ganado %d",aciertos,173,173, gns);
         return gns;
     }
     else
     {
-        printf("\n\tHas Perdido, Vuelve a intentarlo\n\t\tPerdiste -%d ",apuesta);
+        printf("\n\n\tHas Perdido, Vuelve a intentarlo\n\n\t\tPerdiste -$%d ",apuesta);
         return -1 * apuesta;
     }
 }

@@ -46,10 +46,8 @@ void imprimirb(int *cartas,int ii,int ccartas,int x ,int y)
 
 void pantallaB(int *cartas,int ccartas,int x,int suma) {
     int i;
-    for (i = 0; i < 100; i++) {
-        printf("%c",177);
-    }
-    printf("\n\n\t\t\t\t\tB L A C K J A C K\t\t\t%c Suma %c = %d\n",176,176,suma);
+
+    printf("\n\t\t\t\t\tB  L  A  C  K     J  A  C  K\t\t\t%c Suma %c = %d\n",176,176,suma);
     for (i = 0; i < 100; i++) {
         printf("%c",205);
     }

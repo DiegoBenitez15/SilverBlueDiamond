@@ -11,27 +11,25 @@
 
 int Craps()
 {
+
+    printf("\nDinero: $\t\t\tC\tR\tA\tP\tS\n");
     for(int i=0; i< 85;i++){
-        printf("%c",177);
-    }
-    printf("\n\t\t\tC\tR\tA\tP\tS\n");
-    for(int i=0; i< 85;i++){
-        printf("%c",177);
+        printf("%c",205);
     }
 
     char respt, mdj;
 
     int apst = 0, nd1 = 0, nd2 = 0, gns = 0;
     printf("\n");
-    printf("\tIntroduzca la cantidad que desea apostar:\t");
+    printf("\t%cCu%cnto quieres apostar?\t",168,160);
     scanf("%d", &apst);
     fflush(stdin);
     system("CLS");
     if (apst <= 0) {
-        printf("APUESTA ERRONEA");
+        printf("\n%c Error. Digita nuevamente. %c",176,176);
     }
-    printf("\tElija el modo de apuesta que desea utilizar: ");
-    printf("\n-Linea de pase [A]\n-Campo[C]\n-Gran Seis[S]\n-Gran Ocho[O]\n");
+    printf("\tElija el modo de apuesta que desea utilizar: \n\n\t\t\t\t");
+    mesacraps();
     mdj = getc(stdin);
     nd1 = 1 + rand() % (6 - 1);
     nd2 = 1 + rand() % (6 - 1);
@@ -72,7 +70,7 @@ int Craps()
             break;
         }
         default: {
-            printf("OPCION INCORRECTA");
+            printf("\n%c Error. Digita nuevamente. %c",176,176);
         }
 
     }
