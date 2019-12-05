@@ -23,6 +23,9 @@ void casinoshow(){
 
 void creditos()
 {
+    for(int i =0; i < 75; i++){
+        printf("%c",176);
+    }
 
     printf("\n\n");
     printf("\t\t                  %c%c%c%c               \n",220,219,219,220);

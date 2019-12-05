@@ -120,7 +120,6 @@ int main () {
                         else
                         {
                             Perdiste();
-                            system("cls");
                         }
                         break;
                     }
@@ -139,9 +138,7 @@ int main () {
                         system("cls");
                         printf("\n");
                         printf("\t\t\t\tCreditos\n\n");
-                        for(int i =0; i < 50; i++){
-                            printf("%c",176);
-                        }
+
                         creditos();
                         break;}
                     case 4:{
